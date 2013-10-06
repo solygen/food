@@ -20,53 +20,53 @@ module.exports = {
                 //jQuery
                 {
                 expand: true,
-                cwd: 'bower_components/jquery/',
+                cwd: 'components/jquery/',
                 src: ['jquery.min.js'],
                 dest: 'lib/vendors/'
                 },
                 //font-awesome
                 {
                 expand: true,
-                cwd: 'bower_components/font-awesome/css/',
+                cwd: 'components/font-awesome/css/',
                 src: ['font-awesome.min.css'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/font-awesome/font/',
+                cwd: 'components/font-awesome/font/',
                 src: ['fontawesome-webfont.woff'],
                 dest: 'lib/font/'
                 },
                 //bootstrap
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap/docs/assets/js/',
+                cwd: 'components/bootstrap/dist/js/',
                 src: ['bootstrap.min.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap/docs/assets/css/',
-                src: ['bootstrap-responsive.css'],
+                cwd: 'components/bootstrap/dist/css/',
+                src: ['bootstrap.min.css'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap/docs/assets/css/',
-                src: ['bootstrap.css'],
+                cwd: 'components/bootstrap/dist/css/',
+                src: ['bootstrap-theme.css'],
                 dest: 'lib/vendors/'
                 },
                 //underscore
                 {
                 expand: true,
-                cwd: 'bower_components/underscore/',
+                cwd: 'components/underscore/',
                 src: ['underscore-min.js'],
                 dest: 'lib/vendors/'
                 },
                 //require.js
                 {
                 expand: true,
-                cwd: 'bower_components/requirejs/',
+                cwd: 'components/requirejs/',
                 src: ['require.js'],
                 dest: 'lib/vendors/'
                 }
