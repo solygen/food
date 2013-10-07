@@ -60,6 +60,27 @@ data.meals.push(
     $.extend({},
         templates.meal || {},
         {
+            name: 'Gemüsekuchen',
+            flags: '',
+            ingredients: [
+                {quantity: 3, unit: 'stk', name: 'paprika'},
+                {quantity: 400, unit: 'g', name: 'mehl'},
+                {quantity: 4, unit: 'stk', name: 'frühlingszwiebeln'},
+                {quantity: 100, unit: 'g', name: 'gouda'},
+                {quantity: 4, unit: 'stk', name: 'eier'}
+            ],
+			steps: [
+				"",
+				""
+			]
+        }
+    )
+);
+
+data.meals.push(
+    $.extend({},
+        templates.meal || {},
+        {
             name: 'Gulasch',
             flags: '',
             ingredients: [
@@ -97,23 +118,6 @@ data.meals.push(
         }
     )
 );
-data.meals.push(
-    $.extend({},
-        templates.meal || {},
-        {
-            name: 'Konfetti Gemüsekuchen',
-            flags: '',
-            ingredients: [
-                {quantity: 4, name: 'paprika'},
-                {quantity: 4, name: 'mehl'},
-                {quantity: 1, name: 'frühlingszwiebeln'},
-                {quantity: 1, name: 'gouda'},
-                {quantity: 4, name: 'eier'}
-            ]
-        }
-    )
-);
-
 data.meals.push(
     $.extend({},
         templates.meal || {},

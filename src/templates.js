@@ -3,7 +3,8 @@ var templates = {
     meal: {
         name: 'unknown',
         flags: '',
-        ingredients: []
+        ingredients: [],
+		steps: []
     },
     ingredient:  {
       name: 'unknown',

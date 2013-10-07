@@ -9,7 +9,7 @@ var content = $(document.body).find('.content');
 //add row
 _.each(data.meals, function (meal) {
   var ing = _.map(meal.ingredients, function (ing) {
-    return ing.name
+    return ing.name + (ing.unit ? ' (' + ing.quantity + ' ' + ing.unit + ')' : '');
   });
   var node = $('<tr>')
               .append(
