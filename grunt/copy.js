@@ -47,7 +47,7 @@ module.exports = {
                 {
                 expand: true,
                 cwd: 'components/bootstrap/dist/css/',
-                src: ['bootstrap.min.css'],
+                src: ['bootstrap.css'],
                 dest: 'lib/vendors/'
                 },
                 {

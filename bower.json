@@ -2,12 +2,12 @@
     "name": "food",
     "version": "0.0.1",
     "dependencies": {
-                "jquery": "1.9.1",
-                "font-awesome": "latest",
-                "bootstrap": "latest",
-                "backbone": "latest",
-                "underscore": "latest",
-                "requirejs": "latest",
-                "modernizr": "latest"
+            "jquery": "~2.0",
+            "bootstrap": "~3.0",
+            "font-awesome": "~3.2",
+            "backbone": "~1.0",
+            "underscore": "~1.5",
+            "requirejs": "~2.1",
+            "modernizr": "~2.6"
         }
 }
