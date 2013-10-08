@@ -1,5 +1,5 @@
 module.exports = {
-    files: ['src/*.js'],
+    files: ['src/**.js'],
     //https://github.com/gruntjs/grunt-contrib-jshint/blob/master/docs/jshint-examples.md
     options: {
         bitwise: false,
