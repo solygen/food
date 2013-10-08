@@ -3,13 +3,31 @@
 //http://www.opengtindb.org/index.php
 //http://www.codecheck.info/
 
-
-var recipies = $(document.body).find('.recipies .content'),
+var recipies = $(document.body).find('.recipies').hide(),
     ing,
     node;
-    ingrediants = $(document.body).find('.ingrediants .content'),
+    ingredients = $(document.body).find('.ingredients').hide(),
     hash = {},
     list = [];
+
+$(window).on('hashchange', function() {
+    // Alerts every time the hash changes!
+    if (location.hash.substr(0, 1) === '#' && location.hash.length > 1) {
+      if (location.hash === '#recipies') {
+        recipies.show();
+        ingredients.hide();
+      } else if (location.hash === '#ingredients') {
+        ingredients.show();
+        recipies.hide();
+      } else {
+        ingredients.hide();
+        recipies.hide();
+      }
+    }
+});
+
+
+
 
 //add meals
 _.each(data.meals, function (meal) {
@@ -23,7 +41,7 @@ _.each(data.meals, function (meal) {
                 $('<td>').
                 text(ing.join(', '))
               );
-  recipies.append(node);
+  recipies.find('.content').append(node);
 });
 
 //count
@@ -54,5 +72,5 @@ _.each(list, function (ingr) {
                 $('<td>').
                 text(ingr.count)
               );
-  ingrediants.append(node);
+  ingredients.find('.content').append(node);
 });
