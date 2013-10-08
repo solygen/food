@@ -10,11 +10,11 @@ module.exports = function (grunt) {
         pkg: pkg,
 
         jshint:  require('./grunt/jshint.js'),
+        clean: require('./grunt/clean.js'),
         concat: require('./grunt/concat.js'),
         copy: require('./grunt/copy.js'),
-        uglify: require('./grunt/uglify.js'),
         htmlmin: require('./grunt/htmlmin.js'),
-        clean: ["./vendors"],
+        uglify: require('./grunt/uglify.js'),
         watch: {
             files: '<%= jshint.files %>',
             tasks: 'jshint'
@@ -31,13 +31,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     //after installing latest shit with bower run this task to copy relevant files to lib
-    grunt.registerTask('build:libs', ['copy:update'/*, 'clean'*/]);
+    grunt.registerTask('build:libs', ['clean:libs', 'copy:update']);
 
     // is called without any further parameter.
     grunt.registerTask('default', ['concat:recipies', 'concat:build', 'uglify']);
-    grunt.registerTask('build', [/*'jshint',*/ 'uglify', 'copy']);
+    grunt.registerTask('build', [/*'jshint',*/ 'clean:website', 'uglify', 'copy']);
 
     //create build for website
     grunt.registerTask('build:website', ['copy:website', 'htmlmin']);
-
 };
