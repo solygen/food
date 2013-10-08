@@ -33,10 +33,10 @@ data.meals.push(
             name: 'Champignonpfännchen',
             flags: '',
             ingredients: [
-                {quantity: 2, name: 'zwiebeln'},
-				{quantity: 1, name: 'champignons'},
-				{quantity: 1, name: 'saure sahne'},
-				{quantity: 1, name: 'schnittlauch'},
+                {quantity: 2, unit: 'stk',  name: 'zwiebeln'},
+				{quantity: 400, unit: 'gramm', name: 'champignons'},
+				{quantity: 200, unit: 'gramm', name: 'saure sahne'},
+				{quantity: 4, unit: 'stk', name: 'schnittlauch'},
             ]
         }
     )
