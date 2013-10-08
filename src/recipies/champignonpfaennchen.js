@@ -5,8 +5,8 @@ data.meals.push(
             name: 'Champignonpfännchen',
             flags: '',
             ingredients: [
-                {quantity: 2, name: 'zwiebel'},
-				{quantity: 1, name: 'champignon'},
+                {quantity: 2, name: 'zwiebeln'},
+				{quantity: 1, name: 'champignons'},
 				{quantity: 1, name: 'saure sahne'},
 				{quantity: 1, name: 'schnittlauch'},
             ]

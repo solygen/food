@@ -7,7 +7,7 @@ data.meals.push(
             ingredients: [
                 {quantity: 1, name: 'zucchini'},
                 {quantity: 1, name: 'reis'},
-                {quantity: 1, name: 'haehnchenbrustfilet'}
+                {quantity: 1, name: 'hähnchenbrustfilet'}
             ]
         }
     )

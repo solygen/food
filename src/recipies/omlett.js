@@ -6,7 +6,7 @@ data.meals.push(
             flags: '',
             ingredients: [
                 {quantity: 2, name: 'eier'},
-				{quantity: 1, name: 'tomate'},
+				{quantity: 1, name: 'tomaten'},
 				{quantity: 1, name: 'gekochter schinken'},
 				{quantity: 1, name: 'mozarella'},
 				{quantity: 1, name: 'sahne'},				

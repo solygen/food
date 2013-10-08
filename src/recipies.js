@@ -33,8 +33,8 @@ data.meals.push(
             name: 'Champignonpfännchen',
             flags: '',
             ingredients: [
-                {quantity: 2, name: 'zwiebel'},
-				{quantity: 1, name: 'champignon'},
+                {quantity: 2, name: 'zwiebeln'},
+				{quantity: 1, name: 'champignons'},
 				{quantity: 1, name: 'saure sahne'},
 				{quantity: 1, name: 'schnittlauch'},
             ]
@@ -51,7 +51,7 @@ data.meals.push(
             ingredients: [
                 {quantity: 1, name: 'hackfleisch'},
                 {quantity: 1, name: 'kartoffeln'},
-                {quantity: 1, name: 'moehren'}
+                {quantity: 1, name: 'möhren'}
             ]
         }
     )
@@ -142,7 +142,7 @@ data.meals.push(
             ingredients: [
                 {quantity: 1, name: 'linsen'},
                 {quantity: 3, name: 'kartoffeln'},
-                {quantity: 1, name: 'fruehlingszwiebeln'}
+                {quantity: 1, name: 'frühlingszwiebeln'}
             ]
         }
     )
@@ -156,7 +156,7 @@ data.meals.push(
             flags: '',
             ingredients: [
                 {quantity: 2, name: 'eier'},
-				{quantity: 1, name: 'tomate'},
+				{quantity: 1, name: 'tomaten'},
 				{quantity: 1, name: 'gekochter schinken'},
 				{quantity: 1, name: 'mozarella'},
 				{quantity: 1, name: 'sahne'},				
@@ -175,7 +175,7 @@ data.meals.push(
                 {quantity: 1, name: 'mozarella'},
                 {quantity: 3, name: 'paprika'},
                 {quantity: 1, name: 'hackfleisch'},
-                {quantity: 1, name: 'zwiebel'},
+                {quantity: 1, name: 'zwiebeln'},
                 {quantity: 1, name: 'frischkäse'}
             ]
         }
@@ -204,7 +204,7 @@ data.meals.push(
             ingredients: [
                 {quantity: 1, name: 'zucchini'},
                 {quantity: 1, name: 'reis'},
-                {quantity: 1, name: 'haehnchenbrustfilet'}
+                {quantity: 1, name: 'hähnchenbrustfilet'}
             ]
         }
     )
