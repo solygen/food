@@ -69,6 +69,13 @@ module.exports = {
                 cwd: 'components/requirejs/',
                 src: ['require.js'],
                 dest: 'lib/vendors/'
+                },
+                //list.js
+                {
+                expand: true,
+                cwd: 'components/list/',
+                src: ['list.min.js'],
+                dest: 'lib/vendors/'
                 }
         ]
     },
