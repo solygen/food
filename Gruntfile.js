@@ -36,11 +36,10 @@ module.exports = function (grunt) {
     // is called without any further parameter.
     grunt.registerTask('default', ['concat:build', 'uglify']);
     grunt.registerTask('build', [
-            'jshint',
+            //'jshint',
             'clean:website',
             'uglify',
-            'copy',
-            'clean:tmp'
+            'copy'
         ]
     );
 

@@ -93,6 +93,16 @@ module.exports = {
                 },
                 {
                 expand: true,
+                src: ['css/*'],
+                dest: 'builds/website/'
+                },
+                {
+                expand: true,
+                src: ['src/*'],
+                dest: 'builds/website/'
+                },
+                {
+                expand: true,
                 src: ['*.html'],
                 dest: 'builds/website/'
                 }
