@@ -394,6 +394,7 @@ define('recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -403,7 +404,10 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Zucchini'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
-                    {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'}
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 200, unit: 'gr', name: 'Saure Sahne'}
                 ]
             }
         )
