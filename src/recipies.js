@@ -48,7 +48,7 @@ define('recipies', [], function () {
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 500, unit: 'gr', name: 'Spagetthi'},
                     {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
-                    {quantity: 2, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 2, unit: 'stk', name: 'Zwiebel'},
                     {quantity: 3, unit: 'stk', name: 'Karotten'},
                     {quantity: 2, unit: 'stk', name: 'Kartoffeln'},
                     {quantity: 50, unit: 'gr', name: 'Sellerie'},
@@ -71,7 +71,7 @@ define('recipies', [], function () {
                 name: 'Champignonpfännchen',
                 flags: '',
                 ingredients: [
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebeln'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
                     {quantity: 400, unit: 'gr', name: 'Champignons'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'},
                     {quantity: 4, unit: 'stk', name: 'Schnittlauch'}
@@ -128,7 +128,7 @@ define('recipies', [], function () {
                 name: 'Gemüsestrudel',
                 flags: '',
                 ingredients: [
-                    {quantity: 1, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
                     {quantity: 2, unit: 'stk', name: 'Zucchini'},
                     {quantity: 2, unit: 'stk', name: 'Koblauchzehen'},
                     {quantity: 2, unit: 'el', name: 'Crème fraîche'},
@@ -152,7 +152,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 1000, unit: 'gr',  name: 'TK Grünköhl'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebeln'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
                     {quantity: 3, unit: 'stk',  name: 'Mettwürstchen'},
                     {quantity: 300, unit: 'gr',  name: 'Kassler'},
                     {quantity: 100, unit: 'gr',  name: 'Gänseschmalz'},
@@ -171,7 +171,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Gulasch'},
                     {quantity: 200, unit: 'gr', name: 'Pilze'},
-                    {quantity: 4, unit: 'gr', name: 'Zwiebeln'}
+                    {quantity: 4, unit: 'gr', name: 'Zwiebel'}
                 ]
             }
         )
@@ -185,7 +185,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 1, unit: 'gr', name: 'Gurken'},
-                    {quantity: 1, unit: 'gr', name: 'Zwiebeln'}
+                    {quantity: 1, unit: 'gr', name: 'Zwiebel'}
                 ]
             }
         )
@@ -199,8 +199,30 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
-                    {quantity: 4, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 4, unit: 'stk', name: 'Zwiebel'},
                     {quantity: 500, unit: 'gr', name: 'Spagetthi'}
+                ]
+            }
+        )
+    );
+
+    //http://www.chefkoch.de/rezepte/267151103108036/Hackfleischspinatsauce.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Hackfleischspinatsauce',
+                flags: '',
+                ingredients: [
+                    {quantity: 400, unit: 'gr', name: 'Nudeln'},
+                    {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 3, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
+                    {quantity: 2, unit: 'stk', name: 'Schmelzkäse (Scheibe)'},
+                ],
+                steps: [
+                    'Das Hackfleisch in einer Pfanne mit wenig Öl anbraten und dabei mit etwas Salz & Pfeffer würzen. Die Zwiebel würfeln und dazu geben. Den Knoblauch durch die Presse dazudrücken oder fein hacken und dazugeben. Alles gut anbraten bis es Farbe genommen hat. Dann den Spinat dazu und auftauen lassen. Mit etwas (soviel wie man Sauce haben möchte) Sahne aufgießen und den Käse reinzupfen, aufkochen lassen. Abschmecken mit Salz & Pfeffer - fertig. Dazu Nudeln und Salat.'
                 ]
             }
         )
@@ -215,7 +237,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
-                    {quantity: 3, unit: 'stk', name: 'Zwiebeln (rot)'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebel (rot)'},
                     {quantity: 200, unit: 'gr', name: 'Sahne'},
                     {quantity: 200, unit: 'gr', name: 'Crème Fraiche'}
                 ],
@@ -289,7 +311,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 3, unit: 'stk', name: 'Paprika'},
                     {quantity: 400, unit: 'gr', name: 'Mehl'},
-                    {quantity: 4, unit: 'stk', name: 'Frühlingszwiebeln'},
+                    {quantity: 4, unit: 'stk', name: 'Frühlingszwiebel'},
                     {quantity: 100, unit: 'gr', name: 'Gouda'},
                     {quantity: 4, unit: 'stk', name: 'Eier'}
                 ],
@@ -328,7 +350,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
                     {quantity: 500, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'}
+                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebel'}
                 ]
             }
         )
@@ -360,7 +382,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 3, unit: 'stk',  name: 'Paprika'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebeln'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
                 ]
@@ -376,7 +398,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 5, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 5, unit: 'stk', name: 'Zwiebel'},
                     {quantity: 1, unit: 'stk', name: 'Bolognese-Fix'},
                     {quantity: 50, unit: 'gr', name: 'Tomatenmark'},
                     {quantity: 1, unit: 'stk', name: 'Pizzatomaten (Dose)'},
@@ -435,7 +457,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'stk',  name: 'Zwiebeln'}
+                    {quantity: 1, unit: 'stk',  name: 'Zwiebel'}
                 ]
             }
         )
