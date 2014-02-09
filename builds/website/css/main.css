@@ -222,7 +222,7 @@ button,
 }
 
 .shopping, .recipe {
-  position: fixed;
+  /*position: fixed;*/
 }
 
 .count {

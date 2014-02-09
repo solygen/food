@@ -206,6 +206,51 @@ define('recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/993651204647871/Haehnchenbrust-in-Zwiebelsahne.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Hähnchenbrust in Zwiebelsahne',
+                flags: '',
+                ingredients: [
+                    {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebeln (rot)'},
+                    {quantity: 200, unit: 'gr', name: 'Sahne'},
+                    {quantity: 200, unit: 'gr', name: 'Crème Fraiche'}
+                ],
+                steps: [
+                    'Die Hähnchenbrust mit Salz, Pfeffer und Cayennepfeffer würzen und in einer Pfanne in heißem Butterschmalz von beiden Seiten anbraten. Nun in eine gebutterte Auflaufform geben und abdecken. In derselben Pfanne die in Ringe geschnittenen Zwiebel geben und gut anschmoren, dass sie Farbe bekommen. Die fertige Zwiebel über die Hähnchenbrust geben. Sahne und Créme fraíche miteinander verrühren, gut würzen und über das Ganze geben. Den Backofen auf 180° vorheizen und 20-25 Minuten backen.'
+                ]
+            }
+        )
+    );
+
+    //http://www.chefkoch.de/rezepte/407971130376848/Haehnchenschenkel-mit-Ofen-Schmand-Gemuese.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Hähnchenschenkel mit Ofen-Schmand-Gemüse',
+                flags: '',
+                ingredients: [
+                    {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
+                    {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
+                    {quantity: 1, unit: 'stk', name: 'Zucchini'},
+                    {quantity: 300, unit: 'gr', name: 'Champignons'},
+                    {quantity: 10, unit: 'stk', name: 'Cherrytomaten'},
+                    {quantity: 200, unit: 'gr', name: 'Schmand'},
+                    {quantity: 200, unit: 'gr', name: 'Joghurt'},
+                    {quantity: 100, unit: 'gr', name: 'Schnittlauch (TK)'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehen'}
+                ],
+                steps: [
+                    'Den Backofen auf 200 Grad vorheizen. Hähnchenschenkel waschen und trocken tupfen. Die Schenkel großzügig mit Hähnchengewürz, Paprika und der gekörnten Brühe würzen. Achtung, die Schenkel nicht einölen. Anschließend die Kartoffeln schälen und in mundgerechte Stücke schneiden. Die Zucchini putzen, waschen, halbieren und in ca. 1-cm-dicke Scheiben schneiden. Die Champignons putzen und evt. halbieren. Die Tomaten ebenfalls waschen und evt. halbieren. Die Kartoffeln in einer Fettpfanne verteilen und mit Olivenöl beträufeln. Dann mit Salz, Pfeffer und Rosmarin würzen. Über die Fettpfanne einen Grillrost und darauf die Hähnchenschenkel legen. Die Fettpfanne samt Grillrost in den Ofen schieben und ca. 20 Minuten braten/grillen. Nun tropft das leckere Hähnchenfett auf die Kartoffeln, was einen ganz tollen Geschmack gibt. Anschließend das klein geschnittene Gemüse zu den Kartoffeln in die Pfanne geben und nochmals weitere 15 Minuten in den Ofen. In der Zwischenzeit den Schmand und den Joghurt verrühren. Die Knoblauchzehen dazupressen, den Schnittlauch unterrühren und kräftig mit Salz und Pfeffer würzen. Nach ca. 35-40 Minuten die Hähnchenschenkel mit dem Ofengemüse servieren und die Schmandcreme dazureichen.'
+                ]
+            }
+        )
+    );
+
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -327,6 +372,27 @@ define('recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
+                name: 'Pasta Asciutta',
+                flags: '',
+                ingredients: [
+                    {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 5, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 1, unit: 'stk', name: 'Bolognese-Fix'},
+                    {quantity: 50, unit: 'gr', name: 'Tomatenmark'},
+                    {quantity: 1, unit: 'stk', name: 'Pizzatomaten (Dose)'},
+                    {quantity: 100, unit: 'gr', name: 'Sahnekäse'},
+                ],
+                steps: [
+                    'Die Zwiebeln in feine Ringe schneiden und in Olivenöl anbraten (nicht braun werden lassen)und dann mit heißem Wasser (ca. 1/2 liter)weich kochen lassen. Währenddessen das Gehackte in Butterfett oder Palmin scharf anbraten, bis es braun ist und mit Salz, Pfeffer, Oregano und Paprika würzen. Danach das Tütchen Bolognese reinstreuen. Wenn die Zwiebeln schön weichgekocht sind, gibst Du das Gehackte dazu. Nun kommen die geschälten Tomaten und das Tomatenmark rein. Alles noch bei kleiner Flamme ca. 30 Minuten köcheln lassen. Zum Schluß gibst Du 1-2 Eßl. Sahnekäse dazu und schmeckst ab.'
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
                 name: 'Pizza',
                 flags: '',
                 ingredients: [
@@ -375,6 +441,32 @@ define('recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/401131129151622/Tandoori-Fleisch-in-raffinierter-Joghurtsosse.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Tandoori',
+                flags: '',
+                ingredients: [
+                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 250, unit: 'gr', name: 'Joghurt'},
+                    {quantity: 200, unit: 'gr', name: 'Schmand'},
+                    {quantity: 1, unit: 'Dose', name: 'Kokosmilch'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Paprika'},
+                    {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 1, unit: 'stk', name: 'Brühwürfel'}
+                ],
+                steps: [
+                    'Zwiebel in Streifen schneiden und andünsten. Knoblauch, gefrorene Paprika (verkocht nicht so schnell), 1 Brühwürfel und Tandoori-Gewürz hinzugeben, von der Platte nehmen und abkühlen lassen. Fleisch in Streifen schneiden und rundum anbraten. Gemüse inkl. Sud mit Schmand, Joghurt und Kokosmilch verrühren. Das gebratene Fleisch hinzugeben. Mit Zitronensaft und vielleicht einem weiteren Brühwürfel abschmecken. Alles in eine Auflauf-Form geben und über Nacht ziehen lassen, mind. aber 3-4 Stunden. Danach in den Backofen geben und ca. 30-40 Minuten bei 180°C im Backofen backen lassen. Offene Auflaufformen mit Alufolie abdecken.'
+                ]
+            }
+        )
+    );
+
+
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -393,6 +485,30 @@ define('recipies', [], function () {
             }
         )
     );
+
+    //http://www.chefkoch.de/rezepte/1342861239100533/Tortellini-alla-panna.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Tortellini alla panna',
+                flags: '',
+                ingredients: [
+                    {quantity: 800, unit: 'gr', name: 'Tortellini (Frischeregal'},
+                    {quantity: 400, unit: 'gr', name: 'Sahne'},
+                    {quantity: 200, unit: 'gr', name: 'Kaffeesahne'},
+                    {quantity: 200, unit: 'gr', name: 'Schinken (gekocht)'},
+                    {quantity: 2, unit: 'stk', name: 'Eier (Eigelb)'},
+                    {quantity: 4, unit: 'el', name: 'Parmesan'},
+                    {quantity: 1, unit: 'el', name: 'Butter'}
+                ],
+                steps: [
+                    'Die Tortellinis nach Packungsanweisung kochen. Den gewürfelten gekochten Schinken in einer tiefen Pfanne mit Butter kurz anbraten, dann 400ml von der Sahne hineingeben und auf kleiner Stufe köcheln lassen. Wenn die Tortellini gar sind, in die Pfanne zur Schinkensahne geben und weiter köcheln lassen. In der Zwischenzeit in einer kleinen Schüssel das Eigelb, den Parmesan, Muskatnuss, Salz und die restliche 200 ml Sahne verrühren, dann in die Pfanne zu den Tortellinis geben und so lange köcheln lassen, bis die Soße dickflüssig wird. Sofort servieren. Sehr gehaltvoll, aber der Geschmack ist fantastisch. Ab und zu kann man sich´s mal gönnen.'
+                ]
+            }
+        )
+    );
+
 
     //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
     data.meals.push(
