@@ -19,9 +19,9 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
 
 
         _.each(meals, function (meal) {
-              node.append(
-                $('<div>').text(meal.name)
-              );
+            node.append(
+              $('<div>').text(meal.name)
+            );
         });
 
         node.append('<hr>');
@@ -41,6 +41,21 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
         $(document.body).find('#main').css('float', 'left');
     });
 
+
+    function compare(a, b) {
+        function getKey(item) {
+            var str = localStorage.getItem(item.name), dmy, d;
+            if (str) {
+                dmy = str.split(".");
+                d = new Date(dmy[2], dmy[1] - 1, dmy[0]);
+            } else {
+                d = new Date('2000-01-01') ;
+            }
+            return d.toISOString() + '.' + item.name;
+        }
+        return getKey(a).localeCompare(getKey(b));
+    }
+
     return function () {
         var self = this,
             list, node = $(document.body).find('#recipies'),
@@ -55,51 +70,79 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
 
                 //checkbox
                 if (e.target.type === 'checkbox') {
-                  $(e.target).closest('li').toggleClass('selected');
+                    $(e.target).closest('li').toggleClass('selected');
                 } else if (name === '') {
-                  return;
+                    return;
                 } else {
-                  $right
-                    .empty()
-                    .append(
-                      sidepanel(meal)
-                    )
-                    .show();
-                  $left
-                    .css('float', 'left');
+                    $right
+                        .empty()
+                        .append(
+                          sidepanel(meal)
+                        )
+                        .show();
+                    $left
+                      .css('float', 'left');
                 }
             },
 
             getMarkup = function () {
-                return '<li class="row"><span class="box"><input type="checkbox" name="selected" value="true"></span><div class="name"></div><div class="ingredients hidden"></div></li>';
+                return '<li class="row"><div style="float:left"><span class="box"><input type="checkbox" name="selected" value="true"></span><div class="name"></div></div><div class="date" style="float:right; font-size: 10pt;"><input type="input" class="datepicker" size="6" style="border: 0px"></div><div class="ingredients hidden"></div></li>';
             },
 
             init = function () {
+
+                //sort
+                items.sort(compare);
+
+                //create list
                 list = new List('recipies', {item: getMarkup() }, items);
+
+                //add datepicker
+                $('.datepicker').each(function (index, node) {
+                    var id = $(node).parent().parent().find('.name').text();
+                    var value = localStorage.getItem(id);
+                    $(node).val(value || '');
+                });
+
+                //init datepicker
+                $('.datepicker').datepicker({
+                    language: "de",
+                    autoclose: true,
+                    clearBtn: true,
+                    todayBtn: true,
+                    todayHighlight: true,
+                    weekStart: 1
+                }).on('changeDate', function (e) {
+                   var id = $(e.target).parent().parent().find('.name').text();
+                   localStorage.setItem(id, $(e.target).val());
+                }).on('clearDate', function (e) {
+                   var id = $(e.target).parent().parent().find('.name').text();
+                   localStorage.removeItem(id);
+                });
             };
 
         return {
-          data: function () {
-              var ing;
-              _.each(meals, function (meal) {
-                  ing = _.map(meal.ingredients, function (ing) {
-                      return ing.name + (ing.unit ? ' (' + ing.quantity + ' ' + ing.unit + ')' : '');
-                  });
-                  items.push({name: meal.name, ingredients: ing.join(', ')});
-              });
-              init();
-              $('#recipies').find('li').on('click', fnClick);
-              return this;
-          },
-          get: function () {
-              return list;
-          },
-          hide: function () {
-              return node.hide();
-          },
-          show: function () {
-              return node.show();
-          }
+            data: function () {
+                var ing;
+                _.each(meals, function (meal) {
+                    ing = _.map(meal.ingredients, function (ing) {
+                        return ing.name + (ing.unit ? ' (' + ing.quantity + ' ' + ing.unit + ')' : '');
+                    });
+                    items.push({name: meal.name, ingredients: ing.join(', ')});
+                });
+                init();
+                $('#recipies').find('li').on('click', fnClick);
+                return this;
+            },
+            get: function () {
+                return list;
+            },
+            hide: function () {
+                return node.hide();
+            },
+            show: function () {
+                return node.show();
+            }
         };
     };
 

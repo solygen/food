@@ -48,7 +48,7 @@ define('recipies', [], function () {
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 500, unit: 'gr', name: 'Spagetthi'},
                     {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
-                    {quantity: 2, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 3, unit: 'stk', name: 'Karotten'},
                     {quantity: 2, unit: 'stk', name: 'Kartoffeln'},
                     {quantity: 50, unit: 'gr', name: 'Sellerie'},
@@ -71,7 +71,7 @@ define('recipies', [], function () {
                 name: 'Champignonpfännchen',
                 flags: '',
                 ingredients: [
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 400, unit: 'gr', name: 'Champignons'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'},
                     {quantity: 4, unit: 'stk', name: 'Schnittlauch'}
@@ -91,9 +91,9 @@ define('recipies', [], function () {
                     {quantity: 400, unit: 'gr', name: 'kartoffeln'},
                     {quantity: 1000, unit: 'gr', name: 'Möhren'},
                     {quantity: 1, unit: 'stk', name: 'Porree'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
-                    {quantity: 1, unit: 'stk', name: 'Ei'}
+                    {quantity: 1, unit: 'stk', name: 'Ei(er)'}
                 ],
                 steps: [
                     'Möhren und Kartoffeln schälen und in regelmäßige Stücke schneiden. Den Porree in Halbringe schneiden und mit den Möhren- und Kartoffelstücken in einen Topf geben. Mit 1-2 Teelöffeln Gemüsebrühe und ausreichend Wasser zum Kochen bringen.',
@@ -114,7 +114,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Nudeln'},
                     {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
-                    {quantity: 4, unit: 'stk', name: 'Eier'}
+                    {quantity: 4, unit: 'stk', name: 'Ei(er)'}
                 ]
             }
         )
@@ -128,11 +128,11 @@ define('recipies', [], function () {
                 name: 'Gemüsestrudel',
                 flags: '',
                 ingredients: [
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Zucchini'},
                     {quantity: 2, unit: 'stk', name: 'Koblauchzehen'},
                     {quantity: 2, unit: 'el', name: 'Crème fraîche'},
-                    {quantity: 1, unit: 'stk', name: 'Eier'},
+                    {quantity: 1, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 100, unit: 'gr', name: 'Schinken (gekocht)'},
                     {quantity: 1, unit: 'stk', name: 'Blätterteig'}
                 ],
@@ -152,7 +152,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 1000, unit: 'gr',  name: 'TK Grünköhl'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 3, unit: 'stk',  name: 'Mettwürstchen'},
                     {quantity: 300, unit: 'gr',  name: 'Kassler'},
                     {quantity: 100, unit: 'gr',  name: 'Gänseschmalz'},
@@ -171,7 +171,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Gulasch'},
                     {quantity: 200, unit: 'gr', name: 'Pilze'},
-                    {quantity: 4, unit: 'gr', name: 'Zwiebel'}
+                    {quantity: 4, unit: 'gr', name: 'Zwiebel(n)'}
                 ]
             }
         )
@@ -185,7 +185,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 1, unit: 'gr', name: 'Gurken'},
-                    {quantity: 1, unit: 'gr', name: 'Zwiebel'}
+                    {quantity: 1, unit: 'gr', name: 'Zwiebel(n)'}
                 ]
             }
         )
@@ -199,7 +199,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
-                    {quantity: 4, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 4, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 500, unit: 'gr', name: 'Spagetthi'}
                 ]
             }
@@ -217,7 +217,7 @@ define('recipies', [], function () {
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 3, unit: 'stk', name: 'Knoblauchzehen'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
                     {quantity: 2, unit: 'stk', name: 'Schmelzkäse (Scheibe)'},
                 ],
@@ -253,7 +253,7 @@ define('recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Hähnchenschenkel mit Ofen-Schmand-Gemüse',
+                name: 'Hähnchenschenkel mit Schmand-Gemüse',
                 flags: '',
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
@@ -311,9 +311,9 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 3, unit: 'stk', name: 'Paprika'},
                     {quantity: 400, unit: 'gr', name: 'Mehl'},
-                    {quantity: 4, unit: 'stk', name: 'Frühlingszwiebel'},
+                    {quantity: 4, unit: 'stk', name: 'Frühlingszwiebel(n)'},
                     {quantity: 100, unit: 'gr', name: 'Gouda'},
-                    {quantity: 4, unit: 'stk', name: 'Eier'}
+                    {quantity: 4, unit: 'stk', name: 'Ei(er)'}
                 ],
                 steps: [
                     'Mehl mit Trockenhefe vermischen. Wasser, Salz und Öl dazu mischen und gehen lassen (ca. 15 Minuten).',
@@ -350,7 +350,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
                     {quantity: 500, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebel'}
+                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebel(n)'}
                 ]
             }
         )
@@ -363,7 +363,7 @@ define('recipies', [], function () {
                 name: 'Omlett',
                 flags: '',
                 ingredients: [
-                    {quantity: 2, unit: 'stk', name: 'Eier'},
+                    {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 1, unit: 'Stk', name: 'Tomaten'},
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
                     {quantity: 200, unit: 'gr', name: 'Mozarella'},
@@ -382,7 +382,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 3, unit: 'stk',  name: 'Paprika'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
-                    {quantity: 2, unit: 'stk',  name: 'Zwiebel'},
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
                 ]
@@ -398,7 +398,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 5, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 5, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Bolognese-Fix'},
                     {quantity: 50, unit: 'gr', name: 'Tomatenmark'},
                     {quantity: 1, unit: 'stk', name: 'Pizzatomaten (Dose)'},
@@ -447,6 +447,25 @@ define('recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/726401175430167/Porreegemuese.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Porreegemüse',
+                flags: 'min-20',
+                ingredients: [
+                    {quantity: 1000, unit: 'gr', name: 'Lauch/Porree'},
+                    {quantity: 200, unit: 'gr', name: 'Sahne'},
+                    {quantity: 1, unit: 'el', name: 'Butter'},
+                    {quantity: 1, unit: 'tl', name: 'Gemüsebrühe'}
+                ],
+                steps: [
+                    'Das Grün des Porrees großzügig wegschneiden, danach die übrigbleibenden Stangen gründlich säubern. Diese anschließend in der Länge halbieren und in feine Scheibchen schneiden. Butter in einer großen Pfanne erhitzen und das Gemüse hinzufügen. Bei mäßiger Hitze so lange garen, bis der Porree weich ist. Mit 1-2 Tl Gemüsebrühe, etwas schwarzem Pfeffer und eventuell etwas Gemüsesalz würzen. Zum Schluss den Becher Sahne hinzufügen und etwas einkochen lassen.'
+                ]
+            }
+        )
+    );
 
     data.meals.push(
         $.extend({},
@@ -457,7 +476,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'stk',  name: 'Zwiebel'}
+                    {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'}
                 ]
             }
         )
@@ -475,7 +494,7 @@ define('recipies', [], function () {
                     {quantity: 250, unit: 'gr', name: 'Joghurt'},
                     {quantity: 200, unit: 'gr', name: 'Schmand'},
                     {quantity: 1, unit: 'Dose', name: 'Kokosmilch'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Paprika'},
                     {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
                     {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
@@ -498,7 +517,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 9, unit: 'stk', name: 'Tomaten'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'}
                 ],
                 steps: [
@@ -542,7 +561,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Zucchini'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
                     {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'}
@@ -560,7 +579,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Kalbschnitzel'},
                     {quantity: 200, unit: 'gr', name: 'Champignons'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'el', name: 'Mehl'},
                     {quantity: 200, unit: 'ml', name: 'Traubensaft'},
                     {quantity: 400, unit: 'ml', name: 'Sahne'}
