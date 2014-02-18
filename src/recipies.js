@@ -724,7 +724,7 @@ define('recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Überbackenes Hähnchenbrustfilet auf Pfirsich',
+                name: 'Überbackenes Hähnchenbrustfilet',
                 flags: '',
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenbrustfilets'},
