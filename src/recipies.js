@@ -22,16 +22,23 @@ define('recipies', [], function () {
             }
         };
 
+    //http://www.chefkoch.de/rezepte/198321083838546/Backofenkartoffeln-einfach-und-lecker.html
     data.meals.push(
         $.extend({},
-            templates.meal || {},
+            templates.meal || {},
             {
                 name: 'Backofenkartoffeln',
                 flags: '',
                 ingredients: [
-                    {quantity: 3, unit: 'stk', name: 'Kartoffeln'},
-                    {name: 'Olivenöl'},
-                    {name: 'Paprikapulver (rosenscharf)'}
+                    {quantity: 1000, unit: 'gr', name: 'Kartoffel(n)'},
+                    {quantity: 1, unit: 'd', name: 'Paprikapulver'},
+                    {quantity: 1, unit: 'd', name: 'Pfeffer, gemahlen'},
+                    {quantity: 1, unit: 'd', name: 'Oregano'},
+                    {quantity: 1, unit: 'd', name: 'Knoblauchgranulat'},
+                    {quantity: 1, unit: 'el', name: 'Olivenöl'}
+                ],
+                steps: [
+                    'Die Kartoffeln schrubben und in Spalten schneiden. Danach gebe ich sie in eine Gefriertüte.Dann das Öl und die Gewürze, je nach Geschmack, dazu. Die Tüte zuhalten oder mit einem Gummi verschließen und kräftig schütteln, so dass alle Kartoffeln etwas von den Gewürzen abbekommen haben.Auf einem Backblech mit Backpapier verteilen und bei 200 Grad Umluft ca. 1/2 bis Stunde backen.'
                 ]
             }
         )
@@ -143,6 +150,7 @@ define('recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/237101096472618/Gruenkohl-wie-ihn-Mutter-kochte.html
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -157,6 +165,9 @@ define('recipies', [], function () {
                     {quantity: 300, unit: 'gr',  name: 'Kassler'},
                     {quantity: 100, unit: 'gr',  name: 'Gänseschmalz'},
                     {quantity: 400, unit: 'gr', name: 'Kartoffeln'}
+                ],
+                steps: [
+                    'Arbeitszeit: ca. 30 Min. Ruhezeit: ca. 12 Std. Gänseschmalz in einem großen Topf erhitzen und die fein gewürfelten Zwiebeln darin anschwitzen. Gefrorenen Kohl dazugeben und æ Liter heiße Brühe angießen. Topf schließen und den Kohl bei geringer Hitze in ca. Ω Stunde auftauen. Von 2-3 Pinkel die Pelle abziehen, Würste klein schneiden und in den Kohl einrühren. Speck und 2-3 angepiekste Mettenden mit hineingeben. Topf verschließen und weiter bei geringer Hitze 2 Stunden nur ganz leicht kochen. Kohl hin und wieder umrühren, damit nichts anbrennt. Kasseler Koteletts nicht mit zum Kohl geben, sie werden bei dem langen Garungsprozess trocken und hart. Nach 2 Stunden den Speck und die Mettwürste aus dem Kohl fischen und beiseite stellen. Jetzt beginnt eine der schönsten Arbeiten beim Kochen, das Abschmecken! Salzen, pfeffern, den Senf und evtl. noch einen zerbröselten Brühwürfel in den Kohl rühren. Noch etwas Brühe nachgießen? Genascht werden kann jetzt, aber gegessen wird erst morgen. Deshalb wird der Topf mit nicht ganz geschlossenem Deckel zum Erkalten an einen kühlen Ort gestellt. Am anderen Tag den Kohl wieder erhitzen, dabei das gelegentliche Umrühren nicht vergessen. Wahrscheinlich wird die Konsistenz des Kohls etwas zu dünnflüssig sein, deshalb werden jetzt die Haferflocken eingerührt und kurz mitgekocht. Hätte ich das gestern schon gemacht, müsste ich den Kohl ständig rühren, damit er nicht anbrennt. Wie viel, ob 2, 3 oder 5 Esslöffel muss man dabei selbst beurteilen. Wenn der Kohl fertig ist, soll er eine zwar sämige, aber keine dünnflüssige Konsistenz haben. Fleisch und Würste in einen Topf geben und mit Brühe auffüllen, bis alles bedeckt ist. Erhitzen und ziehen, aber nicht kochen lassen, da sonst die Pinkelwürste platzen würden. Anpieksen kann man die Würste, um überschüssiges Fett auslaufen zu lassen. Auch die Kasseler Koteletts so erhitzen. Pro Person rechne ich mindestens 1 Pinkel, Ω Mettwurst und 1 Stück Speck oder Kassler. Beilagen: Salzkartoffeln und/oder Bratkartoffeln aus Pellkartoffeln vom Vortag. Getränk: Bier passt hier am besten (Gabiko wer mag, hinterher ab 18 J.) *Bei der Pinkel gibt es auch eine geräucherte Variante, die mancher bevorzugt. Beim Mitkochen im Kohl ist sie etwas geschmacksintensiver.',
                 ]
             }
         )
@@ -164,18 +175,27 @@ define('recipies', [], function () {
 
     data.meals.push(
         $.extend({},
-            templates.meal || {},
+            templates.meal || {},
             {
                 name: 'Gulasch',
                 flags: '',
                 ingredients: [
-                    {quantity: 400, unit: 'gr', name: 'Gulasch'},
-                    {quantity: 200, unit: 'gr', name: 'Pilze'},
-                    {quantity: 4, unit: 'gr', name: 'Zwiebel(n)'}
+                    {quantity: 1000, unit: 'gr', name: 'Gulasch'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
+                    {quantity: 1, unit: 'el', name: 'Senf'},
+                    {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
+                    {quantity: 1, unit: 'el', name: 'Frischkäse'},
+                    {quantity: 1, unit: 'etwas', name: 'Dosenmilch'},
+                    {quantity: 1, unit: '', name: 'Paprikapulver rosenscharf, 1 kl. Chilli, Pfeffer, Fett'}
+                ],
+                steps: [
+                    'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Dosenmilch (man kann auch Sahne nehmen) abschmecken.',
                 ]
             }
         )
     );
+
 
     data.meals.push(
         $.extend({},
@@ -273,6 +293,30 @@ define('recipies', [], function () {
         )
     );
 
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'helles Filetgulasch a la Patnaik',
+                flags: '',
+                ingredients: [
+                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
+                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
+                    {quantity: 200, unit: 'gr', name: 'Frischkäse,saure Sahne oder Dosenmilch'},
+                    {quantity: 1, unit: 'etwas', name: 'aus einem Rahmchampignon Gewürzbeutel'},
+                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 1, unit: '', name: 'Sojasauce, Salz, Pfeffer, Paprika, Curry'}
+                ],
+                steps: [
+                    'Hähnchenbrustfilet in Gulaschstücke schneiden und in heißem Butterschmalz anbraten. Kleingeschnittenen Zwiebeln und eine klein gehackte Knoblauchzehe dazugeben und mitbraten. Wenn das Fleisch von allen Seiten angebraten ist, kommt Salz, Pfeffer, Paprikapulver, Curry und ein paar Tropfen Sojasauce dazu. Mit Wasser ablöschen und den Bratensatz loskochen, auf kleiner Flamme mit schrägem Deckel. Dieses Fleisch braucht nicht so lange zum Braten, sonst wird es trocken. Zum Verfeinern nimmt man ebenfalls Frischkäse, Dosenmilch oder saure Sahne. ',
+                ]
+            }
+        )
+    );
+
+
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -283,6 +327,66 @@ define('recipies', [], function () {
                     {quantity: 1, unit: 'stk', name: 'Suppenhuhn'},
                     {quantity: 300, unit: 'gr',  name: 'TK Erbsen'},
                     {quantity: 200, unit: 'ml',  name: 'Sahne'}
+                ]
+            }
+        )
+    );
+
+//http://www.chefkoch.de/rezepte/507251145912155/Huhn-mit-Gemuese-in-Kokos-Sosse.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Huhn mit Gemüse in Kokos-Soße',
+                flags: '',
+                time: 40,
+                ingredients: [
+                    {quantity: 1, unit: 'stk', name: 'Porree'},
+                    {quantity: 2, unit: 'stk', name: 'Möhren'},
+                    {quantity: 1, unit: 'stk', name: 'Limette(n)'},
+                    {quantity: 500, unit: 'g', name: 'Hähnchenbrustfilet'},
+                    {quantity: 1, unit: 'el', name: 'Öl (Sesamöl)'},
+                    {quantity: 1, unit: 'tl', name: 'Ingwerpulver'},
+                    {quantity: 0.5, unit: 'tl', name: 'Kurkuma'},
+                    {quantity: 0.25, unit: 'tl', name: 'Cayennepfeffer'},
+                    {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
+                    {quantity: 100, unit: 'gr', name: 'Brühe'},
+                    {quantity: 3, unit: 'el', name: 'Creme fraiche'},
+                    {quantity: 1, unit: '', name: 'Salz'},
+                    {quantity: 1, unit: '', name: 'Pfeffer'},
+                    {quantity: 1, unit: 'evtl.', name: 'Schnittlauch'}
+                ],
+                steps: [
+                    'Gemüse waschen, putzen, Möhren schälen. Alles mit einem großen Messer in feine Stifte (Julienne) schneiden. Die Limette auspressen. Fleisch abbrausen, trockentupfen, in Streifen teilen. Sesamöl in einem großen Wok oder einer großen Pfanne erhitzen. Fleisch darin bei starker Hitze unter Rühren anbraten. Ingwer, Kurkuma, Cayennepfeffer, etwas Salz, Pfeffer zufügen und bei mittlerer Hitze kurz mitbraten. Die Möhren, die Kokosnussmilch und die Brühe zufügen. Alles aufkochen lassen. Die Crème fraiche einrühren. Porree sowie Paprikastreifen hinzufügen und alles ca. 7 Minuten köcheln lassen. Mit 3 EL Limettensaft, etwas Salz, Pfeffer und Cayennepfeffer kräftig abschmecken. Auf Teller anrichten, evtl. mit Schnittlauchhalmen garnieren. Sehr empfehlenswert dazu ist Basmati.',
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Keema',
+                flags: '',
+                ingredients: [
+                    {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
+                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
+                    {quantity: 3, unit: 'stk', name: 'Kartoffel(n), klein gewürfelt'},
+                    {quantity: 1, unit: 'Tasse', name: 'gefrorene Erbsen'},
+                    {quantity: 3, unit: 'stk', name: 'Tomaten(n), kleingehackt'},
+                    {quantity: 100, unit: 'gr', name: 'saure Sahne'},
+                    {quantity: 2, unit: 'stk', name: 'Lorbeerblätter'},
+                    {quantity: 0.5, unit: 'Stange', name: 'Zimt'},
+                    {quantity: 3, unit: 'Kapseln', name: 'Kardamon'},
+                    {quantity: 4, unit: 'stk', name: 'Nelken'},
+                    {quantity: 1, unit: 'el', name: 'Kurkuma'},
+                    {quantity: 0.5, unit: 'el', name: 'Ingwer'},
+                    {quantity: 100, unit: 'gr', name: 'Wasser'}
+                ],
+                steps: [
+                    'Gehacktes in dem Öl gut anbraten, dann die gewürfelten Kartoffeln ebenfalls mit anbraten. Lorbeerblätter, Kardamon, Nelken und Zimt zugeben. Zwiebeln und Knoblauch ebenfalls mit anbraten. Nun Kurkuma, Paprika, Ingwer und Tomate dazu. Das Wasser dazugießen, damit nichts anbrät und etwas köcheln lassen. Gferorene Erbsen und die saure Sahne dazu. Köcheln lassen, bis die Kartoffeln gar sind. Abschmecken mit Salz und Pfeffer.'
                 ]
             }
         )
@@ -364,7 +468,7 @@ define('recipies', [], function () {
                 flags: '',
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Ei(er)'},
-                    {quantity: 1, unit: 'Stk', name: 'Tomaten'},
+                    {quantity: 1, unit: 'stk', name: 'Tomaten'},
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
                     {quantity: 200, unit: 'gr', name: 'Mozarella'},
                     {quantity: 200, unit: 'ml', name: 'Sahne'},
@@ -482,6 +586,72 @@ define('recipies', [], function () {
         )
     );
 
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Spitzkohl mit Kartoffeln',
+                flags: '',
+                ingredients: [
+                    {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
+                    {quantity: 8, unit: 'stk', name: 'Kartoffeln'},
+                    {quantity: 1, unit: 'etwas', name: 'Brühe'},
+                    {quantity: 2, unit: 'el', name: 'Crème fraîche'},
+                    {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
+                    {quantity: 1, unit: '', name: 'Fett'},
+                    {quantity: 1, unit: 'stk', name: 'evtl. Hack, Mettwurst, Bratwurst etc.'}
+                ],
+                steps: [
+                    'Die äußeren Blätter vom Spitzkohl entfernen und halbieren. Den Strunk aus der Mitte schneiden. Spitzkohl in STreifen schneiden. Wasser mit Salz zum Kochen bringen, den Spitzkohl 5 Minuten kochen lassen, dann abschütten. Kartoffeln schneiden und 15 Minuten in Brühe garen (beim Abschütten Wasser auffangen). Fett im Topf auslassen und Speckwürfel anbraten. Dann den Spitzkohl und die Kartoffeln dazugeben. Mit Salz, Peffer, Brühe und evtl. Sahnekäase abschmecken. Hackfleisch in seperater Pfanne krümelig anbraten und zum Schluss untermengen.',
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Rippchen a ala Mama',
+                flags: '',
+                ingredients: [
+                    {quantity: 1, unit: 'kg', name: 'dicke Rippe'},
+                    {quantity: 1, unit: '', name: 'Bratenfett'},
+                    {quantity: 2, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 1, unit: '', name: 'getrocknete Pilze'},
+                    {quantity: 1, unit: '', name: 'Honig, Sahnekäse, Jägersoße, Salz, Pfeffer, Paprika, Senf'}
+                ],
+                steps: [
+                    'Fleisch waschen und abtrocknen. Fett heiß werden lassen. Fleisch von beiden Seiten würzen, dann mit Senf einreiben. Fleisch scharf anbraten. Zwiebeln achteln und wenn Fleisch braun ist dazugeben. Herd runter schalten (sanft brutzeln). Getrocknete Pilze einweichen und ausdrücken (nur wenige). Knobi dazu. Etwas heißes Wasser dazu (ca. 1 Kaffeetasse). getrocknete Pilze dazu geben und Deckel drauf. Ca. 1-1 1/2 Stunden schmoren. Hin und wieder Wasser dazu. Fleisch rausnehmen und dann Soße abschmecken (Salz, Pfeffer, Parika und Honig).',
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Strammer Max',
+                flags: '',
+                ingredients: [
+                    {quantity: 4, unit: 'stk', name: 'Brotscheiben'},
+                    {quantity: 4, unit: 'stk', name: 'Eier'},
+                    {quantity: 4, unit: 'stk', name: 'geräucherter Schinken'},
+                    {quantity: 4, unit: 'stk', name: 'Gewürzgurken'},
+                    {quantity: 1, unit: 'stk', name: 'Ei(er)'},
+                    {quantity: 3, unit: 'stk', name: 'Tomaten'}
+
+                ],
+                steps: [
+                    'Ei in der Pfanne braten und vor dem Wenden eine Scheibe Schinken darauf legen. Das Schinken-Spiegel-Ei auf die Scheibe Brot legen. Gewürzgurken und Tomaten in Scheiben schneiden und über das Gericht geben. ',
+                ]
+            }
+        )
+    );
+
     //http://www.chefkoch.de/rezepte/401131129151622/Tandoori-Fleisch-in-raffinierter-Joghurtsosse.html
     data.meals.push(
         $.extend({},
@@ -550,6 +720,27 @@ define('recipies', [], function () {
         )
     );
 
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Überbackenes Hähnchenbrustfilet auf Pfirsich',
+                flags: '',
+                ingredients: [
+                    {quantity: 4, unit: 'stk', name: 'Hähnchenbrustfilets'},
+                    {quantity: 0.5, unit: 'Dose', name: 'Pfirsichhälften'},
+                    {quantity: 400, unit: 'ml', name: 'Sahne'},
+                    {quantity: 1, unit: 'Dose', name: 'Pilze'},
+                    {quantity: 1, unit: 'Beutel', name: 'Zwiebelsuppe'},
+                    {quantity: 1, unit: 'etwas', name: 'geraspelten Käse'}
+
+                ],
+                steps: [
+                    'Hähnchenbrustfilets mit einem scharfen Messer der Länge nach durchschneiden. Diese nun in heißem Fett in einer Pfanne von beiden Seiten anbraten und dabei salzen, pfeffern und mit Paprikapulver würzen. Eine Aufluafform einreiben und die gebratenen Filets darin verteilen. Die Pfirsiche vierteln und über die Filets geben. In der heißen Pfanne die Sahne und die Pilze heiß werden lassen. Nun darüber den Beutel Zwiebelsuppe geben und verrühren. Die Pilz-Sahne-Zwiebelsuppe nun noch mit Paprika, Salz, Pfeffer, Sojasauce und Curry würzen und in die Auflaufform geben. Zum Schluss etwas geraspelten Käse darauf verteilen und bei 200 ∞C in den vorgeheizten Backofen schieben. ‹berbacken wird ca. 20 Minuten bedeckt (Deckel oder Aulufolie) und 15 Minuten unbedeckt. ',
+                ]
+            }
+        )
+    );
 
     //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
     data.meals.push(
