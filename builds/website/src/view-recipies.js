@@ -2,29 +2,44 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
 
     'use strict';
 
+    var list;
+
     $(document.body).find('#shopping').on('click', function (e) {
         location.hash = '';
-        var list = $(document.body).find('li.selected').find('.name'),
-            meals = [];
-        _.each(list, function (node) {
-            meals.push(
-                recipies.get('meals', $(node).text())
-            );
+
+        var meals = [];
+
+        //add selected to meals
+        _.each(list.get(), function (item) {
+            var node = $(item.elm);
+            if (node.hasClass('selected')) {
+                meals.push(
+                    recipies.get('meals', node.find('.name').text())
+                );
+            }
         });
 
-        var stuff = recipies.ingredients(meals);
-        var node = $('<div class="shopping">').append(
-            $('<h1>').text('Einkaufsliste')
-        );
+        //create shopping list
+        var stuff = recipies.ingredients(meals),
+            node = $('<div class="shopping">').append(
+                $('<h1>').text('Einkaufsliste')
+            ),
+            output = $('<textarea>')
+                    .css('background', '#c0392b')
+                    .css('padding', '10px')
+                    .css('border', '0')
+                    .css('width', '100%')
+                    .attr('rows', 30);
 
 
         _.each(meals, function (meal) {
             node.append(
-              $('<div>').text(meal.name)
+            $('<div>').text(meal.name)
             );
         });
-
         node.append('<hr>');
+
+        output.appendTo(node);
 
         var keys = Object.keys(stuff);
         keys = keys.sort();
@@ -32,9 +47,7 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
         _.each(keys, function (name) {
             var ing = stuff[name];
             _.each(ing, function (value, unit) {
-              node.append(
-                $('<div>').text(name + ' (' + value + ' ' + unit + ')')
-              );
+                output.append(name + ' (' + value + ' ' + unit + ')' + '&#xA;');
             });
         });
         $(document.body).find('#sidepanel').empty().append(node).show();
@@ -57,8 +70,7 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
     }
 
     return function () {
-        var self = this,
-            list, node = $(document.body).find('#recipies'),
+        var node = $(document.body).find('#recipies'),
             items = [],
             $right = $(document.body).find('#sidepanel'),
             $left = $(document.body).find('#main'),
