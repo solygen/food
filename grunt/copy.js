@@ -20,7 +20,7 @@ module.exports = {
                 //jQuery
                 {
                 expand: true,
-                cwd: 'components/jquery/',
+                cwd: 'components/jquery/dist/',
                 src: ['jquery.min.js'],
                 dest: 'lib/vendors/'
                 },
@@ -56,6 +56,25 @@ module.exports = {
                 src: ['bootstrap-theme.css'],
                 dest: 'lib/vendors/'
                 },
+                //datrepicker
+                {
+                expand: true,
+                cwd: 'components/bootstrap-datepicker/js/',
+                src: ['bootstrap-datepicker.js'],
+                dest: 'lib/vendors/'
+                },
+                {
+                expand: true,
+                cwd: 'components/bootstrap-datepicker/js/locales',
+                src: ['bootstrap-datepicker.de.js'],
+                dest: 'lib/vendors/'
+                },
+                {
+                expand: true,
+                cwd: 'components/bootstrap-datepicker/css/',
+                src: ['datepicker.css', 'datepicker3.css'],
+                dest: 'lib/vendors/'
+                },
                 //underscore
                 {
                 expand: true,
@@ -73,7 +92,7 @@ module.exports = {
                 //list.js
                 {
                 expand: true,
-                cwd: 'components/list/',
+                cwd: 'components/list/dist',
                 src: ['list.min.js'],
                 dest: 'lib/vendors/'
                 }

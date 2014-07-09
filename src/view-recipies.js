@@ -57,10 +57,14 @@ define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, side
 
     function compare(a, b) {
         function getKey(item) {
-            var str = localStorage.getItem(item.name), dmy, d;
+            var str = localStorage.getItem(item.name), dmy, d, now;
             if (str) {
-                dmy = str.split(".");
-                d = new Date(dmy[2], dmy[1] - 1, dmy[0]);
+                dmy = str.split('.');
+                d = new Date(dmy[2], dmy[1] - 1, dmy[0], 23, 59, 59);
+                now = new Date();
+                if (d >= now) {
+                    d =  new Date(1999, d.getMonth(), d.getDate())
+                }
             } else {
                 d = new Date('2000-01-01') ;
             }

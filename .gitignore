@@ -2,5 +2,4 @@ bower_components
 food.sublime-workspace
 food.sublime-project
 components
-lib/*
-lib/recipies.js
+node_modules
