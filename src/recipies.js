@@ -8,9 +8,9 @@ define('recipies', [], function () {
         templates = {
             meal: {
                 name: 'unknown',
-                flags: '',
                 ingredients: [],
-                steps: []
+                steps: [],
+                tags: []
             },
             ingredient:  {
                 quantity: 1,
@@ -28,9 +28,12 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Backofenkartoffeln',
-                flags: '',
+                tags: [
+                    'vegetarisch',
+                    'beilage: kartoffeln'
+                ],
                 ingredients: [
-                    {quantity: 1000, unit: 'gr', name: 'Kartoffel(n)'},
+                    {quantity: 1000, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 1, unit: 'd', name: 'Paprikapulver'},
                     {quantity: 1, unit: 'd', name: 'Pfeffer, gemahlen'},
                     {quantity: 1, unit: 'd', name: 'Oregano'},
@@ -50,14 +53,17 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Bolognese',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 500, unit: 'gr', name: 'Spagetthi'},
                     {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
                     {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 3, unit: 'stk', name: 'Karotten'},
-                    {quantity: 2, unit: 'stk', name: 'Kartoffeln'},
+                    {quantity: 100, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 50, unit: 'gr', name: 'Sellerie'},
                     {quantity: 500, unit: 'ml', name: 'Traubensaft'}
                 ],
@@ -76,7 +82,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Champignonpfännchen',
-                flags: '',
+               tags: [
+                    'vegetarisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 400, unit: 'gr', name: 'Champignons'},
@@ -92,14 +101,17 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Möhrenuntereinander mit Frikadellen',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 400, unit: 'gr', name: 'kartoffeln'},
                     {quantity: 1000, unit: 'gr', name: 'Möhren'},
-                    {quantity: 1, unit: 'stk', name: 'Porree'},
+                    {quantity: 1, unit: 'stk', name: 'Lauch/Porree'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
                     {quantity: 1, unit: 'stk', name: 'Ei(er)'}
                 ],
                 steps: [
@@ -117,7 +129,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Gebratene Nudeln mit Speck und Ei',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Nudeln'},
                     {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
@@ -133,7 +148,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Gemüsestrudel',
-                flags: '',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Zucchini'},
@@ -156,7 +173,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Grünkohl',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr',  name: 'TK Grünköhl'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
@@ -178,14 +198,18 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Gulasch',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
+                    {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 1000, unit: 'gr', name: 'Gulasch'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
                     {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
                     {quantity: 1, unit: 'el', name: 'Senf'},
                     {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
-                    {quantity: 1, unit: 'el', name: 'Frischkäse'},
+                    {quantity: 50, unit: 'gr', name: 'Frischkäse'},
                     {quantity: 1, unit: 'etwas', name: 'Dosenmilch'},
                     {quantity: 1, unit: '', name: 'Paprikapulver rosenscharf, 1 kl. Chilli, Pfeffer, Fett'}
                 ],
@@ -202,7 +226,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Gurkensuppe',
-                flags: '',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                     {quantity: 1, unit: 'gr', name: 'Gurken'},
                     {quantity: 1, unit: 'gr', name: 'Zwiebel(n)'}
@@ -216,7 +242,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Hähnchengulasch',
-                flags: '',
+                tags: [
+                    'Helles Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
                     {quantity: 4, unit: 'stk', name: 'Zwiebel(n)'},
@@ -232,7 +261,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Hackfleischspinatsauce',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
@@ -254,11 +286,14 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Hähnchenbrust in Zwiebelsahne',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebel (rot)'},
-                    {quantity: 200, unit: 'gr', name: 'Sahne'},
+                    {quantity: 200, unit: 'ml', name: 'Sahne'},
                     {quantity: 200, unit: 'gr', name: 'Crème Fraiche'}
                 ],
                 steps: [
@@ -274,7 +309,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Hähnchenschenkel mit Schmand-Gemüse',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
                     {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
@@ -298,13 +336,16 @@ define('recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'helles Filetgulasch a la Patnaik',
-                flags: '',
+                name: 'Helles Filetgulasch a la Patnaik',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
-                    {quantity: 200, unit: 'gr', name: 'Frischkäse,saure Sahne oder Dosenmilch'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 200, unit: 'gr', name: 'Frischkäse'},
                     {quantity: 1, unit: 'etwas', name: 'aus einem Rahmchampignon Gewürzbeutel'},
                     {quantity: 200, unit: 'gr', name: 'Pilze'},
                     {quantity: 1, unit: '', name: 'Sojasauce, Salz, Pfeffer, Paprika, Curry'}
@@ -322,7 +363,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Hühnerfrikassee',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: Reis'
+                ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Suppenhuhn'},
                     {quantity: 300, unit: 'gr',  name: 'TK Erbsen'},
@@ -338,7 +382,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Huhn mit Gemüse in Kokos-Soße',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: Reis'
+                ],
                 time: 40,
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Porree'},
@@ -351,7 +398,7 @@ define('recipies', [], function () {
                     {quantity: 0.25, unit: 'tl', name: 'Cayennepfeffer'},
                     {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
                     {quantity: 100, unit: 'gr', name: 'Brühe'},
-                    {quantity: 3, unit: 'el', name: 'Creme fraiche'},
+                    {quantity: 3, unit: 'el', name: 'Crème Fraiche'},
                     {quantity: 1, unit: '', name: 'Salz'},
                     {quantity: 1, unit: '', name: 'Pfeffer'},
                     {quantity: 1, unit: 'evtl.', name: 'Schnittlauch'}
@@ -368,15 +415,18 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Keema',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
-                    {quantity: 3, unit: 'stk', name: 'Kartoffel(n), klein gewürfelt'},
+                    {quantity: 3, unit: 'stk', name: 'Kartoffeln'},
                     {quantity: 1, unit: 'Tasse', name: 'gefrorene Erbsen'},
                     {quantity: 3, unit: 'stk', name: 'Tomaten(n), kleingehackt'},
-                    {quantity: 100, unit: 'gr', name: 'saure Sahne'},
+                    {quantity: 100, unit: 'gr', name: 'Saure Sahne'},
                     {quantity: 2, unit: 'stk', name: 'Lorbeerblätter'},
                     {quantity: 0.5, unit: 'Stange', name: 'Zimt'},
                     {quantity: 3, unit: 'Kapseln', name: 'Kardamon'},
@@ -397,7 +447,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Kohlgemüse mit Bratwurst',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Broccoli'},
                     {quantity: 5, unit: 'stk', name: 'Bratwurst (grob)'}
@@ -411,11 +464,13 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Konfetti Gemüsekuchen',
-                flags: 'vegetarisch',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                     {quantity: 3, unit: 'stk', name: 'Paprika'},
                     {quantity: 400, unit: 'gr', name: 'Mehl'},
-                    {quantity: 4, unit: 'stk', name: 'Frühlingszwiebel(n)'},
+                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'},
                     {quantity: 100, unit: 'gr', name: 'Gouda'},
                     {quantity: 4, unit: 'stk', name: 'Ei(er)'}
                 ],
@@ -434,7 +489,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Lachs',
-                flags: '',
+                tags: [
+                    'Meeresfrüchte',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 200, unit: 'gr',  name: 'Lachs'},
                     {quantity: 500, unit: 'gr',  name: 'Nudeln'},
@@ -450,11 +508,14 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Linsengemüse',
-                flags: '',
+                tags: [
+                    'vegetarisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
                     {quantity: 500, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebel(n)'}
+                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'}
                 ]
             }
         )
@@ -465,12 +526,14 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Omlett',
-                flags: '',
+                tags: [
+                    'rotes Fleisch'
+                ],
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 1, unit: 'stk', name: 'Tomaten'},
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
-                    {quantity: 200, unit: 'gr', name: 'Mozarella'},
+                    {quantity: 200, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 200, unit: 'ml', name: 'Sahne'},
                 ]
             }
@@ -482,7 +545,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Paprika Gehacktes',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Reis'
+                ],
                 ingredients: [
                     {quantity: 3, unit: 'stk',  name: 'Paprika'},
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
@@ -499,7 +565,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Pasta Asciutta',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 5, unit: 'stk', name: 'Zwiebel(n)'},
@@ -520,7 +589,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Pizza',
-                flags: '',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                     {quantity: 2, unit: 'stk',  name: 'Pizzateig'},
                     {quantity: 50, unit: 'gr',  name: 'Tomatenmark'},
@@ -537,7 +608,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Pizza (Variante)',
-                flags: '',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                     {name: 'Olivenöl'},
                     {name: 'Mehl'},
@@ -557,10 +630,13 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Porreegemüse',
-                flags: 'min-20',
+                tags: [
+                    'vegetarisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Lauch/Porree'},
-                    {quantity: 200, unit: 'gr', name: 'Sahne'},
+                    {quantity: 200, unit: 'ml', name: 'Sahne'},
                     {quantity: 1, unit: 'el', name: 'Butter'},
                     {quantity: 1, unit: 'tl', name: 'Gemüsebrühe'}
                 ],
@@ -576,7 +652,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Spinat',
-                flags: '',
+                tags: [
+                    'vegetarisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
@@ -591,12 +670,15 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Spitzkohl mit Kartoffeln',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
                     {quantity: 8, unit: 'stk', name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'etwas', name: 'Brühe'},
-                    {quantity: 2, unit: 'el', name: 'Crème fraîche'},
+                    {quantity: 50, unit: 'gr', name: 'Brühe'},
+                    {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
                     {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
                     {quantity: 1, unit: '', name: 'Fett'},
                     {quantity: 1, unit: 'stk', name: 'evtl. Hack, Mettwurst, Bratwurst etc.'}
@@ -613,7 +695,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Rippchen a ala Mama',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Kartoffeln'
+                ],
                 ingredients: [
                     {quantity: 1, unit: 'kg', name: 'dicke Rippe'},
                     {quantity: 1, unit: '', name: 'Bratenfett'},
@@ -635,7 +720,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Strammer Max',
-                flags: '',
+                tags: [
+                    'rotes Fleisch'
+                ],
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Brotscheiben'},
                     {quantity: 4, unit: 'stk', name: 'Eier'},
@@ -658,12 +745,15 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Tandoori',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 250, unit: 'gr', name: 'Joghurt'},
                     {quantity: 200, unit: 'gr', name: 'Schmand'},
-                    {quantity: 1, unit: 'Dose', name: 'Kokosmilch'},
+                    {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Paprika'},
                     {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
@@ -683,7 +773,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Tomatensauce mit Mozzarella',
-                flags: '',
+                tags: [
+                    'vegetarisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 9, unit: 'stk', name: 'Tomaten'},
@@ -703,13 +796,16 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Tortellini alla panna',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: Nudeln'
+                ],
                 ingredients: [
                     {quantity: 800, unit: 'gr', name: 'Tortellini (Frischeregal'},
-                    {quantity: 400, unit: 'gr', name: 'Sahne'},
+                    {quantity: 400, unit: 'ml', name: 'Sahne'},
                     {quantity: 200, unit: 'gr', name: 'Kaffeesahne'},
                     {quantity: 200, unit: 'gr', name: 'Schinken (gekocht)'},
-                    {quantity: 2, unit: 'stk', name: 'Eier (Eigelb)'},
+                    {quantity: 2, unit: 'stk', name: 'Eier'},
                     {quantity: 4, unit: 'el', name: 'Parmesan'},
                     {quantity: 1, unit: 'el', name: 'Butter'}
                 ],
@@ -725,12 +821,15 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Überbackenes Hähnchenbrustfilet',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: Reis'
+                ],
                 ingredients: [
-                    {quantity: 4, unit: 'stk', name: 'Hähnchenbrustfilets'},
+                    {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 0.5, unit: 'Dose', name: 'Pfirsichhälften'},
                     {quantity: 400, unit: 'ml', name: 'Sahne'},
-                    {quantity: 1, unit: 'Dose', name: 'Pilze'},
+                    {quantity: 200, unit: 'gr', name: 'Pilze'},
                     {quantity: 1, unit: 'Beutel', name: 'Zwiebelsuppe'},
                     {quantity: 1, unit: 'etwas', name: 'geraspelten Käse'}
 
@@ -748,12 +847,15 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Zucchini mit Hähnchenbrust',
-                flags: '',
+                tags: [
+                    'helles Fleisch',
+                    'beilage: Reis'
+                ],
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Zucchini'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
                     {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'}
                 ]
@@ -766,7 +868,10 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Zürcher Geschnetzeltes',
-                flags: '',
+                tags: [
+                    'rotes Fleisch',
+                    'beilage: ???'
+                ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Kalbschnitzel'},
                     {quantity: 200, unit: 'gr', name: 'Champignons'},
