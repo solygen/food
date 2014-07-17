@@ -8,7 +8,7 @@ define('view-statistics', ['recipies'], function (recipies) {
         var list, node = $(document.body).find('#ingredients').hide(), items = [];
 
         var getMarkup = function () {
-            return '<div class="row list-group-item"><div class="name col-md-3"></div><div class="count col-md-2"></div></div>';
+            return '<div class="row list-group-item"><div class="name col-md-5"></div><div class="count col-md-5"></div></div>';
         };
 
         //init
@@ -30,14 +30,12 @@ define('view-statistics', ['recipies'], function (recipies) {
                     list = list.concat({count: count, name: key});
                 });
 
-
                 list.sort(function (a, b) {
                     var attr = 'count';
                     if (a[attr] < b[attr]) return 1;
                     if (a[attr] > b[attr]) return -1;
                     return 0;
                 });
-
                 //draw statistics
                 _.each(list, function (ingr) {
                     items.push({name: ingr.name, count: ingr.count});

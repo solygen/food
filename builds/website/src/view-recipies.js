@@ -1,4 +1,4 @@
-define('view-recipies', ['recipies', 'view-sidepanel'], function (recipies, sidepanel) {
+define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], function (recipies, sidepanel, statistics) {
 
     'use strict';
 

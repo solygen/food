@@ -108,8 +108,8 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 400, unit: 'gr', name: 'kartoffeln'},
-                    {quantity: 1000, unit: 'gr', name: 'Möhren'},
-                    {quantity: 1, unit: 'stk', name: 'Lauch/Porree'},
+                    {quantity: 1000, unit: 'gr', name: 'Karotten'},
+                    {quantity: 1, unit: 'stk', name: 'Porree'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
                     {quantity: 1, unit: 'stk', name: 'Ei(er)'}
@@ -154,9 +154,9 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Zucchini'},
-                    {quantity: 2, unit: 'stk', name: 'Möhren'},
-                    {quantity: 2, unit: 'stk', name: 'Koblauchzehen'},
-                    {quantity: 2, unit: 'el', name: 'Crème fraîche'},
+                    {quantity: 2, unit: 'stk', name: 'Karotten'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
                     {quantity: 1, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 100, unit: 'gr', name: 'Schinken (gekocht)'},
                     {quantity: 1, unit: 'stk', name: 'Blätterteig'}
@@ -207,15 +207,17 @@ define('recipies', [], function () {
                     {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 1000, unit: 'gr', name: 'Gulasch'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
-                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
                     {quantity: 1, unit: 'el', name: 'Senf'},
                     {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
-                    {quantity: 50, unit: 'gr', name: 'Frischkäse'},
-                    {quantity: 1, unit: 'etwas', name: 'Dosenmilch'},
-                    {quantity: 1, unit: '', name: 'Paprikapulver rosenscharf, 1 kl. Chilli, Pfeffer, Fett'}
+                    {quantity: 1, unit: 'el', name: 'Frischkäse'},
+                    {quantity: 100, unit: 'ml', name: 'Kondensmilch'},
+                    {name: 'Paprikapulver'},
+                    {name: 'Chillipulver'},
+                    {name: 'Pfeffer'}
                 ],
                 steps: [
-                    'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Dosenmilch (man kann auch Sahne nehmen) abschmecken.',
+                    'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Kondensmilch (man kann auch Sahne nehmen) abschmecken.',
                 ]
             }
         )
@@ -269,7 +271,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 3, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 3, unit: 'stk', name: 'Knoblauchzehe'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
                     {quantity: 2, unit: 'stk', name: 'Schmelzkäse (Scheibe)'},
@@ -322,8 +324,8 @@ define('recipies', [], function () {
                     {quantity: 10, unit: 'stk', name: 'Cherrytomaten'},
                     {quantity: 200, unit: 'gr', name: 'Schmand'},
                     {quantity: 200, unit: 'gr', name: 'Joghurt'},
-                    {quantity: 100, unit: 'gr', name: 'Schnittlauch (TK)'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehen'}
+                    {quantity: 100, unit: 'gr', name: 'Schnittlauch'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'}
                 ],
                 steps: [
                     'Den Backofen auf 200 Grad vorheizen. Hähnchenschenkel waschen und trocken tupfen. Die Schenkel großzügig mit Hähnchengewürz, Paprika und der gekörnten Brühe würzen. Achtung, die Schenkel nicht einölen. Anschließend die Kartoffeln schälen und in mundgerechte Stücke schneiden. Die Zucchini putzen, waschen, halbieren und in ca. 1-cm-dicke Scheiben schneiden. Die Champignons putzen und evt. halbieren. Die Tomaten ebenfalls waschen und evt. halbieren. Die Kartoffeln in einer Fettpfanne verteilen und mit Olivenöl beträufeln. Dann mit Salz, Pfeffer und Rosmarin würzen. Über die Fettpfanne einen Grillrost und darauf die Hähnchenschenkel legen. Die Fettpfanne samt Grillrost in den Ofen schieben und ca. 20 Minuten braten/grillen. Nun tropft das leckere Hähnchenfett auf die Kartoffeln, was einen ganz tollen Geschmack gibt. Anschließend das klein geschnittene Gemüse zu den Kartoffeln in die Pfanne geben und nochmals weitere 15 Minuten in den Ofen. In der Zwischenzeit den Schmand und den Joghurt verrühren. Die Knoblauchzehen dazupressen, den Schnittlauch unterrühren und kräftig mit Salz und Pfeffer würzen. Nach ca. 35-40 Minuten die Hähnchenschenkel mit dem Ofengemüse servieren und die Schmandcreme dazureichen.'
@@ -349,10 +351,14 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr', name: 'Frischkäse'},
                     {quantity: 1, unit: 'etwas', name: 'aus einem Rahmchampignon Gewürzbeutel'},
                     {quantity: 200, unit: 'gr', name: 'Pilze'},
-                    {quantity: 1, unit: '', name: 'Sojasauce, Salz, Pfeffer, Paprika, Curry'}
+                    {name: 'Sojasauce'},
+                    {name: 'Salz'},
+                    {name: 'Pfeffer'},
+                    {name: 'Paprika'},
+                    {name: 'Curry'}
                 ],
                 steps: [
-                    'Hähnchenbrustfilet in Gulaschstücke schneiden und in heißem Butterschmalz anbraten. Kleingeschnittenen Zwiebeln und eine klein gehackte Knoblauchzehe dazugeben und mitbraten. Wenn das Fleisch von allen Seiten angebraten ist, kommt Salz, Pfeffer, Paprikapulver, Curry und ein paar Tropfen Sojasauce dazu. Mit Wasser ablöschen und den Bratensatz loskochen, auf kleiner Flamme mit schrägem Deckel. Dieses Fleisch braucht nicht so lange zum Braten, sonst wird es trocken. Zum Verfeinern nimmt man ebenfalls Frischkäse, Dosenmilch oder saure Sahne. ',
+                    'Hähnchenbrustfilet in Gulaschstücke schneiden und in heißem Butterschmalz anbraten. Kleingeschnittenen Zwiebeln und eine klein gehackte Knoblauchzehe dazugeben und mitbraten. Wenn das Fleisch von allen Seiten angebraten ist, kommt Salz, Pfeffer, Paprikapulver, Curry und ein paar Tropfen Sojasauce dazu. Mit Wasser ablöschen und den Bratensatz loskochen, auf kleiner Flamme mit schrägem Deckel. Dieses Fleisch braucht nicht so lange zum Braten, sonst wird es trocken. Zum Verfeinern nimmt man ebenfalls Frischkäse, Kondensmilch oder saure Sahne. ',
                 ]
             }
         )
@@ -377,7 +383,7 @@ define('recipies', [], function () {
         )
     );
 
-//http://www.chefkoch.de/rezepte/507251145912155/Huhn-mit-Gemuese-in-Kokos-Sosse.html
+    //http://www.chefkoch.de/rezepte/507251145912155/Huhn-mit-Gemuese-in-Kokos-Sosse.html
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -390,9 +396,9 @@ define('recipies', [], function () {
                 time: 40,
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Porree'},
-                    {quantity: 2, unit: 'stk', name: 'Möhren'},
+                    {quantity: 2, unit: 'stk', name: 'Karotten'},
                     {quantity: 1, unit: 'stk', name: 'Limette(n)'},
-                    {quantity: 500, unit: 'g', name: 'Hähnchenbrustfilet'},
+                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 1, unit: 'el', name: 'Öl (Sesamöl)'},
                     {quantity: 1, unit: 'tl', name: 'Ingwerpulver'},
                     {quantity: 0.5, unit: 'tl', name: 'Kurkuma'},
@@ -400,9 +406,9 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
                     {quantity: 100, unit: 'gr', name: 'Brühe'},
                     {quantity: 3, unit: 'el', name: 'Crème Fraiche'},
-                    {quantity: 1, unit: '', name: 'Salz'},
-                    {quantity: 1, unit: '', name: 'Pfeffer'},
-                    {quantity: 1, unit: 'evtl.', name: 'Schnittlauch'}
+                    {name: 'Salz'},
+                    {name: 'Pfeffer'},
+                    {name: 'Schnittlauch'}
                 ],
                 steps: [
                     'Gemüse waschen, putzen, Möhren schälen. Alles mit einem großen Messer in feine Stifte (Julienne) schneiden. Die Limette auspressen. Fleisch abbrausen, trockentupfen, in Streifen teilen. Sesamöl in einem großen Wok oder einer großen Pfanne erhitzen. Fleisch darin bei starker Hitze unter Rühren anbraten. Ingwer, Kurkuma, Cayennepfeffer, etwas Salz, Pfeffer zufügen und bei mittlerer Hitze kurz mitbraten. Die Möhren, die Kokosnussmilch und die Brühe zufügen. Alles aufkochen lassen. Die Crème fraiche einrühren. Porree sowie Paprikastreifen hinzufügen und alles ca. 7 Minuten köcheln lassen. Mit 3 EL Limettensaft, etwas Salz, Pfeffer und Cayennepfeffer kräftig abschmecken. Auf Teller anrichten, evtl. mit Schnittlauchhalmen garnieren. Sehr empfehlenswert dazu ist Basmati.',
@@ -424,9 +430,9 @@ define('recipies', [], function () {
                     {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
-                    {quantity: 3, unit: 'stk', name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'Tasse', name: 'gefrorene Erbsen'},
-                    {quantity: 3, unit: 'stk', name: 'Tomaten(n), kleingehackt'},
+                    {quantity: 3, unit: 'stk', name: 'Kartoffel(n)'},
+                    {quantity: 1, unit: 'Tasse', name: 'Erbsen (TK)'},
+                    {quantity: 3, unit: 'stk', name: 'Tomaten'},
                     {quantity: 100, unit: 'gr', name: 'Saure Sahne'},
                     {quantity: 2, unit: 'stk', name: 'Lorbeerblätter'},
                     {quantity: 0.5, unit: 'Stange', name: 'Zimt'},
@@ -437,7 +443,7 @@ define('recipies', [], function () {
                     {quantity: 100, unit: 'gr', name: 'Wasser'}
                 ],
                 steps: [
-                    'Gehacktes in dem Öl gut anbraten, dann die gewürfelten Kartoffeln ebenfalls mit anbraten. Lorbeerblätter, Kardamon, Nelken und Zimt zugeben. Zwiebeln und Knoblauch ebenfalls mit anbraten. Nun Kurkuma, Paprika, Ingwer und Tomate dazu. Das Wasser dazugießen, damit nichts anbrät und etwas köcheln lassen. Gferorene Erbsen und die saure Sahne dazu. Köcheln lassen, bis die Kartoffeln gar sind. Abschmecken mit Salz und Pfeffer.'
+                    'Gehacktes in dem Öl gut anbraten, dann die gewürfelten Kartoffeln ebenfalls mit anbraten. Lorbeerblätter, Kardamon, Nelken und Zimt zugeben. Zwiebeln und Knoblauch ebenfalls mit anbraten. Nun Kurkuma, Paprika, Ingwer und die gewürfelten Tomaten dazu. Das Wasser dazugießen, damit nichts anbrät und etwas köcheln lassen. Gferorene Erbsen und die saure Sahne dazu. Köcheln lassen, bis die Kartoffeln gar sind. Abschmecken mit Salz und Pfeffer.'
                 ]
             }
         )
@@ -497,7 +503,9 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 200, unit: 'gr',  name: 'Lachs'},
                     {quantity: 500, unit: 'gr',  name: 'Nudeln'},
-                    {quantity: 200, unit: 'ml',  name: 'Sahne'},
+                    {quantity: 400, unit: 'ml',  name: 'Kondensmilch'},
+                    {quantity: 5, unit: 'gr',  name: 'Senf'},
+                    {quantity: 5, unit: 'gr',  name: 'Honig'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'}
                 ]
             }
@@ -551,10 +559,13 @@ define('recipies', [], function () {
                     {quantity: 1100, unit: 'ml', name: 'Milch'},
                     {quantity: 200,  unit: 'gr', name: 'Milchreis'},
                     {quantity: 40, unit: 'gr', name: 'Zucker'},
-                    {quantity: 1, unit: 'littlebit', name: 'Salz'},
+                    {name: 'Salz'},
                 ],
                 steps: [
                     'Die Milch mit dem Salz, dem Abrieb der Zitronenschale und dem Zucker in einen Topf geben und bei schwacher Hitze aufkochen. Milchreis hinzugeben, kräftig rühren und erneut aufkochen lassen. Bei schwacher Hitze den Reis etwa 30-35 Minuten in dem halb geschlossenem Topf quellen lassen, immer wieder rühren.'
+                ],
+                tags: [
+                    'vegetarisch'
                 ]
             }
         )
@@ -575,13 +586,13 @@ define('recipies', [], function () {
                     {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
                     {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'},
-                    {quantity: 200, unit: 'ml',  name: 'Dosenmilch'},
+                    {quantity: 200, unit: 'ml',  name: 'Kondensmilch'},
                     {quantity: 250, unit: 'gr', name: 'Reis'}
                 ],
                 steps: [
-                    'Zwiebeln anbraten und danach die Paprika hinzugeben. Mit Dosenmilch und Wasser ablöschen und gar kochen.',
+                    'Zwiebeln anbraten und danach die Paprika hinzugeben. Mit Kondensmilch und Wasser ablöschen und gar kochen.',
                     'Parallel das Hackfleisch in einer Pfanne anbraten und im Anschluss zu den Zwiebeln und Paprika hinzugeben.', 
-                    'Zum Abschluss den Frischkäse hinzugeben und ggf. mit etwas Dosenmilch verdünnen.'
+                    'Zum Abschluss den Frischkäse hinzugeben und ggf. mit etwas Kondensmilch verdünnen.'
                 ]
             }
         )
@@ -625,6 +636,9 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr',  name: 'Tomaten (passiert)'},
                     {quantity: 200, unit: 'gr',  name: 'Pilze'},
                     {quantity: 300, unit: 'gr', name: 'Gouda'}
+                ],
+                tags: [
+                    'vegetarisch'
                 ]
             }
         )
@@ -669,6 +683,9 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Das Grün des Porrees großzügig wegschneiden, danach die übrigbleibenden Stangen gründlich säubern. Diese anschließend in der Länge halbieren und in feine Scheibchen schneiden. Butter in einer großen Pfanne erhitzen und das Gemüse hinzufügen. Bei mäßiger Hitze so lange garen, bis der Porree weich ist. Mit 1-2 Tl Gemüsebrühe, etwas schwarzem Pfeffer und eventuell etwas Gemüsesalz würzen. Zum Schluss den Becher Sahne hinzufügen und etwas einkochen lassen.'
+                ],
+                tags: [
+                    'vegetarisch'
                 ]
             }
         )
@@ -685,8 +702,12 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat'},
+                    {quantity: 3, unit: 'stk',  name: 'Ei(er)'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
                     {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'}
+                ],
+                tags: [
+                    'vegetarisch'
                 ]
             }
         )
@@ -704,11 +725,10 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
                     {quantity: 8, unit: 'stk', name: 'Kartoffeln'},
-                    {quantity: 50, unit: 'gr', name: 'Brühe'},
+                    {quantity: 50, unit: 'ml', name: 'Brühe'},
                     {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
                     {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
-                    {quantity: 1, unit: '', name: 'Fett'},
-                    {quantity: 1, unit: 'stk', name: 'evtl. Hack, Mettwurst, Bratwurst etc.'}
+                    {quantity: 1, unit: 'stk', name: 'Bratwurst'}
                 ],
                 steps: [
                     'Die äußeren Blätter vom Spitzkohl entfernen und halbieren. Den Strunk aus der Mitte schneiden. Spitzkohl in STreifen schneiden. Wasser mit Salz zum Kochen bringen, den Spitzkohl 5 Minuten kochen lassen, dann abschütten. Kartoffeln schneiden und 15 Minuten in Brühe garen (beim Abschütten Wasser auffangen). Fett im Topf auslassen und Speckwürfel anbraten. Dann den Spitzkohl und die Kartoffeln dazugeben. Mit Salz, Peffer, Brühe und evtl. Sahnekäase abschmecken. Hackfleisch in seperater Pfanne krümelig anbraten und zum Schluss untermengen.',
@@ -728,15 +748,24 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 1, unit: 'kg', name: 'dicke Rippe'},
-                    {quantity: 1, unit: '', name: 'Bratenfett'},
-                    {quantity: 2, unit: 'stk', name: 'Zwiebeln'},
+                    {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
                     {quantity: 200, unit: 'gr', name: 'Pilze'},
-                    {quantity: 1, unit: '', name: 'getrocknete Pilze'},
-                    {quantity: 1, unit: '', name: 'Honig, Sahnekäse, Jägersoße, Salz, Pfeffer, Paprika, Senf'}
+                    {name: 'Bratenfett'},
+                    {name: 'getrocknete Pilze'},
+                    {name: 'Honig'},
+                    {name: 'Sahnekäse'},
+                    {name: 'Jägersoße'},
+                    {name: 'Salz'},
+                    {name: 'Pfeffer'},
+                    {name: 'Paprikapulver'},
+                    {name: 'Senf'}
                 ],
                 steps: [
                     'Fleisch waschen und abtrocknen. Fett heiß werden lassen. Fleisch von beiden Seiten würzen, dann mit Senf einreiben. Fleisch scharf anbraten. Zwiebeln achteln und wenn Fleisch braun ist dazugeben. Herd runter schalten (sanft brutzeln). Getrocknete Pilze einweichen und ausdrücken (nur wenige). Knobi dazu. Etwas heißes Wasser dazu (ca. 1 Kaffeetasse). getrocknete Pilze dazu geben und Deckel drauf. Ca. 1-1 1/2 Stunden schmoren. Hin und wieder Wasser dazu. Fleisch rausnehmen und dann Soße abschmecken (Salz, Pfeffer, Parika und Honig).',
+                ],
+                tags: [
+                    'Dunkles Fleisch'
                 ]
             }
         )
@@ -761,6 +790,22 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Ei in der Pfanne braten und vor dem Wenden eine Scheibe Schinken darauf legen. Das Schinken-Spiegel-Ei auf die Scheibe Brot legen. Gewürzgurken und Tomaten in Scheiben schneiden und über das Gericht geben. ',
+                ]
+            }
+        )
+    );
+
+    //http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Test: Käse-Spinat-Pfannkuchen',
+                flags: '',
+                ingredients: [
+                ],
+                steps: [
+                    'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'    
                 ]
             }
         )
@@ -828,11 +873,12 @@ define('recipies', [], function () {
                     'beilage: Nudeln'
                 ],
                 ingredients: [
-                    {quantity: 800, unit: 'gr', name: 'Tortellini (Frischeregal'},
-                    {quantity: 200, unit: 'ml', name: 'Sahne'},
-                    {quantity: 400, unit: 'gr', name: 'Kaffeesahne'},
+
+                    {quantity: 800, unit: 'gr', name: 'Tortellini (Frischeregal)'},
+                    {quantity: 400, unit: 'gr', name: 'Sahne'},
+                    {quantity: 200, unit: 'gr', name: 'Kondensmilch'},
                     {quantity: 200, unit: 'gr', name: 'Schinken (gekocht)'},
-                    {quantity: 2, unit: 'stk', name: 'Eier'},
+                    {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 4, unit: 'el', name: 'Parmesan'},
                     {quantity: 1, unit: 'el', name: 'Butter'}
                 ],
@@ -885,6 +931,14 @@ define('recipies', [], function () {
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
                     {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'}
+                ],
+                steps: [
+                    'Das Fleisch in Öl rundherum goldbraun anbraten. Zwiebeln und Knoblauch zu geben und ebenfalls anbraten. Zucchinischeiben hinzu fügen und kurz mit anbraten. Mit Salz, Pfeffer, Curry und Koriander würzen.',
+                    'Zugedeckt 10-15 Minuten unter mehrmaligem Wenden bei mäßiger Hitze dünsten lassen. Die Zucchinischeiben sollten noch etwas "Biss" haben.',
+                    'Die saure Sahne unterrühren und noch einmal abschmecken. Schnittlauch dazu geben und sofort heiß servieren.'
+                ],
+                tags: [
+                    'Helles Fleisch'
                 ]
             }
         )
@@ -910,6 +964,9 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Das Geschnetzelte mit Salz und Pfeffer aus der Mühle würzen und in zwei Teile teilen. Eine große Teflonpfanne mit der Hälfte des Erdnussöles sehr gut erhitzen, einen Teil des Fleisches beigeben und kurz (!) anbraten. (nicht zu lange, sonst wird das Fleisch zäh und trocken). Das Fleisch aus der Pfanne nehmen, warm stellen. Mit dem restlichen Fleisch ebenso verfahren. In derselben Pfanne die Butter erhitzen, die Zwiebeln beigeben und dünsten. Die in Scheiben geschnittenen Champignons dazugeben, mit dem Mehl stäuben und vermischen. Weißwein beigeben und zur Hälfte einreduzieren. Den Bratensaft vom Fleisch und den Rahm dazugeben und alles zur gewünschten Konsistenz einkochen. Mit Salz und Pfeffer abschmecken. '
+                ],
+                tags: [
+                    'Dungkles Fleisch'
                 ]
             }
         )
@@ -942,7 +999,7 @@ define('recipies', [], function () {
             _.each(list, function (meal) {
                 _.each(meal.ingredients, function (ing) {
                     hash[ing.name] = hash[ing.name] || {};
-                    ing.unit = ing.unit || 'littlebit';
+                    ing.unit = ing.unit || '';
                     hash[ing.name][ing.unit] = hash[ing.name][ing.unit] || 0;
                     hash[ing.name][ing.unit] = hash[ing.name][ing.unit] +  (ing.quantity || 1);
 

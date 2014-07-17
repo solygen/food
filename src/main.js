@@ -4,7 +4,7 @@ requirejs.config({
     }
 });
 
-define('main', ['recipies', 'view-recipies'], function (data, listview, statistics) {
+define('main', ['recipies', 'view-recipies', 'view-statistics'], function (data, listview, statistics) {
 
     'use strict';
 
@@ -12,17 +12,22 @@ define('main', ['recipies', 'view-recipies'], function (data, listview, statisti
     //http://www.codecheck.info/
 
     var hash = {},
-        rec = listview().data();
-        //ing = statistics().data();
+        rec = listview().data(),
+        ing = statistics().data();
+    
 
     $(window).on('hashchange', function () {
         if (location.hash.substr(0, 1) === '#' && location.hash.length > 1) {
+            debugger;
             if (location.hash === '#recipies') {
                 rec.show();
-                //ing.hide();
+                ing.hide();
+            } else if (location.hash === '#ingredients') {
+                rec.hide();
+                ing.show();
             } else {
                 rec.show();
-                //ing.hide();
+                ing.hide();
             }
         }
     });
