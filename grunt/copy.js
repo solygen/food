@@ -20,7 +20,7 @@ module.exports = {
                 //jQuery
                 {
                 expand: true,
-                cwd: 'components/jquery/dist/',
+                cwd: 'components/jquery/',
                 src: ['jquery.min.js'],
                 dest: 'lib/vendors/'
                 },
