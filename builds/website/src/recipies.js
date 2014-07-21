@@ -542,7 +542,7 @@ define('recipies', [], function () {
                     {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 1, unit: 'stk', name: 'Tomaten'},
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
-                    {quantity: 200, unit: 'gr', name: 'Mozarella'}, 
+                    {quantity: 200, unit: 'gr', name: 'Mozarella'},
                     {quantity: 200, unit: 'ml', name: 'Sahne'},
                 ]
             }
@@ -591,7 +591,7 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Zwiebeln anbraten und danach die Paprika hinzugeben. Mit Kondensmilch und Wasser ablöschen und gar kochen.',
-                    'Parallel das Hackfleisch in einer Pfanne anbraten und im Anschluss zu den Zwiebeln und Paprika hinzugeben.', 
+                    'Parallel das Hackfleisch in einer Pfanne anbraten und im Anschluss zu den Zwiebeln und Paprika hinzugeben.',
                     'Zum Abschluss den Frischkäse hinzugeben und ggf. mit etwas Kondensmilch verdünnen.'
                 ]
             }
@@ -619,7 +619,7 @@ define('recipies', [], function () {
                     'Die Zwiebeln in feine Ringe schneiden und in Olivenöl anbraten (nicht braun werden lassen)und dann mit heißem Wasser (ca. 1/2 liter)weich kochen lassen. Währenddessen das Gehackte in Butterfett oder Palmin scharf anbraten, bis es braun ist und mit Salz, Pfeffer, Oregano und Paprika würzen. Danach das Tütchen Bolognese reinstreuen. Wenn die Zwiebeln schön weichgekocht sind, gibst Du das Gehackte dazu. Nun kommen die geschälten Tomaten und das Tomatenmark rein. Alles noch bei kleiner Flamme ca. 30 Minuten köcheln lassen. Zum Schluß gibst Du 1-2 Eßl. Sahnekäse dazu und schmeckst ab.'
                 ]
             }
-        )   
+        )
     );
 
     data.meals.push(
@@ -636,9 +636,6 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr',  name: 'Tomaten (passiert)'},
                     {quantity: 200, unit: 'gr',  name: 'Pilze'},
                     {quantity: 300, unit: 'gr', name: 'Gouda'}
-                ],
-                tags: [
-                    'vegetarisch'
                 ]
             }
         )
@@ -683,9 +680,6 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Das Grün des Porrees großzügig wegschneiden, danach die übrigbleibenden Stangen gründlich säubern. Diese anschließend in der Länge halbieren und in feine Scheibchen schneiden. Butter in einer großen Pfanne erhitzen und das Gemüse hinzufügen. Bei mäßiger Hitze so lange garen, bis der Porree weich ist. Mit 1-2 Tl Gemüsebrühe, etwas schwarzem Pfeffer und eventuell etwas Gemüsesalz würzen. Zum Schluss den Becher Sahne hinzufügen und etwas einkochen lassen.'
-                ],
-                tags: [
-                    'vegetarisch'
                 ]
             }
         )
@@ -705,9 +699,6 @@ define('recipies', [], function () {
                     {quantity: 3, unit: 'stk',  name: 'Ei(er)'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
                     {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'}
-                ],
-                tags: [
-                    'vegetarisch'
                 ]
             }
         )
@@ -763,9 +754,6 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Fleisch waschen und abtrocknen. Fett heiß werden lassen. Fleisch von beiden Seiten würzen, dann mit Senf einreiben. Fleisch scharf anbraten. Zwiebeln achteln und wenn Fleisch braun ist dazugeben. Herd runter schalten (sanft brutzeln). Getrocknete Pilze einweichen und ausdrücken (nur wenige). Knobi dazu. Etwas heißes Wasser dazu (ca. 1 Kaffeetasse). getrocknete Pilze dazu geben und Deckel drauf. Ca. 1-1 1/2 Stunden schmoren. Hin und wieder Wasser dazu. Fleisch rausnehmen und dann Soße abschmecken (Salz, Pfeffer, Parika und Honig).',
-                ],
-                tags: [
-                    'Dunkles Fleisch'
                 ]
             }
         )
@@ -805,7 +793,7 @@ define('recipies', [], function () {
                 ingredients: [
                 ],
                 steps: [
-                    'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'    
+                    'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'
                 ]
             }
         )
@@ -936,9 +924,6 @@ define('recipies', [], function () {
                     'Das Fleisch in Öl rundherum goldbraun anbraten. Zwiebeln und Knoblauch zu geben und ebenfalls anbraten. Zucchinischeiben hinzu fügen und kurz mit anbraten. Mit Salz, Pfeffer, Curry und Koriander würzen.',
                     'Zugedeckt 10-15 Minuten unter mehrmaligem Wenden bei mäßiger Hitze dünsten lassen. Die Zucchinischeiben sollten noch etwas "Biss" haben.',
                     'Die saure Sahne unterrühren und noch einmal abschmecken. Schnittlauch dazu geben und sofort heiß servieren.'
-                ],
-                tags: [
-                    'Helles Fleisch'
                 ]
             }
         )
@@ -964,9 +949,6 @@ define('recipies', [], function () {
                 ],
                 steps: [
                     'Das Geschnetzelte mit Salz und Pfeffer aus der Mühle würzen und in zwei Teile teilen. Eine große Teflonpfanne mit der Hälfte des Erdnussöles sehr gut erhitzen, einen Teil des Fleisches beigeben und kurz (!) anbraten. (nicht zu lange, sonst wird das Fleisch zäh und trocken). Das Fleisch aus der Pfanne nehmen, warm stellen. Mit dem restlichen Fleisch ebenso verfahren. In derselben Pfanne die Butter erhitzen, die Zwiebeln beigeben und dünsten. Die in Scheiben geschnittenen Champignons dazugeben, mit dem Mehl stäuben und vermischen. Weißwein beigeben und zur Hälfte einreduzieren. Den Bratensaft vom Fleisch und den Rahm dazugeben und alles zur gewünschten Konsistenz einkochen. Mit Salz und Pfeffer abschmecken. '
-                ],
-                tags: [
-                    'Dungkles Fleisch'
                 ]
             }
         )

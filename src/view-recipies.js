@@ -63,7 +63,7 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
                 d = new Date(dmy[2], dmy[1] - 1, dmy[0], 23, 59, 59);
                 now = new Date();
                 if (d >= now) {
-                    d =  new Date(1999, d.getMonth(), d.getDate())
+                    d =  new Date(1999, d.getMonth(), d.getDate());
                 }
             } else {
                 d = new Date('2000-01-01') ;

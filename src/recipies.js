@@ -233,8 +233,10 @@ define('recipies', [], function () {
                     'vegetarisch'
                 ],
                 ingredients: [
-                    {quantity: 1, unit: 'gr', name: 'Gurken'},
-                    {quantity: 1, unit: 'gr', name: 'Zwiebel(n)'}
+                    {quantity: 1, unit: 'stk', name: 'Gurken'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
+                    {quantity: 200, unit: 'gr', name: 'Frischkäse'},
+                    {quantity: 200, unit: 'ml', name: 'Brühe'}
                 ]
             }
         )
@@ -270,7 +272,7 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
-                    {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 3, unit: 'stk', name: 'Knoblauchzehe'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
@@ -376,7 +378,7 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Suppenhuhn'},
-                    {quantity: 300, unit: 'gr',  name: 'TK Erbsen'},
+                    {quantity: 300, unit: 'gr',  name: 'Erbsen (TK)'},
                     {quantity: 200, unit: 'ml',  name: 'Sahne'}
                 ]
             }
@@ -544,6 +546,25 @@ define('recipies', [], function () {
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
                     {quantity: 200, unit: 'gr', name: 'Mozarella'},
                     {quantity: 200, unit: 'ml', name: 'Sahne'},
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Maultaschen mit schwäbischen Kartoffelsalat',
+                flags: '',
+                ingredients: [
+                    {quantity: 800, unit: 'gr', name: 'Maultaschen (frisch)'}
+
+                ],
+                steps: [
+                ],
+                tags: [
+                    'vegetarisch'
                 ]
             }
         )
@@ -789,7 +810,9 @@ define('recipies', [], function () {
             templates.meal || {},
             {
                 name: 'Test: Käse-Spinat-Pfannkuchen',
-                flags: '',
+                tags: [
+                    'vegetarisch'
+                ],
                 ingredients: [
                 ],
                 steps: [
@@ -798,6 +821,26 @@ define('recipies', [], function () {
             }
         )
     );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Tomaten-Thunfisch-Salat',
+                tags: [
+                    'vegetarisch',
+                    'beilage'
+                ],
+                ingredients: [
+                ],
+                steps: [
+                    'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'
+                ]
+            }
+        )
+    );
+
+
 
     //http://www.chefkoch.de/rezepte/401131129151622/Tandoori-Fleisch-in-raffinierter-Joghurtsosse.html
     data.meals.push(

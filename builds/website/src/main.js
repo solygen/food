@@ -14,11 +14,10 @@ define('main', ['recipies', 'view-recipies', 'view-statistics'], function (data,
     var hash = {},
         rec = listview().data(),
         ing = statistics().data();
-    
+
 
     $(window).on('hashchange', function () {
         if (location.hash.substr(0, 1) === '#' && location.hash.length > 1) {
-            debugger;
             if (location.hash === '#recipies') {
                 rec.show();
                 ing.hide();
