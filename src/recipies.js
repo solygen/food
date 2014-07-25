@@ -223,6 +223,29 @@ define('recipies', [], function () {
         )
     );
 
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Garnelen/Krabben Pfanne',
+                tags: [
+                    'Meeresfrüchte',
+                    'beilage: Reis'
+                ],
+                ingredients: [
+                    {quantity: 200, unit: 'gr', name: 'Garnelen'},
+                    {quantity: 100, unit: 'gr', name: 'Frischkäse'},
+                    {quantity: 300, unit: 'gr', name: 'Reis'},
+                    {quantity: 1, unit: 'stk', name: 'Zucchini'},
+                     {quantity: 200, unit: 'ml', name: 'Kondensmilch (4%)'}
+                 ],
+                steps: [
+                    'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Kondensmilch (man kann auch Sahne nehmen) abschmecken.',
+                ]
+            }
+        )
+    );
+
 
     data.meals.push(
         $.extend({},
@@ -232,6 +255,7 @@ define('recipies', [], function () {
                 tags: [
                     'vegetarisch'
                 ],
+
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Gurken'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
@@ -272,7 +296,7 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
-                    {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 300, unit: 'gr', name: 'Hackfleisch (Rind)'},
                     {quantity: 3, unit: 'stk', name: 'Knoblauchzehe'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
