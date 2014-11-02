@@ -30,7 +30,7 @@ define('recipies', [], function () {
                 name: 'Backofenkartoffeln',
                 tags: [
                     'vegetarisch',
-                    'beilage: kartoffeln'
+                    'sideorder: kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Kartoffeln'},
@@ -54,8 +54,8 @@ define('recipies', [], function () {
             {
                 name: 'Bolognese',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Nudeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
@@ -84,7 +84,7 @@ define('recipies', [], function () {
                 name: 'Champignonpfännchen',
                tags: [
                     'vegetarisch',
-                    'beilage: Nudeln'
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
@@ -102,8 +102,8 @@ define('recipies', [], function () {
             {
                 name: 'Möhrenuntereinander mit Frikadellen',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
@@ -130,8 +130,8 @@ define('recipies', [], function () {
             {
                 name: 'Gebratene Nudeln mit Speck und Ei',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Nudeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Nudeln'},
@@ -175,8 +175,8 @@ define('recipies', [], function () {
             {
                 name: 'Grünkohl',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr',  name: 'TK Grünköhl'},
@@ -188,7 +188,7 @@ define('recipies', [], function () {
                     {quantity: 400, unit: 'gr', name: 'Kartoffeln'}
                 ],
                 steps: [
-                    'Arbeitszeit: ca. 30 Min. Ruhezeit: ca. 12 Std. Gänseschmalz in einem großen Topf erhitzen und die fein gewürfelten Zwiebeln darin anschwitzen. Gefrorenen Kohl dazugeben und æ Liter heiße Brühe angießen. Topf schließen und den Kohl bei geringer Hitze in ca. Ω Stunde auftauen. Von 2-3 Pinkel die Pelle abziehen, Würste klein schneiden und in den Kohl einrühren. Speck und 2-3 angepiekste Mettenden mit hineingeben. Topf verschließen und weiter bei geringer Hitze 2 Stunden nur ganz leicht kochen. Kohl hin und wieder umrühren, damit nichts anbrennt. Kasseler Koteletts nicht mit zum Kohl geben, sie werden bei dem langen Garungsprozess trocken und hart. Nach 2 Stunden den Speck und die Mettwürste aus dem Kohl fischen und beiseite stellen. Jetzt beginnt eine der schönsten Arbeiten beim Kochen, das Abschmecken! Salzen, pfeffern, den Senf und evtl. noch einen zerbröselten Brühwürfel in den Kohl rühren. Noch etwas Brühe nachgießen? Genascht werden kann jetzt, aber gegessen wird erst morgen. Deshalb wird der Topf mit nicht ganz geschlossenem Deckel zum Erkalten an einen kühlen Ort gestellt. Am anderen Tag den Kohl wieder erhitzen, dabei das gelegentliche Umrühren nicht vergessen. Wahrscheinlich wird die Konsistenz des Kohls etwas zu dünnflüssig sein, deshalb werden jetzt die Haferflocken eingerührt und kurz mitgekocht. Hätte ich das gestern schon gemacht, müsste ich den Kohl ständig rühren, damit er nicht anbrennt. Wie viel, ob 2, 3 oder 5 Esslöffel muss man dabei selbst beurteilen. Wenn der Kohl fertig ist, soll er eine zwar sämige, aber keine dünnflüssige Konsistenz haben. Fleisch und Würste in einen Topf geben und mit Brühe auffüllen, bis alles bedeckt ist. Erhitzen und ziehen, aber nicht kochen lassen, da sonst die Pinkelwürste platzen würden. Anpieksen kann man die Würste, um überschüssiges Fett auslaufen zu lassen. Auch die Kasseler Koteletts so erhitzen. Pro Person rechne ich mindestens 1 Pinkel, Ω Mettwurst und 1 Stück Speck oder Kassler. Beilagen: Salzkartoffeln und/oder Bratkartoffeln aus Pellkartoffeln vom Vortag. Getränk: Bier passt hier am besten (Gabiko wer mag, hinterher ab 18 J.) *Bei der Pinkel gibt es auch eine geräucherte Variante, die mancher bevorzugt. Beim Mitkochen im Kohl ist sie etwas geschmacksintensiver.',
+                    'Arbeitszeit: ca. 30 Min. Ruhezeit: ca. 12 Std. Gänseschmalz in einem großen Topf erhitzen und die fein gewürfelten Zwiebeln darin anschwitzen. Gefrorenen Kohl dazugeben und æ Liter heiße Brühe angießen. Topf schließen und den Kohl bei geringer Hitze in ca. Ω Stunde auftauen. Von 2-3 Pinkel die Pelle abziehen, Würste klein schneiden und in den Kohl einrühren. Speck und 2-3 angepiekste Mettenden mit hineingeben. Topf verschließen und weiter bei geringer Hitze 2 Stunden nur ganz leicht kochen. Kohl hin und wieder umrühren, damit nichts anbrennt. Kasseler Koteletts nicht mit zum Kohl geben, sie werden bei dem langen Garungsprozess trocken und hart. Nach 2 Stunden den Speck und die Mettwürste aus dem Kohl fischen und beiseite stellen. Jetzt beginnt eine der schönsten Arbeiten beim Kochen, das Abschmecken! Salzen, pfeffern, den Senf und evtl. noch einen zerbröselten Brühwürfel in den Kohl rühren. Noch etwas Brühe nachgießen? Genascht werden kann jetzt, aber gegessen wird erst morgen. Deshalb wird der Topf mit nicht ganz geschlossenem Deckel zum Erkalten an einen kühlen Ort gestellt. Am anderen Tag den Kohl wieder erhitzen, dabei das gelegentliche Umrühren nicht vergessen. Wahrscheinlich wird die Konsistenz des Kohls etwas zu dünnflüssig sein, deshalb werden jetzt die Haferflocken eingerührt und kurz mitgekocht. Hätte ich das gestern schon gemacht, müsste ich den Kohl ständig rühren, damit er nicht anbrennt. Wie viel, ob 2, 3 oder 5 Esslöffel muss man dabei selbst beurteilen. Wenn der Kohl fertig ist, soll er eine zwar sämige, aber keine dünnflüssige Konsistenz haben. Fleisch und Würste in einen Topf geben und mit Brühe auffüllen, bis alles bedeckt ist. Erhitzen und ziehen, aber nicht kochen lassen, da sonst die Pinkelwürste platzen würden. Anpieksen kann man die Würste, um überschüssiges Fett auslaufen zu lassen. Auch die Kasseler Koteletts so erhitzen. Pro Person rechne ich mindestens 1 Pinkel, Ω Mettwurst und 1 Stück Speck oder Kassler. sideordern: Salzkartoffeln und/oder Bratkartoffeln aus Pellkartoffeln vom Vortag. Getränk: Bier passt hier am besten (Gabiko wer mag, hinterher ab 18 J.) *Bei der Pinkel gibt es auch eine geräucherte Variante, die mancher bevorzugt. Beim Mitkochen im Kohl ist sie etwas geschmacksintensiver.',
                 ]
             }
         )
@@ -200,8 +200,8 @@ define('recipies', [], function () {
             {
                 name: 'Gulasch',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
@@ -211,7 +211,7 @@ define('recipies', [], function () {
                     {quantity: 1, unit: 'el', name: 'Senf'},
                     {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
                     {quantity: 1, unit: 'el', name: 'Frischkäse'},
-                    {quantity: 100, unit: 'ml', name: 'Kondensmilch'},
+                    {quantity: 100, unit: 'ml', name: 'Kondensmilch (4%)'},
                     {name: 'Paprikapulver'},
                     {name: 'Chillipulver'},
                     {name: 'Pfeffer'}
@@ -230,7 +230,7 @@ define('recipies', [], function () {
                 name: 'Garnelen/Krabben Pfanne',
                 tags: [
                     'Meeresfrüchte',
-                    'beilage: Reis'
+                    'sideorder: Reis'
                 ],
                 ingredients: [
                     {quantity: 200, unit: 'gr', name: 'Garnelen'},
@@ -273,7 +273,7 @@ define('recipies', [], function () {
                 name: 'Hähnchengulasch',
                 tags: [
                     'Helles Fleisch',
-                    'beilage: Nudeln'
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
@@ -291,8 +291,8 @@ define('recipies', [], function () {
             {
                 name: 'Hackfleischspinatsauce',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Nudeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
@@ -316,8 +316,8 @@ define('recipies', [], function () {
             {
                 name: 'Hähnchenbrust in Zwiebelsahne',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: ???'
+                    'Helles Fleisch',
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
@@ -339,8 +339,8 @@ define('recipies', [], function () {
             {
                 name: 'Hähnchenschenkel mit Schmand-Gemüse',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: Kartoffeln'
+                    'Helles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
@@ -367,8 +367,8 @@ define('recipies', [], function () {
             {
                 name: 'Helles Filetgulasch a la Patnaik',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: ???'
+                    'Helles Fleisch',
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
@@ -397,8 +397,8 @@ define('recipies', [], function () {
             {
                 name: 'Hühnerfrikassee',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: Reis'
+                    'Helles Fleisch',
+                    'sideorder: Reis'
                 ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Suppenhuhn'},
@@ -416,8 +416,8 @@ define('recipies', [], function () {
             {
                 name: 'Huhn mit Gemüse in Kokos-Soße',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: Reis'
+                    'Helles Fleisch',
+                    'sideorder: Reis'
                 ],
                 time: 40,
                 ingredients: [
@@ -449,8 +449,8 @@ define('recipies', [], function () {
             {
                 name: 'Keema',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
@@ -481,8 +481,8 @@ define('recipies', [], function () {
             {
                 name: 'Kohlgemüse mit Bratwurst',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Broccoli'},
@@ -524,12 +524,12 @@ define('recipies', [], function () {
                 name: 'Lachs',
                 tags: [
                     'Meeresfrüchte',
-                    'beilage: Nudeln'
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 200, unit: 'gr',  name: 'Lachs'},
                     {quantity: 500, unit: 'gr',  name: 'Nudeln'},
-                    {quantity: 400, unit: 'ml',  name: 'Kondensmilch'},
+                    {quantity: 400, unit: 'ml',  name: 'Kondensmilch (4%)'},
                     {quantity: 5, unit: 'gr',  name: 'Senf'},
                     {quantity: 5, unit: 'gr',  name: 'Honig'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'}
@@ -545,7 +545,7 @@ define('recipies', [], function () {
                 name: 'Linsengemüse',
                 tags: [
                     'vegetarisch',
-                    'beilage: Kartoffeln'
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
@@ -562,13 +562,13 @@ define('recipies', [], function () {
             {
                 name: 'Omlett',
                 tags: [
-                    'rotes Fleisch'
+                    'Dunkles Fleisch'
                 ],
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 1, unit: 'stk', name: 'Tomaten'},
                     {quantity: 200,  unit: 'gr', name: 'Gekochter Schinken'},
-                    {quantity: 200, unit: 'gr', name: 'Mozarella'},
+                    {quantity: 125, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 200, unit: 'ml', name: 'Sahne'},
                 ]
             }
@@ -579,10 +579,10 @@ define('recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Maultaschen mit schwäbischen Kartoffelsalat',
+                name: 'Maultaschen mit warmen Kartoffelsalat',
                 flags: '',
                 ingredients: [
-                    {quantity: 800, unit: 'gr', name: 'Maultaschen (frisch)'}
+                    {quantity: 800, unit: 'gr', name: 'Gemüse-Maultaschen (frisch)'}
 
                 ],
                 steps: [
@@ -601,13 +601,13 @@ define('recipies', [], function () {
                 name: 'Milchreis',
                 flags: '',
                 ingredients: [
-                    {quantity: 1100, unit: 'ml', name: 'Milch'},
+                    {quantity: 1000, unit: 'ml', name: 'Soja-/Kuhmilch'},
                     {quantity: 200,  unit: 'gr', name: 'Milchreis'},
-                    {quantity: 40, unit: 'gr', name: 'Zucker'},
+                    {quantity: 1, unit: 'el', name: 'Honig'},
                     {name: 'Salz'},
                 ],
                 steps: [
-                    'Die Milch mit dem Salz, dem Abrieb der Zitronenschale und dem Zucker in einen Topf geben und bei schwacher Hitze aufkochen. Milchreis hinzugeben, kräftig rühren und erneut aufkochen lassen. Bei schwacher Hitze den Reis etwa 30-35 Minuten in dem halb geschlossenem Topf quellen lassen, immer wieder rühren.'
+                    'Die Milch mit dem Salz, dem Abrieb der Zitrosnenschale und dem Zucker in einen Topf geben und bei schwacher Hitze aufkochen. Milchreis hinzugeben, kräftig rühren und erneut aufkochen lassen. Bei schwacher Hitze den Reis etwa 30-35 Minuten in dem halb geschlossenem Topf quellen lassen, immer wieder rühren.'
                 ],
                 tags: [
                     'vegetarisch'
@@ -622,17 +622,19 @@ define('recipies', [], function () {
             {
                 name: 'Paprika Gehacktes',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Reis'
+                    'Dunkles Fleisch',
+                    'sideorder: Reis'
                 ],
                 ingredients: [
                     {quantity: 3, unit: 'stk',  name: 'Paprika'},
                     {quantity: 300, unit: 'gr',  name: 'Pilze'},
-                    {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
+                    {quantity: 300, unit: 'gr',  name: 'Hackfleisch (Rind)'},
                     {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'},
-                    {quantity: 200, unit: 'ml',  name: 'Kondensmilch'},
-                    {quantity: 250, unit: 'gr', name: 'Reis'}
+                    {quantity: 200, unit: 'ml',  name: 'Kondensmilch (4%)'},
+                    {quantity: 250, unit: 'gr', name: 'Reis'},
+                    {name: 'Paprikapulver'}
+
                 ],
                 steps: [
                     'Zwiebeln anbraten und danach die Paprika hinzugeben. Mit Kondensmilch und Wasser ablöschen und gar kochen.',
@@ -649,8 +651,8 @@ define('recipies', [], function () {
             {
                 name: 'Pasta Asciutta',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Nudeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
@@ -673,35 +675,28 @@ define('recipies', [], function () {
             {
                 name: 'Pizza',
                 tags: [
-                    'vegetarisch'
+                    'Dunkles Fleisch',
+                    'Meeresfrüchte'
                 ],
                 ingredients: [
-                    {quantity: 2, unit: 'stk',  name: 'Pizzateig'},
-                    {quantity: 50, unit: 'gr',  name: 'Tomatenmark'},
-                    {quantity: 200, unit: 'gr',  name: 'Tomaten (passiert)'},
-                    {quantity: 200, unit: 'gr',  name: 'Pilze'},
-                    {quantity: 300, unit: 'gr', name: 'Gouda'}
-                ]
-            }
-        )
-    );
-
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Pizza (Variante)',
-                tags: [
-                    'vegetarisch'
-                ],
-                ingredients: [
-                    {name: 'Olivenöl'},
-                    {name: 'Mehl'},
-                    {name: 'Trockenhefe'},
-                    {name: 'passierte Tomaten'}
+                    {quantity: 1000, unit: 'gr', name: 'Mehl'},
+                    {quantity: 250, unit: 'ml', name: 'Milch'},
+                    {quantity: 250, unit: 'ml', name: 'heißes Wasser'},
+                    {quantity: 1, unit: 'stk', name: 'Frischhefe'},
+                    {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
+                    {quantity: 200, unit: 'gr', name: 'Gouda (geraspelt)'},
+                    {quantity: 100, unit: 'gr', name: 'Mais'},
+                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 200, unit: 'gr', name: 'Thunfisch'},
+                    {quantity: 100, unit: 'gr', name: 'Salami'},
+                    {quantity: 1, unit: 'tl', name: 'Salz'},
+                    {quantity: 1, unit: 'stk', name: 'Ei'},
+                    {name: 'Zucker'}
                 ],
                 steps: [
-                    'Du nimmst eine große Schüssel mischst Du etwas Hefe rein. ca. 1 kleiner Teelöffel und einen Löffel Zucker und eine Prise Salz, vermengen. Dann kommt eine viertel Tasse Milch und eine viertel Tasse heisses Wasser mit dazu. Umrühren, 2 Minuten stehen lassen. Dann noch einen Schuß Olivenöl. Und und dann mischst Du ca. 3- 3 1/2 Tassen Mehl( große Tassen) dazu und knetest alles. Eventuell brauchts Du noch etwas mehr Mehl oder Wasser. Danach machst Du die Pizzasauce: eine kleine Knoblauch klein schneiden. Dann passierte Tomatensauce dazu.Gewürze und wenn Du hast teifgefrorene Kräuter und einen Schuß Olivenöl.'
+                    '',
+                    'Du nimmst eine große Schüssel mischst Du die Hefe rein, das Ei und einen Löffel Zucker und eine Prise Salz vermengen. Dann kommt eine die Milch und das heisses Wasser mit dazu. Umrühren, 2 Minuten stehen lassen. Dann noch einen Schuß Olivenöl. Und und dann mischst Du das Mehl dazu und knetest alles. Eventuell brauchts Du noch etwas mehr Mehl oder Wasser. Den Teig danach ne halbe Stunde stehen lassen.',
+                    'Danach machst Du die Pizzasauce: eine kleine Knoblauch klein schneiden. Dann passierte Tomatensauce dazu. Gewürze und wenn Du hast teifgefrorene Kräuter und einen Schuß Olivenöl.'
                 ]
             }
         )
@@ -715,7 +710,7 @@ define('recipies', [], function () {
                 name: 'Porreegemüse',
                 tags: [
                     'vegetarisch',
-                    'beilage: ???'
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Lauch/Porree'},
@@ -737,7 +732,7 @@ define('recipies', [], function () {
                 name: 'Spinat',
                 tags: [
                     'vegetarisch',
-                    'beilage: ???'
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat'},
@@ -755,8 +750,8 @@ define('recipies', [], function () {
             {
                 name: 'Spitzkohl mit Kartoffeln',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
@@ -779,8 +774,8 @@ define('recipies', [], function () {
             {
                 name: 'Rippchen a ala Mama',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Kartoffeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 1, unit: 'kg', name: 'dicke Rippe'},
@@ -804,29 +799,29 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Strammer Max',
-                tags: [
-                    'rotes Fleisch'
-                ],
-                ingredients: [
-                    {quantity: 4, unit: 'stk', name: 'Brotscheiben'},
-                    {quantity: 4, unit: 'stk', name: 'Eier'},
-                    {quantity: 4, unit: 'stk', name: 'geräucherter Schinken'},
-                    {quantity: 4, unit: 'stk', name: 'Gewürzgurken'},
-                    {quantity: 1, unit: 'stk', name: 'Ei(er)'},
-                    {quantity: 3, unit: 'stk', name: 'Tomaten'}
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Strammer Max',
+    //             tags: [
+    //                 'Dunkles Fleisch'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 4, unit: 'stk', name: 'Brotscheiben'},
+    //                 {quantity: 4, unit: 'stk', name: 'Eier'},
+    //                 {quantity: 4, unit: 'stk', name: 'geräucherter Schinken'},
+    //                 {quantity: 4, unit: 'stk', name: 'Gewürzgurken'},
+    //                 {quantity: 1, unit: 'stk', name: 'Ei(er)'},
+    //                 {quantity: 3, unit: 'stk', name: 'Tomaten'}
 
-                ],
-                steps: [
-                    'Ei in der Pfanne braten und vor dem Wenden eine Scheibe Schinken darauf legen. Das Schinken-Spiegel-Ei auf die Scheibe Brot legen. Gewürzgurken und Tomaten in Scheiben schneiden und über das Gericht geben. ',
-                ]
-            }
-        )
-    );
+    //             ],
+    //             steps: [
+    //                 'Ei in der Pfanne braten und vor dem Wenden eine Scheibe Schinken darauf legen. Das Schinken-Spiegel-Ei auf die Scheibe Brot legen. Gewürzgurken und Tomaten in Scheiben schneiden und über das Gericht geben. ',
+    //             ]
+    //         }
+    //     )
+    // );
 
     //http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html
     data.meals.push(
@@ -853,7 +848,7 @@ define('recipies', [], function () {
                 name: 'Tomaten-Thunfisch-Salat',
                 tags: [
                     'vegetarisch',
-                    'beilage'
+                    'sideorder'
                 ],
                 ingredients: [
                 ],
@@ -873,8 +868,8 @@ define('recipies', [], function () {
             {
                 name: 'Tandoori',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: ???'
+                    'Helles Fleisch',
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
@@ -902,13 +897,17 @@ define('recipies', [], function () {
                 name: 'Tomatensauce mit Mozzarella',
                 tags: [
                     'vegetarisch',
-                    'beilage: Nudeln'
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
-                    {quantity: 400, unit: 'gr', name: 'Mozzarella'},
+                    {quantity: 250, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 9, unit: 'stk', name: 'Tomaten'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'}
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+                    {name: 'Basilikum'},
+                    {name: 'Thymian'},
+                    {name: 'Oregano'}
+
                 ],
                 steps: [
                     'Tomaten waschen, halbieren und wie Zwiebel (nur größer) in Würfel schneiden. In einer Pfanne oder einem Topf das Olivenöl erhitzen, die Zwiebel darin glasig dünsten, die gewürfelten Tomaten dazu geben und etwas dünsten. Die gehackten Knoblauchzehen dazu geben und kurz mitdünsten. Mit Salz, Pfeffer und Brühe würzen. Die frischen, gehackten Kräuter (Basilikum, Thymian, Oregano) dazu geben, umrühren und ganz zum Schluss den klein gewürfelten Mozzarella hineingeben. Die Pfanne (Topf) sofort von der Kochstelle nehmen und umrühren. Der Käse soll nicht gleich sofort vollständig schmelzen.'
@@ -924,14 +923,14 @@ define('recipies', [], function () {
             {
                 name: 'Tortellini alla panna',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: Nudeln'
+                    'Dunkles Fleisch',
+                    'sideorder: Nudeln'
                 ],
                 ingredients: [
 
                     {quantity: 800, unit: 'gr', name: 'Tortellini (Frischeregal)'},
-                    {quantity: 400, unit: 'gr', name: 'Sahne'},
-                    {quantity: 200, unit: 'gr', name: 'Kondensmilch'},
+                    {quantity: 200, unit: 'gr', name: 'Sahne'},
+                    {quantity: 400, unit: 'gr', name: 'Kondensmilch (4%)'},
                     {quantity: 200, unit: 'gr', name: 'Schinken (gekocht)'},
                     {quantity: 2, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 4, unit: 'el', name: 'Parmesan'},
@@ -950,8 +949,8 @@ define('recipies', [], function () {
             {
                 name: 'Überbackenes Hähnchenbrustfilet',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: Reis'
+                    'Helles Fleisch',
+                    'sideorder: Reis'
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
@@ -976,8 +975,8 @@ define('recipies', [], function () {
             {
                 name: 'Zucchini mit Hähnchenbrust',
                 tags: [
-                    'helles Fleisch',
-                    'beilage: Reis'
+                    'Helles Fleisch',
+                    'sideorder: Reis'
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Zucchini'},
@@ -1002,8 +1001,8 @@ define('recipies', [], function () {
             {
                 name: 'Zürcher Geschnetzeltes',
                 tags: [
-                    'rotes Fleisch',
-                    'beilage: ???'
+                    'Dunkles Fleisch',
+                    'sideorder: ???'
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Kalbschnitzel'},
