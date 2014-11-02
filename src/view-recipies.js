@@ -109,7 +109,6 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
 
                 //sort
                 items.sort(compare);
-                debugger;
                 //create list
                 list = new List('recipies', {item: getMarkup() }, items);
 

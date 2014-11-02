@@ -48,34 +48,34 @@ define('recipies', [], function () {
     );
 
     //http://www.chefkoch.de/rezepte/344811118790017/Bolognese.html
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Bolognese',
-                tags: [
-                    'Dunkles Fleisch',
-                    'sideorder: Nudeln'
-                ],
-                ingredients: [
-                    {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 500, unit: 'gr', name: 'Spagetthi'},
-                    {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
-                    {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 3, unit: 'stk', name: 'Karotten'},
-                    {quantity: 100, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 50, unit: 'gr', name: 'Sellerie'},
-                    {quantity: 500, unit: 'ml', name: 'Traubensaft'}
-                ],
-                steps: [
-                    'Zwiebel in kleine Würfel schneiden, die Karotten und den Sellerie klein würfeln oder schaben.',
-                    'Das Hackfleisch anbraten, funktioniert auch ohne Öl, nur der Topf sollte schön heiß sein. Die Zwiebel zufügen und glasig werden lassen.',
-                    'Jetzt die Karotten, das Sellerie, die klein geschnittene Kartoffel, die Lorbeerblätter und klein gehacktes Knoblauch zufügen, mit ca. 500 ml Gemüsebrüche auffüllen. Ca. 30 Minuten köcheln lassen. Jetzt den Wein aufgießen und die passierten Tomaten zufügen. Die Soße auf kleiner Flamme einkochen lassen, ca. 2 Stunden. Je länger sie kocht, umso besser schmeckt sie. Auf jeden Fall darf die Soße nicht mehr flüssig sein.',
-                    'Ca. 30 Minuten vor Ende der Kochzeit füge ich den restlichen Kräutern hinzu und schmecke die Soße evt. mit Salz und Pfeffer ab. Da es immer solange kochen muss, mache ich immer gleich die vierfache Menge und friere den Rest ein.',
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Bolognese',
+    //             tags: [
+    //                 'Dunkles Fleisch',
+    //                 'sideorder: Nudeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
+    //                 {quantity: 500, unit: 'gr', name: 'Spagetthi'},
+    //                 {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
+    //                 {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
+    //                 {quantity: 3, unit: 'stk', name: 'Karotten'},
+    //                 {quantity: 100, unit: 'gr', name: 'Kartoffeln'},
+    //                 {quantity: 50, unit: 'gr', name: 'Sellerie'},
+    //                 {quantity: 500, unit: 'ml', name: 'Traubensaft'}
+    //             ],
+    //             steps: [
+    //                 'Zwiebel in kleine Würfel schneiden, die Karotten und den Sellerie klein würfeln oder schaben.',
+    //                 'Das Hackfleisch anbraten, funktioniert auch ohne Öl, nur der Topf sollte schön heiß sein. Die Zwiebel zufügen und glasig werden lassen.',
+    //                 'Jetzt die Karotten, das Sellerie, die klein geschnittene Kartoffel, die Lorbeerblätter und klein gehacktes Knoblauch zufügen, mit ca. 500 ml Gemüsebrüche auffüllen. Ca. 30 Minuten köcheln lassen. Jetzt den Wein aufgießen und die passierten Tomaten zufügen. Die Soße auf kleiner Flamme einkochen lassen, ca. 2 Stunden. Je länger sie kocht, umso besser schmeckt sie. Auf jeden Fall darf die Soße nicht mehr flüssig sein.',
+    //                 'Ca. 30 Minuten vor Ende der Kochzeit füge ich den restlichen Kräutern hinzu und schmecke die Soße evt. mit Salz und Pfeffer ab. Da es immer solange kochen muss, mache ich immer gleich die vierfache Menge und friere den Rest ein.',
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -194,34 +194,34 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Gulasch',
-                tags: [
-                    'Dunkles Fleisch',
-                    'sideorder: Kartoffeln'
-                ],
-                ingredients: [
-                    {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 1000, unit: 'gr', name: 'Gulasch'},
-                    {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
-                    {quantity: 1, unit: 'el', name: 'Senf'},
-                    {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
-                    {quantity: 1, unit: 'el', name: 'Frischkäse'},
-                    {quantity: 100, unit: 'ml', name: 'Kondensmilch (4%)'},
-                    {name: 'Paprikapulver'},
-                    {name: 'Chillipulver'},
-                    {name: 'Pfeffer'}
-                ],
-                steps: [
-                    'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Kondensmilch (man kann auch Sahne nehmen) abschmecken.',
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Gulasch',
+    //             tags: [
+    //                 'Dunkles Fleisch',
+    //                 'sideorder: Kartoffeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
+    //                 {quantity: 1000, unit: 'gr', name: 'Gulasch'},
+    //                 {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
+    //                 {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+    //                 {quantity: 1, unit: 'el', name: 'Senf'},
+    //                 {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
+    //                 {quantity: 1, unit: 'el', name: 'Frischkäse'},
+    //                 {quantity: 100, unit: 'ml', name: 'Kondensmilch (4%)'},
+    //                 {name: 'Paprikapulver'},
+    //                 {name: 'Chillipulver'},
+    //                 {name: 'Pfeffer'}
+    //             ],
+    //             steps: [
+    //                 'Das Fleisch vor dem Braten in einer Schüssel mit dem Paprikapulver und Pfeffer und einem EL Senf vermengen. Fett in einem Topf heiß werden lassen, dann das Fleisch anbraten. Nach einigen Minuten die in Achtel geschnittenen Zwiebeln und die klein gehackte Knoblauchzehe dazu geben und weiter anbraten. Wenn das Fleisch angebraten ist wird es mit etwas Wasser abgelöscht, damit der Bratensatz losgekocht wird. Nun die Temperatur kleiner stellen und den Deckel auf Kippe darauf legen. Immer mal wieder nachshen, ob noch etwas Wasser nachgegossen werden muss. Nach ca. 45 Minuten müsste es gar sein. Probieren! Nun das Gulaschgewürz einstreuen und schauen ob genug S¥ße entstanden ist, sonst noch etwas Wasser dazu. Zum Schluss mit dem Sahnekäse und dwer Kondensmilch (man kann auch Sahne nehmen) abschmecken.',
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -247,24 +247,24 @@ define('recipies', [], function () {
     );
 
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Gurkensuppe',
-                tags: [
-                    'vegetarisch'
-                ],
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Gurkensuppe',
+    //             tags: [
+    //                 'vegetarisch'
+    //             ],
 
-                ingredients: [
-                    {quantity: 1, unit: 'stk', name: 'Gurken'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 200, unit: 'gr', name: 'Frischkäse'},
-                    {quantity: 200, unit: 'ml', name: 'Brühe'}
-                ]
-            }
-        )
-    );
+    //             ingredients: [
+    //                 {quantity: 1, unit: 'stk', name: 'Gurken'},
+    //                 {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
+    //                 {quantity: 200, unit: 'gr', name: 'Frischkäse'},
+    //                 {quantity: 200, unit: 'ml', name: 'Brühe'}
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -443,37 +443,37 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Keema',
-                tags: [
-                    'Dunkles Fleisch',
-                    'sideorder: Kartoffeln'
-                ],
-                ingredients: [
-                    {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
-                    {quantity: 3, unit: 'stk', name: 'Kartoffel(n)'},
-                    {quantity: 1, unit: 'Tasse', name: 'Erbsen (TK)'},
-                    {quantity: 3, unit: 'stk', name: 'Tomaten'},
-                    {quantity: 100, unit: 'gr', name: 'Saure Sahne'},
-                    {quantity: 2, unit: 'stk', name: 'Lorbeerblätter'},
-                    {quantity: 0.5, unit: 'Stange', name: 'Zimt'},
-                    {quantity: 3, unit: 'Kapseln', name: 'Kardamon'},
-                    {quantity: 4, unit: 'stk', name: 'Nelken'},
-                    {quantity: 1, unit: 'el', name: 'Kurkuma'},
-                    {quantity: 0.5, unit: 'el', name: 'Ingwer'},
-                    {quantity: 100, unit: 'gr', name: 'Wasser'}
-                ],
-                steps: [
-                    'Gehacktes in dem Öl gut anbraten, dann die gewürfelten Kartoffeln ebenfalls mit anbraten. Lorbeerblätter, Kardamon, Nelken und Zimt zugeben. Zwiebeln und Knoblauch ebenfalls mit anbraten. Nun Kurkuma, Paprika, Ingwer und die gewürfelten Tomaten dazu. Das Wasser dazugießen, damit nichts anbrät und etwas köcheln lassen. Gferorene Erbsen und die saure Sahne dazu. Köcheln lassen, bis die Kartoffeln gar sind. Abschmecken mit Salz und Pfeffer.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Keema',
+    //             tags: [
+    //                 'Dunkles Fleisch',
+    //                 'sideorder: Kartoffeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 1000, unit: 'gr', name: 'Hackfleisch'},
+    //                 {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
+    //                 {quantity: 1, unit: 'stk', name: 'Koblauchzehen'},
+    //                 {quantity: 3, unit: 'stk', name: 'Kartoffel(n)'},
+    //                 {quantity: 1, unit: 'Tasse', name: 'Erbsen (TK)'},
+    //                 {quantity: 3, unit: 'stk', name: 'Tomaten'},
+    //                 {quantity: 100, unit: 'gr', name: 'Saure Sahne'},
+    //                 {quantity: 2, unit: 'stk', name: 'Lorbeerblätter'},
+    //                 {quantity: 0.5, unit: 'Stange', name: 'Zimt'},
+    //                 {quantity: 3, unit: 'Kapseln', name: 'Kardamon'},
+    //                 {quantity: 4, unit: 'stk', name: 'Nelken'},
+    //                 {quantity: 1, unit: 'el', name: 'Kurkuma'},
+    //                 {quantity: 0.5, unit: 'el', name: 'Ingwer'},
+    //                 {quantity: 100, unit: 'gr', name: 'Wasser'}
+    //             ],
+    //             steps: [
+    //                 'Gehacktes in dem Öl gut anbraten, dann die gewürfelten Kartoffeln ebenfalls mit anbraten. Lorbeerblätter, Kardamon, Nelken und Zimt zugeben. Zwiebeln und Knoblauch ebenfalls mit anbraten. Nun Kurkuma, Paprika, Ingwer und die gewürfelten Tomaten dazu. Das Wasser dazugießen, damit nichts anbrät und etwas köcheln lassen. Gferorene Erbsen und die saure Sahne dazu. Köcheln lassen, bis die Kartoffeln gar sind. Abschmecken mit Salz und Pfeffer.'
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -492,30 +492,30 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Konfetti Gemüsekuchen',
-                tags: [
-                    'vegetarisch'
-                ],
-                ingredients: [
-                    {quantity: 3, unit: 'stk', name: 'Paprika'},
-                    {quantity: 400, unit: 'gr', name: 'Mehl'},
-                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'},
-                    {quantity: 100, unit: 'gr', name: 'Gouda'},
-                    {quantity: 4, unit: 'stk', name: 'Ei(er)'}
-                ],
-                steps: [
-                    'Mehl mit Trockenhefe vermischen. Wasser, Salz und Öl dazu mischen und gehen lassen (ca. 15 Minuten).',
-                    'Paprika putzen und fein würfeln. Frühlingszwiebeln putzen und in Ringe schneiden. Öl in einer Pfanne erhitzen. Paprikawürfel darin kurz andünsten und anschließend abkühlen lassen.',
-                    'Teig auf einem gefetteten Blech ausrollen. Eier, Schmand und Käse miteinander verrühren mit Salz und Pfeffer würzen. Eier-Schmandcreme auf den Teig geben. Paprikawürfel und Frühlingszwiebeln darüber streuen.',
-                    'Im vorgeheizten Backofen (E-Herd: 175°C, Gas: Stufe 2) ca. 40-45 Min. backen.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Konfetti Gemüsekuchen',
+    //             tags: [
+    //                 'vegetarisch'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 3, unit: 'stk', name: 'Paprika'},
+    //                 {quantity: 400, unit: 'gr', name: 'Mehl'},
+    //                 {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'},
+    //                 {quantity: 100, unit: 'gr', name: 'Gouda'},
+    //                 {quantity: 4, unit: 'stk', name: 'Ei(er)'}
+    //             ],
+    //             steps: [
+    //                 'Mehl mit Trockenhefe vermischen. Wasser, Salz und Öl dazu mischen und gehen lassen (ca. 15 Minuten).',
+    //                 'Paprika putzen und fein würfeln. Frühlingszwiebeln putzen und in Ringe schneiden. Öl in einer Pfanne erhitzen. Paprikawürfel darin kurz andünsten und anschließend abkühlen lassen.',
+    //                 'Teig auf einem gefetteten Blech ausrollen. Eier, Schmand und Käse miteinander verrühren mit Salz und Pfeffer würzen. Eier-Schmandcreme auf den Teig geben. Paprikawürfel und Frühlingszwiebeln darüber streuen.',
+    //                 'Im vorgeheizten Backofen (E-Herd: 175°C, Gas: Stufe 2) ca. 40-45 Min. backen.'
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -538,23 +538,23 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Linsengemüse',
-                tags: [
-                    'vegetarisch',
-                    'sideorder: Kartoffeln'
-                ],
-                ingredients: [
-                    {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
-                    {quantity: 500, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'}
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Linsengemüse',
+    //             tags: [
+    //                 'vegetarisch',
+    //                 'sideorder: Kartoffeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 400, unit: 'gr', name: 'Linsen (Dose)'},
+    //                 {quantity: 500, unit: 'gr', name: 'Kartoffeln'},
+    //                 {quantity: 200, unit: 'gr', name: 'Frühlingszwiebeln'}
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -594,27 +594,27 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Milchreis',
-                flags: '',
-                ingredients: [
-                    {quantity: 1000, unit: 'ml', name: 'Soja-/Kuhmilch'},
-                    {quantity: 200,  unit: 'gr', name: 'Milchreis'},
-                    {quantity: 1, unit: 'el', name: 'Honig'},
-                    {name: 'Salz'},
-                ],
-                steps: [
-                    'Die Milch mit dem Salz, dem Abrieb der Zitrosnenschale und dem Zucker in einen Topf geben und bei schwacher Hitze aufkochen. Milchreis hinzugeben, kräftig rühren und erneut aufkochen lassen. Bei schwacher Hitze den Reis etwa 30-35 Minuten in dem halb geschlossenem Topf quellen lassen, immer wieder rühren.'
-                ],
-                tags: [
-                    'vegetarisch'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Milchreis',
+    //             flags: '',
+    //             ingredients: [
+    //                 {quantity: 1000, unit: 'ml', name: 'Soja-/Kuhmilch'},
+    //                 {quantity: 200,  unit: 'gr', name: 'Milchreis'},
+    //                 {quantity: 1, unit: 'el', name: 'Honig'},
+    //                 {name: 'Salz'},
+    //             ],
+    //             steps: [
+    //                 'Die Milch mit dem Salz, dem Abrieb der Zitrosnenschale und dem Zucker in einen Topf geben und bei schwacher Hitze aufkochen. Milchreis hinzugeben, kräftig rühren und erneut aufkochen lassen. Bei schwacher Hitze den Reis etwa 30-35 Minuten in dem halb geschlossenem Topf quellen lassen, immer wieder rühren.'
+    //             ],
+    //             tags: [
+    //                 'vegetarisch'
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -703,27 +703,27 @@ define('recipies', [], function () {
     );
 
     //http://www.chefkoch.de/rezepte/726401175430167/Porreegemuese.html
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Porreegemüse',
-                tags: [
-                    'vegetarisch',
-                    'sideorder: ???'
-                ],
-                ingredients: [
-                    {quantity: 1000, unit: 'gr', name: 'Lauch/Porree'},
-                    {quantity: 200, unit: 'ml', name: 'Sahne'},
-                    {quantity: 1, unit: 'el', name: 'Butter'},
-                    {quantity: 1, unit: 'tl', name: 'Gemüsebrühe'}
-                ],
-                steps: [
-                    'Das Grün des Porrees großzügig wegschneiden, danach die übrigbleibenden Stangen gründlich säubern. Diese anschließend in der Länge halbieren und in feine Scheibchen schneiden. Butter in einer großen Pfanne erhitzen und das Gemüse hinzufügen. Bei mäßiger Hitze so lange garen, bis der Porree weich ist. Mit 1-2 Tl Gemüsebrühe, etwas schwarzem Pfeffer und eventuell etwas Gemüsesalz würzen. Zum Schluss den Becher Sahne hinzufügen und etwas einkochen lassen.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Porreegemüse',
+    //             tags: [
+    //                 'vegetarisch',
+    //                 'sideorder: ???'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 1000, unit: 'gr', name: 'Lauch/Porree'},
+    //                 {quantity: 200, unit: 'ml', name: 'Sahne'},
+    //                 {quantity: 1, unit: 'el', name: 'Butter'},
+    //                 {quantity: 1, unit: 'tl', name: 'Gemüsebrühe'}
+    //             ],
+    //             steps: [
+    //                 'Das Grün des Porrees großzügig wegschneiden, danach die übrigbleibenden Stangen gründlich säubern. Diese anschließend in der Länge halbieren und in feine Scheibchen schneiden. Butter in einer großen Pfanne erhitzen und das Gemüse hinzufügen. Bei mäßiger Hitze so lange garen, bis der Porree weich ist. Mit 1-2 Tl Gemüsebrühe, etwas schwarzem Pfeffer und eventuell etwas Gemüsesalz würzen. Zum Schluss den Becher Sahne hinzufügen und etwas einkochen lassen.'
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -841,53 +841,53 @@ define('recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Tomaten-Thunfisch-Salat',
-                tags: [
-                    'vegetarisch',
-                    'sideorder'
-                ],
-                ingredients: [
-                ],
-                steps: [
-                    'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Tomaten-Thunfisch-Salat',
+    //             tags: [
+    //                 'vegetarisch',
+    //                 'sideorder'
+    //             ],
+    //             ingredients: [
+    //             ],
+    //             steps: [
+    //                 'http://www.kochbar.de/rezept/266901/Kaese-Spinat-Pfannkuchen.html'
+    //             ]
+    //         }
+    //     )
+    // );
 
 
 
     //http://www.chefkoch.de/rezepte/401131129151622/Tandoori-Fleisch-in-raffinierter-Joghurtsosse.html
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Tandoori',
-                tags: [
-                    'Helles Fleisch',
-                    'sideorder: ???'
-                ],
-                ingredients: [
-                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
-                    {quantity: 250, unit: 'gr', name: 'Joghurt'},
-                    {quantity: 200, unit: 'gr', name: 'Schmand'},
-                    {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
-                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Paprika'},
-                    {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
-                    {quantity: 1, unit: 'stk', name: 'Brühwürfel'}
-                ],
-                steps: [
-                    'Zwiebel in Streifen schneiden und andünsten. Knoblauch, gefrorene Paprika (verkocht nicht so schnell), 1 Brühwürfel und Tandoori-Gewürz hinzugeben, von der Platte nehmen und abkühlen lassen. Fleisch in Streifen schneiden und rundum anbraten. Gemüse inkl. Sud mit Schmand, Joghurt und Kokosmilch verrühren. Das gebratene Fleisch hinzugeben. Mit Zitronensaft und vielleicht einem weiteren Brühwürfel abschmecken. Alles in eine Auflauf-Form geben und über Nacht ziehen lassen, mind. aber 3-4 Stunden. Danach in den Backofen geben und ca. 30-40 Minuten bei 180°C im Backofen backen lassen. Offene Auflaufformen mit Alufolie abdecken.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Tandoori',
+    //             tags: [
+    //                 'Helles Fleisch',
+    //                 'sideorder: ???'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
+    //                 {quantity: 250, unit: 'gr', name: 'Joghurt'},
+    //                 {quantity: 200, unit: 'gr', name: 'Schmand'},
+    //                 {quantity: 200, unit: 'gr', name: 'Kokosmilch'},
+    //                 {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
+    //                 {quantity: 1, unit: 'stk', name: 'Paprika'},
+    //                 {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
+    //                 {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+    //                 {quantity: 1, unit: 'stk', name: 'Brühwürfel'}
+    //             ],
+    //             steps: [
+    //                 'Zwiebel in Streifen schneiden und andünsten. Knoblauch, gefrorene Paprika (verkocht nicht so schnell), 1 Brühwürfel und Tandoori-Gewürz hinzugeben, von der Platte nehmen und abkühlen lassen. Fleisch in Streifen schneiden und rundum anbraten. Gemüse inkl. Sud mit Schmand, Joghurt und Kokosmilch verrühren. Das gebratene Fleisch hinzugeben. Mit Zitronensaft und vielleicht einem weiteren Brühwürfel abschmecken. Alles in eine Auflauf-Form geben und über Nacht ziehen lassen, mind. aber 3-4 Stunden. Danach in den Backofen geben und ca. 30-40 Minuten bei 180°C im Backofen backen lassen. Offene Auflaufformen mit Alufolie abdecken.'
+    //             ]
+    //         }
+    //     )
+    // );
 
 
     data.meals.push(
