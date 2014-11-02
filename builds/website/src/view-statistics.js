@@ -5,7 +5,7 @@ define('view-statistics', ['recipies'], function (recipies) {
     'use strict';
 
     return function (data) {
-        var list, node = $(document.body).find('#ingredients').hide(), items = [];
+        var list, node = $(document.body).find('#ingredients').hide(), items = [], summary = { fleisch: {}, beilage: {}};
 
         var getMarkup = function () {
             return '<div class="row list-group-item"><div class="name col-md-5"></div><div class="count col-md-5"></div></div>';
@@ -13,7 +13,10 @@ define('view-statistics', ['recipies'], function (recipies) {
 
         //init
         var init = function () {
+            console.log(JSON.stringify(summary, undefined, 4));
+            //node.append(JSON.stringify(summary, undefined, 4));
             list = new List('ingredients', {item: getMarkup() }, items);
+
         };
 
         return {
@@ -24,6 +27,13 @@ define('view-statistics', ['recipies'], function (recipies) {
                     _.each(meal.ingredients, function (ing) {
                         hash[ing.name] = (hash[ing.name] || 0) + 1;
                     });
+                    _.each(meal.tags, function (tag) {
+                        if (tag.contains('beilage'))
+                            summary.beilage[tag] = (summary.beilage[tag] || 0) + 1;
+                        else
+                            summary.fleisch[tag] = (summary.fleisch[tag] || 0) + 1;
+                    });
+
                 });
 
                 _.each(hash, function (count, key) {
