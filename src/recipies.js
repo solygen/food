@@ -2,6 +2,19 @@ define('recipies', [], function () {
 
     'use strict';
 
+    // client
+    //
+    // collections:
+    //      recipies
+    //      ingrediants (base for clones)
+    //
+    // model
+    //      recipe
+    //          ingrediants collection (extended from global)
+    //
+    // node.server handles sync, get, etc.
+    // JSON database
+
     var data = {
             meals: []
         },
@@ -22,6 +35,61 @@ define('recipies', [], function () {
             }
         };
 
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Fruchteis (TM)',
+                tags: [
+                    'vegetarisch'
+                ],
+                ingredients: [
+                    {quantity: 300, unit: 'gr', name: 'Gefrorene Beeren'},
+                    {quantity: 150, unit: 'gr', name: 'Joghurt (fettarm)'},
+                    {quantity: 6, unit: 'tl', name: 'Stevia'}
+                ],
+                steps: [
+                    'Stevia in TM geben und 10 sec. bei Stufen 10 pulverisieren',
+                    'Gefrorene Beeren hinzufügen und 10 se. bei Stufe 5 zerkleinern',
+                    'Die Masse mit dem Spachtel nach unten schieben',
+                    'Joghurt hinzugeben und 10 sec. bei Stufe 5 vermengen'
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Hähnchen mit Karotten-Paprika-Reis (TM)',
+                tags: [
+                    'Helles Fleisch'
+                ],
+                ingredients: [
+                    {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 300, unit: 'gr', name: 'Möhren'},
+                    {quantity: 150, unit: 'gr', name: 'Paprika'},
+                    {quantity: 35, unit: 'gr', name: 'Öl'},
+                    {quantity: 200, unit: 'gr', name: 'Reis'},
+                    {quantity: 100, unit: 'gr', name: 'Kondensmilch (4%)'},
+                    {quantity: 20, unit: 'gr', name: 'Speisestärke'},
+                    {quantity: 15, unit: 'gr', name: 'Schnittlauch'},
+                ],
+                steps: [
+                    'Hähnchenscheiben in eine flache Schale legen',
+                    '30g. Öl, 1/2 TL Salz, 1/4 TL Pfeffer,Zitronenschale und 1/2 Paprika Pulver in den Mixtopf geben, 10Sek./St.5 verrühren, über den Hähnchenscheiben verteilen, mischen und 30 Min im Kühlschrank marinieren. Mixtopf spülen.',
+                    'Möhren und Paprikastücke in den Mixtopf geben, 4 Sek./St. 5 zerkleinern und in die Varoma-Behälter geben.',
+                    'Brühwürfel und 1 TL Öl (5g) in den Mixtopf geben, Gareinsatz einhängen, Reis einwiegen und Wasser über den Reis in den Mixtopf einwiegen.',
+                    'Varoma-Behälter aufsetzen, Varoma-Einlegeboden einsetzen, Hähnchenfleisch darauf verteilen, Varoma verschließen und 25Min./Varoma/ St.1 garen.',
+                    'Varoma absetzen, Gareinsatz entnehmen, Möhren,Paprika und Reis gemeinsam in eine Schüssel umfühlen und vermishen.Hähnchen ebenfalls umfühlen und alles warm stellen. Mixtopf leeren,Garflüsssigkeit dabei auffangen.',
+                    '400g Garflüssigkeit (ggf. mit Wasser auffüllen), Kondensmilch, 1/2 TL Salz, 1/2 TL Pfeffer,1/2 TL Paprikapulver und Speisestärke in den Mixtopf geben und 5 Sec./St. 5 verrühren.',
+                    'Schnittlauchröllchen zugeben, 4 Min.30sec./100°C/ St.2 aufkochen, abschmecken und zu Paprika-Möhren-Reis und Hänchen Servieren.'
+                ]
+            }
+        )
+    );
+
     //http://www.chefkoch.de/rezepte/198321083838546/Backofenkartoffeln-einfach-und-lecker.html
     data.meals.push(
         $.extend({},
@@ -35,7 +103,7 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 1000, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 1, unit: 'd', name: 'Paprikapulver'},
-                    {quantity: 1, unit: 'd', name: 'Pfeffer, gemahlen'},
+                    {quantity: 1, unit: 'd', name: 'Pfeffer'},
                     {quantity: 1, unit: 'd', name: 'Oregano'},
                     {quantity: 1, unit: 'd', name: 'Knoblauchgranulat'},
                     {quantity: 1, unit: 'el', name: 'Olivenöl'}
@@ -107,11 +175,11 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 400, unit: 'gr', name: 'kartoffeln'},
+                    {quantity: 400, unit: 'gr', name: 'Kartoffeln'},
                     {quantity: 1000, unit: 'gr', name: 'Karotten'},
                     {quantity: 1, unit: 'stk', name: 'Porree'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 1, unit: 'stk', name: 'Ei(er)'}
                 ],
                 steps: [
@@ -155,7 +223,7 @@ define('recipies', [], function () {
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Zucchini'},
                     {quantity: 2, unit: 'stk', name: 'Karotten'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
                     {quantity: 1, unit: 'stk', name: 'Ei(er)'},
                     {quantity: 100, unit: 'gr', name: 'Schinken (gekocht)'},
@@ -207,7 +275,7 @@ define('recipies', [], function () {
     //                 {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
     //                 {quantity: 1000, unit: 'gr', name: 'Gulasch'},
     //                 {quantity: 3, unit: 'stk', name: 'Zwiebeln'},
-    //                 {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+    //                 {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
     //                 {quantity: 1, unit: 'el', name: 'Senf'},
     //                 {quantity: 0.5, unit: 'stk', name: 'Gulaschgewürz (Packung)'},
     //                 {quantity: 1, unit: 'el', name: 'Frischkäse'},
@@ -296,8 +364,8 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 400, unit: 'gr', name: 'Nudeln'},
-                    {quantity: 300, unit: 'gr', name: 'Hackfleisch (Rind)'},
-                    {quantity: 3, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
+                    {quantity: 3, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 300, unit: 'gr', name: 'Spinat (TK)'},
                     {quantity: 2, unit: 'stk', name: 'Schmelzkäse (Scheibe)'},
@@ -351,7 +419,7 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr', name: 'Schmand'},
                     {quantity: 200, unit: 'gr', name: 'Joghurt'},
                     {quantity: 100, unit: 'gr', name: 'Schnittlauch'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'}
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'}
                 ],
                 steps: [
                     'Den Backofen auf 200 Grad vorheizen. Hähnchenschenkel waschen und trocken tupfen. Die Schenkel großzügig mit Hähnchengewürz, Paprika und der gekörnten Brühe würzen. Achtung, die Schenkel nicht einölen. Anschließend die Kartoffeln schälen und in mundgerechte Stücke schneiden. Die Zucchini putzen, waschen, halbieren und in ca. 1-cm-dicke Scheiben schneiden. Die Champignons putzen und evt. halbieren. Die Tomaten ebenfalls waschen und evt. halbieren. Die Kartoffeln in einer Fettpfanne verteilen und mit Olivenöl beträufeln. Dann mit Salz, Pfeffer und Rosmarin würzen. Über die Fettpfanne einen Grillrost und darauf die Hähnchenschenkel legen. Die Fettpfanne samt Grillrost in den Ofen schieben und ca. 20 Minuten braten/grillen. Nun tropft das leckere Hähnchenfett auf die Kartoffeln, was einen ganz tollen Geschmack gibt. Anschließend das klein geschnittene Gemüse zu den Kartoffeln in die Pfanne geben und nochmals weitere 15 Minuten in den Ofen. In der Zwischenzeit den Schmand und den Joghurt verrühren. Die Knoblauchzehen dazupressen, den Schnittlauch unterrühren und kräftig mit Salz und Pfeffer würzen. Nach ca. 35-40 Minuten die Hähnchenschenkel mit dem Ofengemüse servieren und die Schmandcreme dazureichen.'
@@ -373,10 +441,10 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 200, unit: 'gr', name: 'Frischkäse'},
                     {quantity: 1, unit: 'etwas', name: 'aus einem Rahmchampignon Gewürzbeutel'},
-                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 200, unit: 'gr', name: 'Champignons'},
                     {name: 'Sojasauce'},
                     {name: 'Salz'},
                     {name: 'Pfeffer'},
@@ -627,8 +695,8 @@ define('recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 3, unit: 'stk',  name: 'Paprika'},
-                    {quantity: 300, unit: 'gr',  name: 'Pilze'},
-                    {quantity: 300, unit: 'gr',  name: 'Hackfleisch (Rind)'},
+                    {quantity: 300, unit: 'gr',  name: 'Champignons'},
+                    {quantity: 300, unit: 'gr',  name: 'Hackfleisch'},
                     {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
                     {quantity: 100, unit: 'gr',  name: 'Frischkäse'},
                     {quantity: 200, unit: 'ml',  name: 'Kondensmilch (4%)'},
@@ -686,11 +754,11 @@ define('recipies', [], function () {
                     {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
                     {quantity: 200, unit: 'gr', name: 'Gouda (geraspelt)'},
                     {quantity: 100, unit: 'gr', name: 'Mais'},
-                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 200, unit: 'gr', name: 'Champignons'},
                     {quantity: 200, unit: 'gr', name: 'Thunfisch'},
                     {quantity: 100, unit: 'gr', name: 'Salami'},
                     {quantity: 1, unit: 'tl', name: 'Salz'},
-                    {quantity: 1, unit: 'stk', name: 'Ei'},
+                    {quantity: 1, unit: 'stk', name: 'Ei(er)'},
                     {name: 'Zucker'}
                 ],
                 steps: [
@@ -735,7 +803,7 @@ define('recipies', [], function () {
                     'sideorder: ???'
                 ],
                 ingredients: [
-                    {quantity: 300, unit: 'gr',  name: 'Spinat'},
+                    {quantity: 300, unit: 'gr',  name: 'Spinat (TK)'},
                     {quantity: 3, unit: 'stk',  name: 'Ei(er)'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
                     {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'}
@@ -780,8 +848,8 @@ define('recipies', [], function () {
                 ingredients: [
                     {quantity: 1, unit: 'kg', name: 'dicke Rippe'},
                     {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
-                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
+                    {quantity: 200, unit: 'gr', name: 'Champignons'},
                     {name: 'Bratenfett'},
                     {name: 'getrocknete Pilze'},
                     {name: 'Honig'},
@@ -879,7 +947,7 @@ define('recipies', [], function () {
     //                 {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
     //                 {quantity: 1, unit: 'stk', name: 'Paprika'},
     //                 {quantity: 4, unit: 'tl', name: 'Tandoori Masala'},
-    //                 {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+    //                 {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'},
     //                 {quantity: 1, unit: 'stk', name: 'Brühwürfel'}
     //             ],
     //             steps: [
@@ -903,7 +971,7 @@ define('recipies', [], function () {
                     {quantity: 250, unit: 'gr', name: 'Mozzarella'},
                     {quantity: 9, unit: 'stk', name: 'Tomaten'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {name: 'Basilikum'},
                     {name: 'Thymian'},
                     {name: 'Oregano'}
@@ -956,7 +1024,7 @@ define('recipies', [], function () {
                     {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 0.5, unit: 'Dose', name: 'Pfirsichhälften'},
                     {quantity: 400, unit: 'ml', name: 'Sahne'},
-                    {quantity: 200, unit: 'gr', name: 'Pilze'},
+                    {quantity: 200, unit: 'gr', name: 'Champignons'},
                     {quantity: 1, unit: 'Beutel', name: 'Zwiebelsuppe'},
                     {quantity: 1, unit: 'etwas', name: 'geraspelten Käse'}
 
@@ -982,7 +1050,7 @@ define('recipies', [], function () {
                     {quantity: 300, unit: 'gr', name: 'Zucchini'},
                     {quantity: 300, unit: 'gr', name: 'Reis'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehen'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 200, unit: 'gr', name: 'Saure Sahne'}
                 ],

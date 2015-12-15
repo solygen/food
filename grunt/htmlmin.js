@@ -5,7 +5,7 @@ module.exports = {
         collapseWhitespace: true
       },
       files: {
-        'builds/website/index.html': 'builds/website/index.html'
+        'dist/index.html': 'dist/index.html'
       }
     }
 };

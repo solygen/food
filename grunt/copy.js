@@ -1,18 +1,4 @@
 module.exports = {
-    main: {
-        files: [
-                {
-                expand: true,
-                cwd: 'lib/',
-                src: ['<%= pkg.name %>.min.js'],
-                dest: 'builds/',
-                filter: 'isFile',
-                    rename: function(dest, src) {
-                        return dest + src.replace('.min.js', '.<%= pkg.version %>.min.js');
-                    }
-                }
-        ],
-    },
 
     // copy relevant vendor files to lib directory (vendor directory is only temporary)s
     update: {
@@ -20,79 +6,79 @@ module.exports = {
                 //jQuery
                 {
                 expand: true,
-                cwd: 'components/jquery/',
+                cwd: 'bower_components/jquery/',
                 src: ['jquery.min.js'],
                 dest: 'lib/vendors/'
                 },
                 //font-awesome
                 {
                 expand: true,
-                cwd: 'components/font-awesome/css/',
+                cwd: 'bower_components/font-awesome/css/',
                 src: ['font-awesome.min.css'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'components/font-awesome/font/',
+                cwd: 'bower_components/font-awesome/font/',
                 src: ['fontawesome-webfont.woff'],
                 dest: 'lib/font/'
                 },
                 //bootstrap
                 {
                 expand: true,
-                cwd: 'components/bootstrap/dist/js/',
+                cwd: 'bower_components/bootstrap/dist/js/',
                 src: ['bootstrap.min.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'components/bootstrap/dist/css/',
+                cwd: 'bower_components/bootstrap/dist/css/',
                 src: ['bootstrap.css'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'components/bootstrap/dist/css/',
+                cwd: 'bower_components/bootstrap/dist/css/',
                 src: ['bootstrap-theme.css'],
                 dest: 'lib/vendors/'
                 },
                 //datrepicker
                 {
                 expand: true,
-                cwd: 'components/bootstrap-datepicker/js/',
+                cwd: 'bower_components/bootstrap-datepicker/js/',
                 src: ['bootstrap-datepicker.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'components/bootstrap-datepicker/js/locales',
+                cwd: 'bower_components/bootstrap-datepicker/js/locales',
                 src: ['bootstrap-datepicker.de.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'components/bootstrap-datepicker/css/',
+                cwd: 'bower_components/bootstrap-datepicker/css/',
                 src: ['datepicker.css', 'datepicker3.css'],
                 dest: 'lib/vendors/'
                 },
                 //underscore
                 {
                 expand: true,
-                cwd: 'components/underscore/',
+                cwd: 'bower_components/underscore/',
                 src: ['underscore-min.js'],
                 dest: 'lib/vendors/'
                 },
                 //require.js
                 {
                 expand: true,
-                cwd: 'components/requirejs/',
+                cwd: 'bower_components/requirejs/',
                 src: ['require.js'],
                 dest: 'lib/vendors/'
                 },
                 //list.js
                 {
                 expand: true,
-                cwd: 'components/list/dist',
+                cwd: 'bower_components/list/dist',
                 src: ['list.min.js'],
                 dest: 'lib/vendors/'
                 }
@@ -103,27 +89,27 @@ module.exports = {
                 {
                 expand: true,
                 src: ['lib/**'],
-                dest: 'builds/website/'
+                dest: 'dist/'
                 },
                 {
                 expand: true,
-                src: ['img/*'],
-                dest: 'builds/website/'
+                src: ['img/*/**'],
+                dest: 'dist/'
                 },
                 {
                 expand: true,
                 src: ['css/*'],
-                dest: 'builds/website/'
+                dest: 'dist/'
                 },
                 {
                 expand: true,
                 src: ['src/*'],
-                dest: 'builds/website/'
+                dest: 'dist/'
                 },
                 {
                 expand: true,
                 src: ['*.html'],
-                dest: 'builds/website/'
+                dest: 'dist/'
                 }
         ]
     }

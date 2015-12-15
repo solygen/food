@@ -30,7 +30,7 @@ define('view-statistics', ['recipies'], function (recipies) {
                     });
                     // statistics for type and side order
                     _.each(meal.tags, function (tag) {
-                        if (tag.contains('sideorder'))
+                        if (tag.indexOf('sideorder') > -1)
                             summary.sideorder[tag] = (summary.sideorder[tag] || 0) + 1;
                         else
                             summary.type[tag] = (summary.type[tag] || 0) + 1;
@@ -44,6 +44,8 @@ define('view-statistics', ['recipies'], function (recipies) {
 
                 list.sort(function (a, b) {
                     var attr = 'count';
+                    //var attr = 'name';
+
                     if (a[attr] < b[attr]) return 1;
                     if (a[attr] > b[attr]) return -1;
                     return 0;

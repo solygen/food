@@ -34,7 +34,7 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
 
         _.each(meals, function (meal) {
             node.append(
-            $('<div>').text(meal.name)
+                $('<div>').text(meal.name)
             );
         });
         node.append('<hr>');
@@ -102,16 +102,23 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
             },
 
             getMarkup = function () {
-                return '<li class="row"><div style="float:left"><span class="box"><input type="checkbox" name="selected" value="true"></span><div class="name"></div></div><div class="date" style="float:right; font-size: 10pt;"><input type="input" class="datepicker" size="6" style="border: 0px"></div><div class="ingredients hidden"></div></li>';
+                return '<li class="row"><div style="float:left"><span class="box"><input type="checkbox" name="selected" value="true"></span><div class="name"></div></div><div class="tag"><div class="date" style="float:right; font-size: 10pt;"><input type="input" class="datepicker" size="6" style="border: 0px"></div><div class="ingredients hidden"></div></li>';
             },
 
             init = function () {
 
                 //sort
                 items.sort(compare);
-
                 //create list
                 list = new List('recipies', {item: getMarkup() }, items);
+
+                // hack to add tag value as class name
+                _.each(list.items, function (item) {
+                    var tag = $(item.elm).find('.tag').text().replace(' ', '-').toLowerCase();
+                    //$(item.elm).addClass(tag);
+                    $(item.elm).find('.tag').empty();
+                    $(item.elm).find('.tag').addClass(tag);
+                });
 
                 //add datepicker
                 $('.datepicker').each(function (index, node) {
@@ -144,7 +151,7 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
                     ing = _.map(meal.ingredients, function (ing) {
                         return ing.name + (ing.unit ? ' (' + ing.quantity + ' ' + ing.unit + ')' : '');
                     });
-                    items.push({name: meal.name, ingredients: ing.join(', ')});
+                    items.push({name: meal.name, ingredients: ing.join(', '), tag: meal.tags[0]});
                 });
                 init();
                 $('#recipies').find('li').on('click', fnClick);

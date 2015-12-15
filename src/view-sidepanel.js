@@ -14,14 +14,14 @@ define('view-sidepanel', [], function () {
     return function (meal) {
         var node, ing, steps;
 
-        var link = meal.steps[0]
+        var link = meal.steps[0] || '';
 
         // only link
         if (link.indexOf('http://') === 0) {
             return $('<div class="recipe">').append(
                     $('<h1>').text(meal.name),
                     $('<a href="'+ link + '" class="link">').text(link)
-                    )
+                );
         }
 
 

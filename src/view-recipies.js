@@ -118,7 +118,7 @@ define('view-recipies', ['recipies', 'view-sidepanel', 'view-statistics'], funct
                     //$(item.elm).addClass(tag);
                     $(item.elm).find('.tag').empty();
                     $(item.elm).find('.tag').addClass(tag);
-                })
+                });
 
                 //add datepicker
                 $('.datepicker').each(function (index, node) {
