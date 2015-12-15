@@ -5,13 +5,9 @@
             "jquery": "~2.1",
             "bootstrap": "~3.3",
             "font-awesome": "~4.5",
-            "backbone": "~1.2",
             "underscore": "~1.8",
             "requirejs": "~2.1",
-            "modernizr": "~3.2",
             "bootstrap-datepicker": "~1.5",
-            "momentjs": "~2.10",
-            "list": "https://github.com/javve/list.js.git",
-            "stickup": "https://github.com/LiranCohen/stickUp.git"
+            "list": "https://github.com/javve/list.js.git"
         }
 }

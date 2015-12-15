@@ -1,10 +1,18 @@
 {
     "name": "food",
+    "version": "0.0.1",
+    "description": "webapp",
     "repository": {
         "type": "git",
         "url": "https://github.com/solygen/food.git"
     },
-    "version": "0.0.1",
+    "author": "Frank Paczynski <frank@solygen.de> (https://github.com/solygen)",
+    "contributors": [{
+        "name": "Frank Paczynski",
+        "email": "frank@solygen.de"
+    }],
+    "license": "Unlicense",
+    "dependencies": {},
     "devDependencies": {
         "grunt": "~0.4",
         "grunt-contrib-concat": "~0.5",
@@ -15,9 +23,13 @@
         "grunt-contrib-jshint": "~0.11",
         "grunt-contrib-watch": "~0.6"
     },
-    "//": "disabled dependencies",
-    "//": {
-        "grunt-docco":"~0.2",
-        "grunt-docco2": "~0.1"
+    "keywords": [],
+    "homepage": "https://github.com/solygen",
+    "bugs": {
+        "url": "https://github.com/solygen/food/issues"
+    },
+    "private": true,
+    "engines": {
+        "node": ">=0.12.7"
     }
 }
