@@ -15,10 +15,7 @@ module.exports = function (grunt) {
         copy: require('./grunt/copy.js'),
         htmlmin: require('./grunt/htmlmin.js'),
         uglify: require('./grunt/uglify.js'),
-        watch: {
-            files: '<%= jshint.files %>',
-            tasks: 'jshint'
-        }
+        watch: require('./grunt/watch.js')
     });
 
     // Load the plugins that provide the tasks we specified in package.json.
@@ -36,7 +33,7 @@ module.exports = function (grunt) {
     // is called without any further parameter.
     //grunt.registerTask('default', ['jshint', 'concat:build']);
     grunt.registerTask('default', [
-            'jshint',
+            //'jshint',
             'clean:website',
             'copy',
             'copy:website',

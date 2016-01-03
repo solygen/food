@@ -1,13 +1,14 @@
 {
-    "name": "food",
-    "version": "0.0.1",
-    "dependencies": {
-            "jquery": "~2.1",
-            "bootstrap": "~3.3",
-            "font-awesome": "~4.5",
-            "underscore": "~1.8",
-            "requirejs": "~2.1",
-            "bootstrap-datepicker": "~1.5",
-            "list": "https://github.com/javve/list.js.git"
-        }
+  "name": "food",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "2.1",
+    "underscore": "1.8",
+    "requirejs": "2.1",
+    "bootstrap-datepicker": "1.5",
+    "list": "https://github.com/javve/list.js.git",
+    "Materialize": "materialize#~0.97.3",
+    "backbone": "~1.2.3",
+    "backbone.marionette": "~2.4.4"
+  }
 }

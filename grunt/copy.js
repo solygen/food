@@ -6,59 +6,46 @@ module.exports = {
                 //jQuery
                 {
                 expand: true,
-                cwd: 'bower_components/jquery/',
+                cwd: 'bower_components/jquery/dist/',
                 src: ['jquery.min.js'],
                 dest: 'lib/vendors/'
                 },
-                //font-awesome
+                //materialize
                 {
                 expand: true,
-                cwd: 'bower_components/font-awesome/css/',
-                src: ['font-awesome.min.css'],
+                cwd: 'bower_components/Materialize/dist/js/',
+                src: ['materialize.min.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/font-awesome/font/',
-                src: ['fontawesome-webfont.woff'],
-                dest: 'lib/font/'
-                },
-                //bootstrap
-                {
-                expand: true,
-                cwd: 'bower_components/bootstrap/dist/js/',
-                src: ['bootstrap.min.js'],
+                cwd: 'bower_components/Materialize/dist/font/',
+                src: ['*/**'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap/dist/css/',
-                src: ['bootstrap.css'],
-                dest: 'lib/vendors/'
-                },
-                {
-                expand: true,
-                cwd: 'bower_components/bootstrap/dist/css/',
-                src: ['bootstrap-theme.css'],
+                cwd: 'bower_components/Materialize/dist/css/',
+                src: ['materialize.min.css'],
                 dest: 'lib/vendors/'
                 },
                 //datrepicker
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap-datepicker/js/',
-                src: ['bootstrap-datepicker.js'],
+                cwd: 'bower_components/bootstrap-datepicker/dist/js/',
+                src: ['bootstrap-datepicker.min.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap-datepicker/js/locales',
-                src: ['bootstrap-datepicker.de.js'],
+                cwd: 'bower_components/bootstrap-datepicker/dist/locales',
+                src: ['bootstrap-datepicker.de.min.js'],
                 dest: 'lib/vendors/'
                 },
                 {
                 expand: true,
-                cwd: 'bower_components/bootstrap-datepicker/css/',
-                src: ['datepicker.css', 'datepicker3.css'],
+                cwd: 'bower_components/bootstrap-datepicker/dist/css/',
+                src: ['bootstrap-datepicker.min.css', 'bootstrap-datepicker3.min.css', 'bootstrap-datepicker.standalone.min.css', 'bootstrap-datepicker3.standalone.min.css'],
                 dest: 'lib/vendors/'
                 },
                 //underscore
@@ -66,6 +53,19 @@ module.exports = {
                 expand: true,
                 cwd: 'bower_components/underscore/',
                 src: ['underscore-min.js'],
+                dest: 'lib/vendors/'
+                },
+                //backbone
+                {
+                expand: true,
+                cwd: 'bower_components/backbone/',
+                src: ['backbone-min.js'],
+                dest: 'lib/vendors/'
+                },
+                {
+                expand: true,
+                cwd: 'bower_components/backbone.marionette/lib',
+                src: ['backbone.marionette.min.js'],
                 dest: 'lib/vendors/'
                 },
                 //require.js
@@ -103,7 +103,7 @@ module.exports = {
                 },
                 {
                 expand: true,
-                src: ['src/*'],
+                src: ['js/*'],
                 dest: 'dist/'
                 },
                 {

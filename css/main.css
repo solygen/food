@@ -10,21 +10,37 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    list-style: none;
     outline: 1px solid
 }
 
 body {
-    background-color: #c0392b;
+    background-color: #4CAF50;
     font-family: "Lato", sans-serif;
     height: 2000px;
-    color: white;
     cursor: default;
 }
+
 
 html, body{
   height:100%;
 }
+
+.done, .done>b, .done>.col {
+  font-weight: 100;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.ingrediant.row {
+  margin-bottom: 4px;
+}
+
+
+input.datepicker {
+  width: 44px;
+}
+
+/* ---- */
 
 .link {
   color: white;
@@ -56,14 +72,15 @@ html, body{
 
 #sidepanel{
   float: left;
-  margin-top: 58px;
   display: none;
   padding-left: 20px;
-  width: 600px;
+  padding-top: 36px;
+  max-width: 66%;
+  color: white;
+      font-weight: 300;
 }
 
 .steps {
-  list-style: disc inside;
   padding: 0 30px;
 }
 .steps li {
@@ -76,8 +93,12 @@ html, body{
 
 
 #search {
-  margin: 30px auto;
+  margin: 40px auto;
   max-width: 500px;
+}
+
+#text {
+  width: 480px;
 }
 
 .form-group {
@@ -98,7 +119,6 @@ html, body{
 }
 
 #main {
-    margin: 5px;
     padding: 5px;
 }
 
@@ -122,7 +142,6 @@ html, body{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position:relative;
-  list-style: none;
   outline: 1px solid transparent;
 }
 li [class^=icon-],
@@ -134,32 +153,6 @@ li [class*=" icon-"] {
   float:none !important;
 }
 
-::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.2)
-}
-
-:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2)
-}
-
-::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2)
-}
-
-:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.2)
-}
-
-.page-header{
-  margin: 0;
-  border: none;
-  width:100%;
-  color:white;
-  padding:5px 30px;
-  height: 60px;
-  font: normal 18px/1.5 "Lato", "Arial", sans-serif;
-  overflow:hidden;
-}
 .demo-nav{
   float:right;
 }
@@ -185,9 +178,6 @@ li [class*=" icon-"] {
 .demo-nav a.active, .demo-nav a:hover, .demo-nav a:active{
   border-bottom:2px solid white;
 }
-h1{
-  margin-bottom:50px !important;
-}
 h1 {
   font: 300 3.2em/1.2 "Lato", sans-serif;
   color: white;
@@ -198,6 +188,10 @@ header {
   padding-top: 30px;
   margin-bottom: 30px;
   text-align:center;
+  background-color: #1B5E20;
+  box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 2;
 }
 header p{
   color:rgba(255,255,255,.6);
@@ -246,10 +240,6 @@ button,
   font-size: 16px
 }
 
-.shopping, .recipe {
-  /*position: fixed;*/
-}
-
 .count {
   float: left
 }
@@ -258,7 +248,6 @@ button,
   content: " item(s)"
 }
 .list {
-  list-style-type: none;
   max-width: 500px;
   margin: 30px auto
 }

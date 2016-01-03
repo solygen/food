@@ -1,6 +1,6 @@
 module.exports = {
     build: {
-        src: ['src/templates.js', 'src/plugins.js', 'src/recipies.js', 'src/main.js'],
+        src: ['js/templates.js', 'js/plugins.js', 'js/recipies.js', 'js/main.js'],
         dest: 'lib/<%= pkg.name %>.min.js'
     }
 };
