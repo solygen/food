@@ -790,6 +790,39 @@ define('data-recipies', [], function () {
         )
     );
 
+    //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Gurkenreis mit Hähnchenbrust (TM)',
+                tags: [
+                    'Helles Fleisch',
+                    'sideorder: Reis'
+                ],
+                ingredients: [
+                    {quantity: 1, unit: 'Bund', name: 'Dill'},
+                    {quantity: 1000, unit: 'gr', name: 'Wasser'},
+                    {quantity: 200, unit: 'gr', name: 'Langkornreis(n)'},
+                    {xquantity: 2, unit: 'stk', name: 'Salatgurke (geschält)'},
+                    {quantity: 50, unit: 'gr', name: 'Crème Légère'},
+                    {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {name: 'Salz'},
+                    {name: 'Peffer'}
+                ],
+                steps: [
+                    'Dill in den Mixtopf geben, (2 Sek | Stufe 8) zerkleinern und umfüllen',
+                    'Wasser mit 1 TL Salz in den Mixtopf, Reis in den Gareinsatz geben, einhängen und (15 Min | Varoma | Stufe 1) garen.',
+                    'Gurke schälen, längs halbieren und ggf. die Kerne mit einem Löffel ausschaben. Gurkenhälften in ca. 1/2 cm dicke Scheiben schneiden, in den Varoma legen, aufsetzen und (9 Min | Varoma | Stufe 1) weitergaren.',
+                    'Varoma und Gareinsatz zur Seite stellen, Mixtopf leeren und Garflüssigkeit dabei auffangen.',
+                    'Reis, Gurken, Dill, 50 g Garflüssigkeit, 2 Prisen Salz und Pfeffer in den Mixtopf geben und (5 Sek | Linkslauf | Stufe 3) mischen.',
+                    'Mit der Putenbrust servieren.'
+                ]
+            }
+        )
+    );
+
+
     data.meals.push(
         $.extend({},
             templates.meal || {},
