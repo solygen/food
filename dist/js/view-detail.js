@@ -27,11 +27,11 @@ define('view-detail', [], function () {
 
         node = $('<div class="recipe row">').append(
                     $('<h1>').text(meal.name),
-                    $('<div class="col s5">').append(
+                    $('<div class="col s4">').append(
                         $('<h3>').text('Zutaten'),
                         ing = $('<div>').addClass('font')
                     ),
-                    $('<div class="col s7">').append(
+                    $('<div class="col s8">').append(
                         meal.steps.length ? $('<h3>').text('Zubereitung') : $(),
                         steps = $('<ol>').addClass('steps')
                     )
@@ -39,9 +39,9 @@ define('view-detail', [], function () {
 
         _.each(meal.ingredients, function (obj) {
             var node = stub();
-            $(node.children()[0]).text(obj.quantity);
-            $(node.children()[1]).text(obj.unit);
-            $(node.children()[2]).text(obj.name);
+            $(node.children()[0]).html(obj.quantity || '&nbsp;' );
+            $(node.children()[1]).html(obj.unit || '&nbsp;' );
+            $(node.children()[2]).html(obj.name);
             ing.append(node);
         });
 

@@ -77,7 +77,21 @@ input.datepicker {
   padding-top: 36px;
   max-width: 66%;
   color: white;
-      font-weight: 300;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  #sidepanel {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .steps {
