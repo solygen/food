@@ -132,7 +132,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Porree-Käse-Kaiserschmarn (tm)',
+                name: 'Porree-Käse-Kaiserschmarn (TM)',
                 tags: [
                     'vegetarisch'
                 ],
@@ -585,7 +585,6 @@ define('data-recipies', [], function () {
                     {name: 'Zucker'}
                 ],
                 steps: [
-                    '',
                     'Du nimmst eine große Schüssel mischst Du die Hefe rein, das Ei und einen Löffel Zucker und eine Prise Salz vermengen. Dann kommt eine die Milch und das heisses Wasser mit dazu. Umrühren, 2 Minuten stehen lassen. Dann noch einen Schuß Olivenöl. Und und dann mischst Du das Mehl dazu und knetest alles. Eventuell brauchts Du noch etwas mehr Mehl oder Wasser. Den Teig danach ne halbe Stunde stehen lassen.',
                     'Danach machst Du die Pizzasauce: eine kleine Knoblauch klein schneiden. Dann passierte Tomatensauce dazu. Gewürze und wenn Du hast teifgefrorene Kräuter und einen Schuß Olivenöl.'
                 ]
@@ -597,16 +596,25 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Spinat',
+                name: 'Spinat mit Kartoffeln und Fischstäbchen',
                 tags: [
                     'vegetarisch',
-                    'sideorder: ???'
+                    'sideorder: Kartoffeln'
                 ],
                 ingredients: [
                     {quantity: 300, unit: 'gr',  name: 'Spinat (TK)'},
                     {quantity: 3, unit: 'stk',  name: 'Ei(er)'},
                     {quantity: 500, unit: 'gr',  name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'}
+                    {quantity: 1, unit: 'stk',  name: 'Zwiebel(n)'},
+                    {quantity: 4, unit: 'stk',  name: 'Fischstäbchen'},
+
+                ],
+                steps: [
+                    'Spinat frühzeitig auftauen lassen.',
+                    'Backofen vorheizen und Fischstäbchen auf einem Backblech verteilen',
+                    'Kartoffel schälen und kochen',
+                    'Zwiebeln schälen, in kleine Stücke schneiden und in einer Pfanne glasig dünsten.',
+                    'Zwiebeln zum Spinat gehen und erhitzen.'
                 ]
             }
         )
@@ -790,6 +798,45 @@ define('data-recipies', [], function () {
         )
     );
 
+    //http://www.rezeptwelt.de/backen-herzhaft-rezepte/flammkuchen-els%C3%A4sser-art/30533
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Flammkuchen Elsässer Art',
+                tags: [
+                ],
+                ingredients: [
+                    {quantity: 1, unit: 'stk', name: 'Frischhefe'},
+                    {quantity: 1, unit: 'tl', name: 'Zucker'},
+                    {quantity: 250, unit: 'ml', name: 'Wasser'},
+                    {quantity: 450, unit: 'gr', name: 'Mehl'},
+                    {quantity: 20, unit: 'ml', name: 'Olivenöl'},
+                    {quantity: 1, unit: 'tl', name: 'Salz'},
+                    {quantity: 400, unit: 'gr', name: 'Crème Fraiche'},
+                    {name: 'Muskat'},
+                    {name: 'Salz'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 200, unit: 'gr', name: 'Schinkenwürfel'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'bnd', name: 'Schnittlauch'}
+                ],
+                steps: [
+                    'Hefe mit 150g Wasser und dem Zucker in den Mixtopf geschlossen geben, bei (1 Minute | 37° | Stufe 1) vermischenund 10 Min. ruhen lassen.',
+                    'Restliches Wasser, Mehl, Salz, Öl hinzugeben und (2  Min | Teigstufe).',
+                    'In einer Schüssel ca. 20 Minuten an einem warmen Ort ruhen lassen.',
+                    'In dieser Zeit kann der Backofen vorgeheizt werden: 220° Unter-/Oberhitze.',
+                    'Den Teig in 2 Teile teilen und jeweils dünn auf einem Blech ausrollen.',
+                    'In einer Schüssel Creme Fraiche, etwas Salz, Muskat sowie den fein gehackten Knoblauch verrühren.',
+                    'Diese Creme auf dem ausgerollten Teig verteilen und bis zum Rand verstreichen. Schinkenwürfel darauf verteilen.',
+                    'Zwiebeln in feine Ringe schneiden und ebenfalls gleichmäßig auf beide Bleche verteilen.',
+                    'Schnittlauch in feine Röllchen schneiden und über die Bleche streuen.',
+                    'Jedes Blech einzeln auf Unter-/Oberhitze bei 220° für 15-17 Minuten backen.'
+                ]
+            }
+        )
+    );
+
     //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
     data.meals.push(
         $.extend({},
@@ -803,8 +850,8 @@ define('data-recipies', [], function () {
                 ingredients: [
                     {quantity: 1, unit: 'Bund', name: 'Dill'},
                     {quantity: 1000, unit: 'gr', name: 'Wasser'},
-                    {quantity: 200, unit: 'gr', name: 'Langkornreis(n)'},
-                    {xquantity: 2, unit: 'stk', name: 'Salatgurke (geschält)'},
+                    {quantity: 250, unit: 'gr', name: 'Langkornreis'},
+                    {quantity: 2, unit: 'stk', name: 'Salatgurke (geschält)'},
                     {quantity: 50, unit: 'gr', name: 'Crème Légère'},
                     {quantity: 300, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {name: 'Salz'},
