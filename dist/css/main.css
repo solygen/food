@@ -87,6 +87,29 @@ input.datepicker {
   }
 }
 
+@media (max-width: 640px) {
+  #sidepanel {
+    max-width: 100%;
+    width: 100%;
+    padding: 4px;
+  }
+
+  #sidepanel h1 {
+    font-size: 24px;
+  }
+  #sidepanel h3 {
+    font-size: 20px;
+  }
+  #sidepanel h3 {
+    font-size: 20px;
+  }
+
+  #sidepanel .recipe>.col {
+    padding: 4px;
+  }
+
+}
+
 .truncate {
   width: 250px;
   white-space: nowrap;

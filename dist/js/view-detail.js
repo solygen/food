@@ -4,10 +4,11 @@ define('view-detail', [], function () {
     'use strict';
 
     var stub = function () {
+        var isMobile = document.documentElement.clientWidth < 600;
         return $('<ul>').addClass('row ingrediant').append(
-                    $('<li>').addClass('col s2 right-align'),
-                    $('<li>').addClass('col s2'),
-                    $('<li>').addClass('col s8 ')
+                    $('<li>').addClass('col s6 m2').addClass(!isMobile ? 'right-align' : ''),
+                    $('<li>').addClass('col s6 m2'),
+                    $('<li>').addClass('col s12 m8').addClass(isMobile ? 'truncate' : '')
                 );
     };
 
