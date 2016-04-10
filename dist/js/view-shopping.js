@@ -26,7 +26,7 @@ return {
                     $('<h1>').text('Einkaufsliste')
                 ),
                 plot = $('<div class="input-field col s12">').append(
-                    $('<textarea id="textarea1" class="materialize-textarea" style="height: 132px;">'),
+                    $('<div contenteditable="true" id="textarea1" class="materialize-textarea" style="height: 132px;">'),
                     $('<label for="textarea1" class="active">').text('Einkaufsliste')
                 );
 
@@ -45,7 +45,8 @@ return {
             _.each(keys, function (name) {
                 var ing = stuff[name];
                 _.each(ing, function (value, unit) {
-                    plot.find('textarea').append(name + ' (' + value + ' ' + unit + ')' + '&#xA;');
+                    //plot.find('#textarea1').append(name + ' (' + value + ' ' + unit + ')' + '&#xA;' + '\n\n');
+                    plot.find('#textarea1').append($('<div>').text(name + ' (' + value + ' ' + unit + ')'));
                 });
             });
             $(document.body).find('#sidepanel').empty().append(node).show();

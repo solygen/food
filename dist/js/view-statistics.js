@@ -10,7 +10,7 @@ define('view-statistics', ['data-recipies'], function (recipies) {
             summary = { type: {}, sideorder: {}};
 
         var getMarkup = function () {
-            return '<div class="row list-group-item"><div class="name col-md-5"></div><div class="count col-md-5"></div></div>';
+            return '<div class="row list-group-item no-margin"><div class="name col s6"></div><div class="count col s6"></div></div>';
         };
 
         //init

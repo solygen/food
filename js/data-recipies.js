@@ -178,7 +178,7 @@ define('data-recipies', [], function () {
                     {quantity: 150, unit: 'gr',  name: 'Gouda'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'},
-                    {quantity: 2, unit: 'stk', name: 'Karotten'},
+                    {quantity: 2, unit: 'stk', name: 'Möhren'},
                     {quantity: 2, unit: 'el', name: 'Öl'},
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 400, unit: 'gr', name: 'gehackte Tomaten (Dose)'},
@@ -246,7 +246,7 @@ define('data-recipies', [], function () {
                 ingredients: [
                     {quantity: 300, unit: 'gr', name: 'Hackfleisch'},
                     {quantity: 400, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 1000, unit: 'gr', name: 'Karotten'},
+                    {quantity: 1000, unit: 'gr', name: 'Möhren'},
                     {quantity: 1, unit: 'stk', name: 'Porree'},
                     {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
@@ -319,55 +319,55 @@ define('data-recipies', [], function () {
     );
 
     //http://www.chefkoch.de/rezepte/993651204647871/Haehnchenbrust-in-Zwiebelsahne.html
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Hähnchenbrust in Zwiebelsahne',
-                tags: [
-                    'Helles Fleisch',
-                    'sideorder: ???'
-                ],
-                ingredients: [
-                    {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
-                    {quantity: 3, unit: 'stk', name: 'Zwiebel (rot)'},
-                    {quantity: 200, unit: 'ml', name: 'Sahne'},
-                    {quantity: 200, unit: 'gr', name: 'Crème Fraiche'}
-                ],
-                steps: [
-                    'Die Hähnchenbrust mit Salz, Pfeffer und Cayennepfeffer würzen und in einer Pfanne in heißem Butterschmalz von beiden Seiten anbraten. Nun in eine gebutterte Auflaufform geben und abdecken. In derselben Pfanne die in Ringe geschnittenen Zwiebel geben und gut anschmoren, dass sie Farbe bekommen. Die fertige Zwiebel über die Hähnchenbrust geben. Sahne und Créme fraíche miteinander verrühren, gut würzen und über das Ganze geben. Den Backofen auf 180° vorheizen und 20-25 Minuten backen.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Hähnchenbrust in Zwiebelsahne',
+    //             tags: [
+    //                 'Helles Fleisch',
+    //                 'sideorder: ???'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
+    //                 {quantity: 3, unit: 'stk', name: 'Zwiebel (rot)'},
+    //                 {quantity: 200, unit: 'ml', name: 'Sahne'},
+    //                 {quantity: 200, unit: 'gr', name: 'Crème Fraiche'}
+    //             ],
+    //             steps: [
+    //                 'Die Hähnchenbrust mit Salz, Pfeffer und Cayennepfeffer würzen und in einer Pfanne in heißem Butterschmalz von beiden Seiten anbraten. Nun in eine gebutterte Auflaufform geben und abdecken. In derselben Pfanne die in Ringe geschnittenen Zwiebel geben und gut anschmoren, dass sie Farbe bekommen. Die fertige Zwiebel über die Hähnchenbrust geben. Sahne und Créme fraíche miteinander verrühren, gut würzen und über das Ganze geben. Den Backofen auf 180° vorheizen und 20-25 Minuten backen.'
+    //             ]
+    //         }
+    //     )
+    // );
 
     //http://www.chefkoch.de/rezepte/407971130376848/Haehnchenschenkel-mit-Ofen-Schmand-Gemuese.html
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Hähnchenschenkel mit Schmand-Gemüse',
-                tags: [
-                    'Helles Fleisch',
-                    'sideorder: Kartoffeln'
-                ],
-                ingredients: [
-                    {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
-                    {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
-                    {quantity: 1, unit: 'stk', name: 'Zucchini'},
-                    {quantity: 300, unit: 'gr', name: 'Champignons'},
-                    {quantity: 10, unit: 'stk', name: 'Cherrytomaten'},
-                    {quantity: 200, unit: 'gr', name: 'Schmand'},
-                    {quantity: 200, unit: 'gr', name: 'Joghurt'},
-                    {quantity: 100, unit: 'gr', name: 'Schnittlauch'},
-                    {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'}
-                ],
-                steps: [
-                    'Den Backofen auf 200 Grad vorheizen. Hähnchenschenkel waschen und trocken tupfen. Die Schenkel großzügig mit Hähnchengewürz, Paprika und der gekörnten Brühe würzen. Achtung, die Schenkel nicht einölen. Anschließend die Kartoffeln schälen und in mundgerechte Stücke schneiden. Die Zucchini putzen, waschen, halbieren und in ca. 1-cm-dicke Scheiben schneiden. Die Champignons putzen und evt. halbieren. Die Tomaten ebenfalls waschen und evt. halbieren. Die Kartoffeln in einer Fettpfanne verteilen und mit Olivenöl beträufeln. Dann mit Salz, Pfeffer und Rosmarin würzen. Über die Fettpfanne einen Grillrost und darauf die Hähnchenschenkel legen. Die Fettpfanne samt Grillrost in den Ofen schieben und ca. 20 Minuten braten/grillen. Nun tropft das leckere Hähnchenfett auf die Kartoffeln, was einen ganz tollen Geschmack gibt. Anschließend das klein geschnittene Gemüse zu den Kartoffeln in die Pfanne geben und nochmals weitere 15 Minuten in den Ofen. In der Zwischenzeit den Schmand und den Joghurt verrühren. Die Knoblauchzehen dazupressen, den Schnittlauch unterrühren und kräftig mit Salz und Pfeffer würzen. Nach ca. 35-40 Minuten die Hähnchenschenkel mit dem Ofengemüse servieren und die Schmandcreme dazureichen.'
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Hähnchenschenkel mit Schmand-Gemüse',
+    //             tags: [
+    //                 'Helles Fleisch',
+    //                 'sideorder: Kartoffeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 4, unit: 'stk', name: 'Hähnchenschenkel'},
+    //                 {quantity: 800, unit: 'gr', name: 'Kartoffeln'},
+    //                 {quantity: 1, unit: 'stk', name: 'Zucchini'},
+    //                 {quantity: 300, unit: 'gr', name: 'Champignons'},
+    //                 {quantity: 10, unit: 'stk', name: 'Cherrytomaten'},
+    //                 {quantity: 200, unit: 'gr', name: 'Schmand'},
+    //                 {quantity: 200, unit: 'gr', name: 'Joghurt'},
+    //                 {quantity: 100, unit: 'gr', name: 'Schnittlauch'},
+    //                 {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'}
+    //             ],
+    //             steps: [
+    //                 'Den Backofen auf 200 Grad vorheizen. Hähnchenschenkel waschen und trocken tupfen. Die Schenkel großzügig mit Hähnchengewürz, Paprika und der gekörnten Brühe würzen. Achtung, die Schenkel nicht einölen. Anschließend die Kartoffeln schälen und in mundgerechte Stücke schneiden. Die Zucchini putzen, waschen, halbieren und in ca. 1-cm-dicke Scheiben schneiden. Die Champignons putzen und evt. halbieren. Die Tomaten ebenfalls waschen und evt. halbieren. Die Kartoffeln in einer Fettpfanne verteilen und mit Olivenöl beträufeln. Dann mit Salz, Pfeffer und Rosmarin würzen. Über die Fettpfanne einen Grillrost und darauf die Hähnchenschenkel legen. Die Fettpfanne samt Grillrost in den Ofen schieben und ca. 20 Minuten braten/grillen. Nun tropft das leckere Hähnchenfett auf die Kartoffeln, was einen ganz tollen Geschmack gibt. Anschließend das klein geschnittene Gemüse zu den Kartoffeln in die Pfanne geben und nochmals weitere 15 Minuten in den Ofen. In der Zwischenzeit den Schmand und den Joghurt verrühren. Die Knoblauchzehen dazupressen, den Schnittlauch unterrühren und kräftig mit Salz und Pfeffer würzen. Nach ca. 35-40 Minuten die Hähnchenschenkel mit dem Ofengemüse servieren und die Schmandcreme dazureichen.'
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
@@ -429,7 +429,7 @@ define('data-recipies', [], function () {
                 time: 40,
                 ingredients: [
                     {quantity: 1, unit: 'stk', name: 'Porree'},
-                    {quantity: 2, unit: 'stk', name: 'Karotten'},
+                    {quantity: 2, unit: 'stk', name: 'Möhren'},
                     {quantity: 1, unit: 'stk', name: 'Limette(n)'},
                     {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
                     {quantity: 1, unit: 'el', name: 'Öl (Sesamöl)'},
@@ -536,6 +536,7 @@ define('data-recipies', [], function () {
         )
     );
 
+    // http://www.rezeptwelt.de/hauptgerichte-mit-fleisch-rezepte/schnelle-pasta-asciutta-bzw-bolognese-so%C3%9Fe/726901
     data.meals.push(
         $.extend({},
             templates.meal || {},
@@ -547,14 +548,55 @@ define('data-recipies', [], function () {
                 ],
                 ingredients: [
                     {quantity: 500, unit: 'gr', name: 'Hackfleisch'},
-                    {quantity: 5, unit: 'stk', name: 'Zwiebel(n)'},
-                    {quantity: 1, unit: 'stk', name: 'Bolognese-Fix'},
-                    {quantity: 50, unit: 'gr', name: 'Tomatenmark'},
-                    {quantity: 1, unit: 'stk', name: 'Pizzatomaten (Dose)'},
-                    {quantity: 100, unit: 'gr', name: 'Sahnekäse'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
+                    {quantity: 10, unit: 'gr', name: 'Öl'},
+                    {quantity: 2, unit: 'el', name: 'Mehl'},
+                    {quantity: 250, unit: 'ml', name: 'Brühe'},
+                    {quantity: 2, unit: 'el', name: 'Tomatenmark'},
+                    {name: 'Salz'},
+                    {name: 'Pfeffer'},
+                    {name: 'Paprikapulver'},
+                    {name: 'Oregano'},
+                    {name: 'Parmesan'}
                 ],
                 steps: [
-                    'Die Zwiebeln in feine Ringe schneiden und in Olivenöl anbraten (nicht braun werden lassen)und dann mit heißem Wasser (ca. 1/2 liter)weich kochen lassen. Währenddessen das Gehackte in Butterfett oder Palmin scharf anbraten, bis es braun ist und mit Salz, Pfeffer, Oregano und Paprika würzen. Danach das Tütchen Bolognese reinstreuen. Wenn die Zwiebeln schön weichgekocht sind, gibst Du das Gehackte dazu. Nun kommen die geschälten Tomaten und das Tomatenmark rein. Alles noch bei kleiner Flamme ca. 30 Minuten köcheln lassen. Zum Schluß gibst Du 1-2 Eßl. Sahnekäse dazu und schmeckst ab.'
+                    'Die Zwiebel schälen, halbieren und in den Mixtopf geben und (5 Sek | Stufe 5) zerkleinern. Mit Spatel nach unten schieben und nochmal bei (5 Sek | Stufe 5) zerkleinern.',
+                    'Öl hinzufügen und (2 min | Varoma | Stufe 1) dünsten.',
+                    'Hackfleisch in den Mixtopf zugeben und mit Salz, Pfeffer und Paprikapulver kräftig würzen und (5 min | Varoma  | Linkslauf Sanftrührstufe) garen',
+                    'Mehl, Brühe, Tomatenmark und Oregano zugeben und (12 min | 100°C | Linkslauf Stufe 1-2) garen',
+                    'Zum Schluss noch abschmecken und mit Parmesan garnieren'
+                ]
+            }
+        )
+    );
+
+    // http://www.rezeptwelt.de/hauptgerichte-mit-gem%C3%BCse-rezepte/k%C3%BCrbisrisotto/155019
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Kürbisrisotto',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Nudeln'
+                ],
+                ingredients: [
+                    {quantity: 100, unit: 'gr', name: 'Parmesan (gerieben)'},
+                    {quantity: 250, unit: 'gr', name: 'Hokkadiokürbis'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
+                    {quantity: 20, unit: 'gr', name: 'Olivenöl'},
+                    {quantity: 250, unit: 'gr', name: 'Risottoreis'},
+                    {quantity: 900, unit: 'gr', name: 'Gewmüsebrühe (heiß)'},
+                    {quantity: 2, unit: 'tl', name: 'Currypulver'},
+                    {quantity: 20, unit: 'gr', name: 'Butter'}
+                ],
+                steps: [
+                    'Kürbis (mit Schale) in Stücke schneiden und Zwiebelhälften (5 sek | Stufe 6) zerkleinern.',
+                    'Mit Olivenöl (3 min | 100 Grad | Stufe 1) andünsten.',
+                    '250 g Risottoreis zugeben und bei (3 min | 100 Grad | Linkslauf Stufe 1) andünsten.',
+                    '900 g heiße Gemüsebrühe und Currypulver zugeben.',
+                    'Anschließend ohne Messbecher (20 min | 100 Grad  | Linkslauf Stufe 1) kochen.',
+                    'Butter und Parmesan hinzugeben'
                 ]
             }
         )
@@ -620,35 +662,35 @@ define('data-recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Spitzkohl mit Kartoffeln',
-                tags: [
-                    'Dunkles Fleisch',
-                    'sideorder: Kartoffeln'
-                ],
-                ingredients: [
-                    {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
-                    {quantity: 8, unit: 'stk', name: 'Kartoffeln'},
-                    {quantity: 50, unit: 'ml', name: 'Brühe'},
-                    {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
-                    {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
-                    {quantity: 1, unit: 'stk', name: 'Bratwurst'}
-                ],
-                steps: [
-                    'Die äußeren Blätter vom Spitzkohl entfernen und halbieren. Den Strunk aus der Mitte schneiden. Spitzkohl in STreifen schneiden. Wasser mit Salz zum Kochen bringen, den Spitzkohl 5 Minuten kochen lassen, dann abschütten. Kartoffeln schneiden und 15 Minuten in Brühe garen (beim Abschütten Wasser auffangen). Fett im Topf auslassen und Speckwürfel anbraten. Dann den Spitzkohl und die Kartoffeln dazugeben. Mit Salz, Peffer, Brühe und evtl. Sahnekäase abschmecken. Hackfleisch in seperater Pfanne krümelig anbraten und zum Schluss untermengen.',
-                ]
-            }
-        )
-    );
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Spitzkohl mit Kartoffeln',
+    //             tags: [
+    //                 'Dunkles Fleisch',
+    //                 'sideorder: Kartoffeln'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 2, unit: 'stk', name: 'Spitzkohl'},
+    //                 {quantity: 8, unit: 'stk', name: 'Kartoffeln'},
+    //                 {quantity: 50, unit: 'ml', name: 'Brühe'},
+    //                 {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
+    //                 {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
+    //                 {quantity: 1, unit: 'stk', name: 'Bratwurst'}
+    //             ],
+    //             steps: [
+    //                 'Die äußeren Blätter vom Spitzkohl entfernen und halbieren. Den Strunk aus der Mitte schneiden. Spitzkohl in STreifen schneiden. Wasser mit Salz zum Kochen bringen, den Spitzkohl 5 Minuten kochen lassen, dann abschütten. Kartoffeln schneiden und 15 Minuten in Brühe garen (beim Abschütten Wasser auffangen). Fett im Topf auslassen und Speckwürfel anbraten. Dann den Spitzkohl und die Kartoffeln dazugeben. Mit Salz, Peffer, Brühe und evtl. Sahnekäase abschmecken. Hackfleisch in seperater Pfanne krümelig anbraten und zum Schluss untermengen.',
+    //             ]
+    //         }
+    //     )
+    // );
 
     data.meals.push(
         $.extend({},
             templates.meal || {},
             {
-                name: 'Rippchen a ala Mama',
+                name: 'Rippchen a la Mama',
                 tags: [
                     'Dunkles Fleisch',
                     'sideorder: Kartoffeln'
@@ -746,30 +788,30 @@ define('data-recipies', [], function () {
         )
     );
 
-    data.meals.push(
-        $.extend({},
-            templates.meal || {},
-            {
-                name: 'Überbackenes Hähnchenbrustfilet',
-                tags: [
-                    'Helles Fleisch',
-                    'sideorder: Reis'
-                ],
-                ingredients: [
-                    {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
-                    {quantity: 0.5, unit: 'Dose', name: 'Pfirsichhälften'},
-                    {quantity: 400, unit: 'ml', name: 'Sahne'},
-                    {quantity: 200, unit: 'gr', name: 'Champignons'},
-                    {quantity: 1, unit: 'Beutel', name: 'Zwiebelsuppe'},
-                    {quantity: 1, unit: 'etwas', name: 'geraspelten Käse'}
+    // data.meals.push(
+    //     $.extend({},
+    //         templates.meal || {},
+    //         {
+    //             name: 'Überbackenes Hähnchenbrustfilet',
+    //             tags: [
+    //                 'Helles Fleisch',
+    //                 'sideorder: Reis'
+    //             ],
+    //             ingredients: [
+    //                 {quantity: 400, unit: 'gr', name: 'Hähnchenbrustfilet'},
+    //                 {quantity: 0.5, unit: 'Dose', name: 'Pfirsichhälften'},
+    //                 {quantity: 400, unit: 'ml', name: 'Sahne'},
+    //                 {quantity: 200, unit: 'gr', name: 'Champignons'},
+    //                 {quantity: 1, unit: 'Beutel', name: 'Zwiebelsuppe'},
+    //                 {quantity: 1, unit: 'etwas', name: 'geraspelten Käse'}
 
-                ],
-                steps: [
-                    'Hähnchenbrustfilets mit einem scharfen Messer der Länge nach durchschneiden. Diese nun in heißem Fett in einer Pfanne von beiden Seiten anbraten und dabei salzen, pfeffern und mit Paprikapulver würzen. Eine Aufluafform einreiben und die gebratenen Filets darin verteilen. Die Pfirsiche vierteln und über die Filets geben. In der heißen Pfanne die Sahne und die Pilze heiß werden lassen. Nun darüber den Beutel Zwiebelsuppe geben und verrühren. Die Pilz-Sahne-Zwiebelsuppe nun noch mit Paprika, Salz, Pfeffer, Sojasauce und Curry würzen und in die Auflaufform geben. Zum Schluss etwas geraspelten Käse darauf verteilen und bei 200 ∞C in den vorgeheizten Backofen schieben. ‹berbacken wird ca. 20 Minuten bedeckt (Deckel oder Aulufolie) und 15 Minuten unbedeckt. ',
-                ]
-            }
-        )
-    );
+    //             ],
+    //             steps: [
+    //                 'Hähnchenbrustfilets mit einem scharfen Messer der Länge nach durchschneiden. Diese nun in heißem Fett in einer Pfanne von beiden Seiten anbraten und dabei salzen, pfeffern und mit Paprikapulver würzen. Eine Aufluafform einreiben und die gebratenen Filets darin verteilen. Die Pfirsiche vierteln und über die Filets geben. In der heißen Pfanne die Sahne und die Pilze heiß werden lassen. Nun darüber den Beutel Zwiebelsuppe geben und verrühren. Die Pilz-Sahne-Zwiebelsuppe nun noch mit Paprika, Salz, Pfeffer, Sojasauce und Curry würzen und in die Auflaufform geben. Zum Schluss etwas geraspelten Käse darauf verteilen und bei 200 ∞C in den vorgeheizten Backofen schieben. ‹berbacken wird ca. 20 Minuten bedeckt (Deckel oder Aulufolie) und 15 Minuten unbedeckt. ',
+    //             ]
+    //         }
+    //     )
+    // );
 
     //http://www.chefkoch.de/rezepte/1112791217324924/Schnelle-Haehnchenbrust-Zucchini-Pfanne.html
     data.meals.push(
@@ -816,9 +858,9 @@ define('data-recipies', [], function () {
                     {quantity: 400, unit: 'gr', name: 'Crème Fraiche'},
                     {name: 'Muskat'},
                     {name: 'Salz'},
-                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe(n)'},
                     {quantity: 200, unit: 'gr', name: 'Schinkenwürfel'},
-                    {quantity: 3, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 3, unit: 'stk', name: 'Zwiebel(n)'},
                     {quantity: 1, unit: 'bnd', name: 'Schnittlauch'}
                 ],
                 steps: [
@@ -869,6 +911,38 @@ define('data-recipies', [], function () {
         )
     );
 
+    // http://www.rezeptwelt.de/grundrezepte-rezepte/variation-von-finnischer-ofenpfannkuchen-mit-sauerkirschen/619434
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Ofenpfannkuchen mit Sauerkirschen (TM)',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Reis'
+                ],
+                ingredients: [
+                    {quantity: 1, unit: 'Glas', name: 'Sauerkirschen'},
+                    {quantity: 600, unit: 'ml', name: 'Milch'},
+                    {quantity: 2, unit: 'stk', name: 'Eier'},
+                    {quantity: 30, unit: 'gr', name: 'Butter'},
+                    {quantity: 250, unit: 'gr', name: 'Mehl'},
+                    {name: 'Salz'},
+                    {quantity: 50, unit: 'gr', name: 'Zucker'},
+                    {quantity: 4, unit: 'tl', name: 'Zucker'}
+                ],
+                steps: [
+                    'Die Sauerkirschen in einem Sieb gut abtropfen lassen.',
+                    'Milch und Eier in den Mixtopf geschlossen geben und (15 Sek. | Stufe 4) verrühren.',
+                    'Butter, Zucker, Salz und Mehl hinzugeben und (60 Sek | Stufe 4) bis ein glatter Teig entstanden ist.',
+                    'Das Backblech gut mit Backpapier auslegen, das Backpapier sollte über das Backblech gehen oder das Backblech sehr gut einfetten.',
+                    'Teig auf das Backblech geben und die gut abgetropften Sauerkirschen in den Teig "plumpsen" lassen, bzw. gut verteilen.',
+                    'Mit etwas Zucker bestreuen und das Blech in den vorgeheizten Backofen schieben.',
+                    'Backtemperatur 220°C Umluft für ca. 25-30 Minuten'
+                ]
+            }
+        )
+    );
 
     data.meals.push(
         $.extend({},
@@ -910,7 +984,7 @@ define('data-recipies', [], function () {
     //                 {quantity: 500, unit: 'gr', name: 'Spagetthi'},
     //                 {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
     //                 {quantity: 2, unit: 'stk', name: 'Zwiebel(n)'},
-    //                 {quantity: 3, unit: 'stk', name: 'Karotten'},
+    //                 {quantity: 3, unit: 'stk', name: 'Möhren'},
     //                 {quantity: 100, unit: 'gr', name: 'Kartoffeln'},
     //                 {quantity: 50, unit: 'gr', name: 'Sellerie'},
     //                 {quantity: 500, unit: 'ml', name: 'Traubensaft'}
@@ -959,7 +1033,7 @@ define('data-recipies', [], function () {
     //             ingredients: [
     //                 {quantity: 1, unit: 'stk', name: 'Zwiebel(n)'},
     //                 {quantity: 2, unit: 'stk', name: 'Zucchini'},
-    //                 {quantity: 2, unit: 'stk', name: 'Karotten'},
+    //                 {quantity: 2, unit: 'stk', name: 'Möhren'},
     //                 {quantity: 2, unit: 'stk', name: 'Knoblauchzehe(n)'},
     //                 {quantity: 2, unit: 'el', name: 'Crème Fraiche'},
     //                 {quantity: 1, unit: 'stk', name: 'Ei(er)'},
