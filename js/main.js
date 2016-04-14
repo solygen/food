@@ -17,7 +17,7 @@ define('main', ['data-recipies', 'view-list', 'view-statistics'], function (data
 
     $(".button-collapse").sideNav();
 
-    $(window).on('hashchange', function () {
+    $('body').on('hashchange', function (e) {
         if (location.hash.substr(0, 1) === '#' && location.hash.length > 1) {
             if (location.hash === '#recipies') {
                 rec.show();

@@ -218,8 +218,76 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
+                name: 'Möhreneintopf',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Nudeln'
+                ],
+                 ingredients: [
+                    {quantity: 0.5, unit: 'bund',  name: 'Petersilie'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
+                    {quantity: 400, unit: 'gr', name: 'Möhren'},
+                    {quantity: 200, unit: 'gr', name: 'Kartoffeln'},
+                    {quantity: 500, unit: 'gr', name: 'Wasser'},
+                    {quantity: 1, unit: 'tl', name: 'gekörnte Brühe'},
+                    {quantity: 0.25, unit: 'tl', name: 'Muskat'},
+                ],
+                steps: [
+                    'Petersilie in den Mixtopf geben (5 Sek | Stufe 8) und umfüllen',
+                    'Die geviertelte Zwiebel und den Speck in den Mixtopf geben',
+                    'Zerkleinern (5 Sek. | Stufe 7) und dünsten (3 Min | Varoma | Stufe 2)',
+                    'GEwürfelte Möhren und Kartoffeln zugeben und (10 Sek | Stufe 4) zerkleinern',
+                    'Wasser, Brühwürfel und Muskat hinzugeben und (17 Min | 100 Grad | Linkslauf | Stufe 1) garen',
+                    'Anschließend die Petersilie mit dem Spatel unterrühren.'
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Currygeschnetzeltes',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Nudeln'
+                ],
+                ingredients: [
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
+                    {quantity: 1, unit: 'el', name: 'Öl'},
+                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 2, unit: 'el', name: 'Curry'},
+                    {quantity: 30, unit: 'gr', name: 'Mehl'},
+                    {quantity: 30, unit: 'gr', name: 'Tomatenmark'},
+                    {quantity: 500, unit: 'gr', name: 'Wasser'},
+                    {quantity: 2, unit: 'tl', name: 'gekörnte Brühe'},
+                    {quantity: 125, unit: 'gr', name: 'Crème Fraiche'},
+                    {quantity: 125, unit: 'gr', name: 'Joghurt'},
+                    {quantity: 300, unit: 'gr', name: 'Spätzle'},
+                ],
+                steps: [
+                    'Zwiebeln halbieren und in den Mixtopf geschlossen (4 sek | Stufe 5)',
+                    'Öl hinzugeben und (3 min | Varoma | Linkslauf | Stufe 1)',
+                    'Fleisch dazu und (5 min  | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Salz, Pfeffer, Curry, Mehl und Tomatenmark hinzugeben und (2 min  | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Wasser und Brühe hinzugeben und (10 min | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Creme Fraiche und Joghurt hinzugeben und (3 min | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Evtl. noch einmal mit Salz, Pfeffer und Curry abschmecken'
+                ]
+            }
+        )
+    );
+
+
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
                 name: 'Champignonpfännchen',
-               tags: [
+                tags: [
                     'vegetarisch',
                     'sideorder: Nudeln'
                 ],
