@@ -86,7 +86,11 @@ define('data-recipies', [], function () {
                     {quantity: 1, unit: 'el', name: 'Olivenöl'}
                 ],
                 steps: [
-                    'Die Kartoffeln schrubben und in Spalten schneiden. Danach gebe ich sie in eine Gefriertüte.Dann das Öl und die Gewürze, je nach Geschmack, dazu. Die Tüte zuhalten oder mit einem Gummi verschließen und kräftig schütteln, so dass alle Kartoffeln etwas von den Gewürzen abbekommen haben.Auf einem Backblech mit Backpapier verteilen und bei 200 Grad Umluft ca. 1/2 bis Stunde backen.'
+                    'Die Kartoffeln schrubben und in Spalten schneiden',
+                    'Danach gebe ich sie in eine Gefriertüte.',
+                    'Dann das Öl und die Gewürze, je nach Geschmack, dazu.',
+                    'Die Tüte zuhalten oder mit einem Gummi verschließen und kräftig schütteln, so dass alle Kartoffeln etwas von den Gewürzen abbekommen haben.',
+                    'Auf einem Backblech mit Backpapier verteilen und bei 200 Grad Umluft ca. 1/2 bis Stunde backen.'
                 ]
             }
         )
@@ -96,7 +100,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Bandnudeln in Lachs-Sahne Soße',
+                name: 'Bandnudeln in Lachs-Sahne Soße (TM)',
                 tags: [
                     'vegetarisch',
                     'sideorder: Nudeln'
@@ -218,8 +222,76 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
+                name: 'Möhreneintopf (TM)',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Nudeln'
+                ],
+                 ingredients: [
+                    {quantity: 0.5, unit: 'bund',  name: 'Petersilie'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 100, unit: 'gr', name: 'Speckwürfel'},
+                    {quantity: 400, unit: 'gr', name: 'Möhren'},
+                    {quantity: 200, unit: 'gr', name: 'Kartoffeln'},
+                    {quantity: 500, unit: 'gr', name: 'Wasser'},
+                    {quantity: 1, unit: 'tl', name: 'gekörnte Brühe'},
+                    {quantity: 0.25, unit: 'tl', name: 'Muskat'},
+                ],
+                steps: [
+                    'Petersilie in den Mixtopf geben (5 Sek | Stufe 8) und umfüllen',
+                    'Die geviertelte Zwiebel und den Speck in den Mixtopf geben',
+                    'Zerkleinern (5 Sek. | Stufe 7) und dünsten (3 Min | Varoma | Stufe 2)',
+                    'GEwürfelte Möhren und Kartoffeln zugeben und (10 Sek | Stufe 4) zerkleinern',
+                    'Wasser, Brühwürfel und Muskat hinzugeben und (17 Min | 100 Grad | Linkslauf | Stufe 1) garen',
+                    'Anschließend die Petersilie mit dem Spatel unterrühren.'
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
+                name: 'Currygeschnetzeltes (TM)',
+                tags: [
+                    'vegetarisch',
+                    'sideorder: Nudeln'
+                ],
+                ingredients: [
+                    {quantity: 2, unit: 'stk',  name: 'Zwiebel(n)'},
+                    {quantity: 1, unit: 'el', name: 'Öl'},
+                    {quantity: 500, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 2, unit: 'el', name: 'Curry'},
+                    {quantity: 30, unit: 'gr', name: 'Mehl'},
+                    {quantity: 30, unit: 'gr', name: 'Tomatenmark'},
+                    {quantity: 500, unit: 'gr', name: 'Wasser'},
+                    {quantity: 2, unit: 'tl', name: 'gekörnte Brühe'},
+                    {quantity: 125, unit: 'gr', name: 'Crème Fraiche'},
+                    {quantity: 125, unit: 'gr', name: 'Joghurt'},
+                    {quantity: 300, unit: 'gr', name: 'Spätzle'},
+                ],
+                steps: [
+                    'Zwiebeln halbieren und in den Mixtopf geschlossen (4 sek | Stufe 5)',
+                    'Öl hinzugeben und (3 min | Varoma | Linkslauf | Stufe 1)',
+                    'Fleisch dazu und (5 min  | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Salz, Pfeffer, Curry, Mehl und Tomatenmark hinzugeben und (2 min  | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Wasser und Brühe hinzugeben und (10 min | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Creme Fraiche und Joghurt hinzugeben und (3 min | 100 Grad | Linkslauf | Sanftrührstufe)',
+                    'Evtl. noch einmal mit Salz, Pfeffer und Curry abschmecken'
+                ]
+            }
+        )
+    );
+
+
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
                 name: 'Champignonpfännchen',
-               tags: [
+                tags: [
                     'vegetarisch',
                     'sideorder: Nudeln'
                 ],
@@ -304,7 +376,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Hähnchengulasch',
+                name: 'Geschmorte Hähnchenschenkel',
                 tags: [
                     'Helles Fleisch',
                     'sideorder: Nudeln'
@@ -373,7 +445,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Helles Filetgulasch a la Patnaik',
+                name: 'Hähnchenbrust-Ragout',
                 tags: [
                     'Helles Fleisch',
                     'sideorder: ???'
@@ -392,25 +464,55 @@ define('data-recipies', [], function () {
                     {name: 'Curry'}
                 ],
                 steps: [
-                    'Hähnchenbrustfilet in Gulaschstücke schneiden und in heißem Butterschmalz anbraten. Kleingeschnittenen Zwiebeln und eine klein gehackte Knoblauchzehe dazugeben und mitbraten. Wenn das Fleisch von allen Seiten angebraten ist, kommt Salz, Pfeffer, Paprikapulver, Curry und ein paar Tropfen Sojasauce dazu. Mit Wasser ablöschen und den Bratensatz loskochen, auf kleiner Flamme mit schrägem Deckel. Dieses Fleisch braucht nicht so lange zum Braten, sonst wird es trocken. Zum Verfeinern nimmt man ebenfalls Frischkäse, Kondensmilch oder saure Sahne. ',
+                    'Hähnchenbrustfilet in Gulaschstücke schneiden und in heißem Butterschmalz anbraten.',
+                    'Kleingeschnittenen Zwiebeln und eine klein gehackte Knoblauchzehe dazugeben und mitbraten.',
+                    'Wenn das Fleisch von allen Seiten angebraten ist, kommt Salz, Pfeffer, Paprikapulver, Curry und ein paar Tropfen Sojasauce dazu.',
+                    'Mit Wasser ablöschen und den Bratensatz loskochen, auf kleiner Flamme mit schrägem Deckel.',
+                    'Dieses Fleisch braucht nicht so lange zum Braten, sonst wird es trocken.',
+                    'Zum Verfeinern nimmt man ebenfalls Frischkäse, Kondensmilch oder saure Sahne.'
                 ]
             }
         )
     );
 
+    // http://www.rezeptwelt.de/hauptgerichte-mit-fleisch-rezepte/h%C3%BChnerfrikassee-schnell-einfach-und-super-lecker/398269
     data.meals.push(
         $.extend({},
             templates.meal || {},
             {
-                name: 'Hühnerfrikassee',
+                name: 'Hühnerfrikassee (TM)',
                 tags: [
                     'Helles Fleisch',
                     'sideorder: Reis'
                 ],
                 ingredients: [
-                    {quantity: 1, unit: 'stk', name: 'Suppenhuhn'},
-                    {quantity: 300, unit: 'gr',  name: 'Erbsen (TK)'},
-                    {quantity: 200, unit: 'ml',  name: 'Sahne'}
+                    {quantity: 850, unit: 'gr', name: 'Hähnchenbrustfilet'},
+                    {quantity: 150, unit: 'gr',  name: 'Erbsen (TK)'},
+                    {quantity: 320, unit: 'gr',  name: 'Reis'},
+                    {quantity: 700, unit: 'ml',  name: 'Wasser'},
+                    {quantity: 0.5, unit: 'tl',  name: 'Salz'},
+
+                    {quantity: 80, unit: 'gr',  name: 'Butte'},
+                    {quantity: 80, unit: 'gr',  name: 'Mehl'},
+                    {quantity: 500, unit: 'ml',  name: 'Milch'},
+                    {quantity: 300, unit: 'ml',  name: 'Wasser'},
+                    {quantity: 200, unit: 'ml',  name: 'Sahne'},
+                    {quantity: 2, unit: 'el',  name: 'gekörnte Brühe'},
+                    {quantity: 1.5, unit: 'tl',  name: 'Currypulver'},
+                    {quantity: 0.5, unit: 'tl',  name: 'Muskatnuss'},
+                    {quantity: 2, unit: 'el',  name: 'Zitronensaft'},
+                    {quantity: 1, unit: 'tl',  name: 'Salz'},
+                    {name: 'Zucker'}
+                ],
+                steps: [
+                    'Wasser in den Mixtopf geschlossen geben, Salz zufügen.',
+                    'Reis in das Garkörchen einwiegen. Achtung, alle Reiskörner müssen vor dem kochen nass sein. Daher Reis in Garkörbchen kurz unter dem Wasserbahn abspülen.',
+                    'Fleich im unteren Teil des Varomaaufsatz und auf dem Einlegeboden verteilen. Auf dem Einlegeboden zusätzlich die Erbsen verteilen.',
+                    '(30 Minuten | Varoma | Stufe 1)',
+                    'Nach Kochvorgang den Inhalt des Varomas in eine grosse Schüssel umfüllen, ebenso den gegarten Reis in eine andere Schüssel.Restflüssigkeit aus dem Mixtopf geschlossen entfernen.',
+                    'Butter und Mehl in den Mixtopf geben und (3 Minuten | 100°C | Stufe 2) erhitzen und verrühren.',
+                    'Wasser, Milch, Sahne und Gewürze hinzugeben, mit Messbecher die Deckelöffnung verschließen aufkochen und (8 Minuten | 100°C | Stufe 4)',
+                    'Anschließend die fertige Soße über das Fleisch-Erbsen-Gemisch geben.'
                 ]
             }
         )
@@ -421,7 +523,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Huhn mit Gemüse in Kokos-Soße',
+                name: 'Huhn mit Gemüse in Kokos-Soße (TM)',
                 tags: [
                     'Helles Fleisch',
                     'sideorder: Reis'
@@ -488,20 +590,35 @@ define('data-recipies', [], function () {
         )
     );
 
+    // TODO: http://www.rezeptwelt.de/vorspeisensalate-rezepte/kartoffelsalat-kinderleicht-ohne-vorkochen/27173
     data.meals.push(
         $.extend({},
             templates.meal || {},
             {
-                name: 'Maultaschen mit warmen Kartoffelsalat',
-                flags: '',
-                ingredients: [
-                    {quantity: 800, unit: 'gr', name: 'Gemüse-Maultaschen (frisch)'}
-
-                ],
-                steps: [
-                ],
+                name: 'Maultaschen mit Kartoffelsalat (TM)',
                 tags: [
                     'vegetarisch'
+                ],
+                ingredients: [
+                    {quantity: 720, unit: 'gr', name: 'Maultaschen (frisch)'},
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'el', name: 'Öl'},
+                    {quantity: 1000, unit: 'gr', name: 'Kartoffeln'},
+                    {quantity: 500, unit: 'ml', name: 'Gemüsebrühe'},
+                    {quantity: 3, unit: 'el', name: 'Essig'},
+                    {quantity: 3, unit: 'el', name: 'Öl'},
+                    {quantity: 1, unit: 'tl', name: 'Senf'},
+                    {name: 'Salz'},
+                    {name: 'Pfeffer'}
+                ],
+                steps: [
+                    'Kartoffeln schälen und mit dem Hobel in Scheiben schneiden. Geht direkt ins Garköbchen oder in den Varoma - je nach Menge.',
+                    'Die Zwiebel (3 Sek. | Stufe 5) zerkleinern, 1 EL Öl hinzufügen und (2 Min. | Varoma | Stufe 1) dünsten.',
+                    'Gemüsebrühe dazu. Nun Garkörbchen oder Varoma mit den Kartoffeln ein-bzw. aufsetzen.',
+                    '(30-35 Min. | Varoma | Stufe 1) garen. Garprobe machen.',
+                    'Kartoffeln in eine Schüssel geben und etwas abkühlen lassen. Restl. Zutaten in den Mixtopf geben und (10 Sek. | Stufe 2) verrühren.',
+                    'Etwas Soße auf die Kartoffeln geben. Diese wird von der Kartoffel aufgenommen. So lange wiederholen bis der Salat die richtige Konsistenz hat. Schmeckt kalt und warm.',
+                    'Manchmal muss die Soße noch etwas mehr abgeschmeckt werden, je nach Geschmack.'
                 ]
             }
         )
@@ -541,7 +658,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Pasta Asciutta',
+                name: 'Pasta Asciutta (TM)',
                 tags: [
                     'Dunkles Fleisch',
                     'sideorder: Nudeln'
@@ -575,7 +692,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Kürbisrisotto',
+                name: 'Kürbisrisotto (TM)',
                 tags: [
                     'vegetarisch',
                     'sideorder: Nudeln'
@@ -602,33 +719,49 @@ define('data-recipies', [], function () {
         )
     );
 
+    // http://www.rezeptwelt.de/backen-herzhaft-rezepte/pizzateig-aus-neapel/25764
     data.meals.push(
         $.extend({},
             templates.meal || {},
             {
-                name: 'Pizza',
+                name: 'Pizza (TM)',
                 tags: [
                     'Dunkles Fleisch',
                     'Meeresfrüchte'
                 ],
                 ingredients: [
-                    {quantity: 1000, unit: 'gr', name: 'Mehl'},
-                    {quantity: 250, unit: 'ml', name: 'Milch'},
-                    {quantity: 250, unit: 'ml', name: 'heißes Wasser'},
-                    {quantity: 1, unit: 'stk', name: 'Frischhefe'},
-                    {quantity: 200, unit: 'gr', name: 'Tomaten (passiert)'},
+                    {quantity: 450, unit: 'gr', name: 'Mehl'},
+                    {quantity: 250, unit: 'ml', name: 'Wasser'},
+                    {quantity: 5, unit: 'gr', name: 'Hefe'},
+                    {quantity: 10, unit: 'gr', name: 'Salz'},
+
+                    {quantity: 1, unit: 'stk', name: 'Zwiebel'},
+                    {quantity: 1, unit: 'stk', name: 'Knoblauchzehe'},
+                    {quantity: 400, unit: 'gr', name: 'Pizzatomate'},
+                    {quantity: 2, unit: 'el', name: 'Ölivenöl'},
+                    {quantity: 2, unit: 'tl', name: 'Salz'},
+                    {quantity: 1, unit: 'tl', name: 'Pizzagewürz'},
+                    {quantity: 2, unit: 'tl', name: 'Zucker'},
+                    {name: 'Pfeffer'},
                     {quantity: 200, unit: 'gr', name: 'Gouda (geraspelt)'},
-                    {quantity: 100, unit: 'gr', name: 'Mais'},
                     {quantity: 200, unit: 'gr', name: 'Champignons'},
-                    {quantity: 200, unit: 'gr', name: 'Thunfisch'},
-                    {quantity: 100, unit: 'gr', name: 'Salami'},
-                    {quantity: 1, unit: 'tl', name: 'Salz'},
-                    {quantity: 1, unit: 'stk', name: 'Ei(er)'},
-                    {name: 'Zucker'}
+                    {quantity: 200, unit: 'gr', name: 'Paprika'},
+                    {quantity: 100, unit: 'gr', name: 'Salami'}
                 ],
                 steps: [
-                    'Du nimmst eine große Schüssel mischst Du die Hefe rein, das Ei und einen Löffel Zucker und eine Prise Salz vermengen. Dann kommt eine die Milch und das heisses Wasser mit dazu. Umrühren, 2 Minuten stehen lassen. Dann noch einen Schuß Olivenöl. Und und dann mischst Du das Mehl dazu und knetest alles. Eventuell brauchts Du noch etwas mehr Mehl oder Wasser. Den Teig danach ne halbe Stunde stehen lassen.',
-                    'Danach machst Du die Pizzasauce: eine kleine Knoblauch klein schneiden. Dann passierte Tomatensauce dazu. Gewürze und wenn Du hast teifgefrorene Kräuter und einen Schuß Olivenöl.'
+                    'Mehl, Wasser, Hefe und Salz Zutaten in den Mixtopf geben und (5 Min. | Teigstufe)',
+                    '6 bi 12 Std. ruhen lassen - gerne auch länger',
+                    'Danach machst Du die Pizzasauce: eine kleine Knoblauch klein schneiden. Dann passierte Tomatensauce dazu. Gewürze und wenn Du hast teifgefrorene Kräuter und einen Schuß Olivenöl.',
+                    'Für die Tomatensauce Zwiebel und Knoblauch schälen und bei Stufe 5 auf das laufende Messer fallen lassen.',
+                    'Pizzatomaten, Olivenöl, Salz, Pizzagewürz, Zucker und etwas Pfeffer in den Mixtopf geschlossen geben und (8 min | 80 Grad | Stufe 1) kochen lassen.',
+                    'Sofort in ca. 2 bis 3 heiß ausgespülte kleine Gläser füllen.',
+                    'Den Backofen mit Pizzastein für mindestens 45 Minuten bei 250 Grad vorheozen',
+                    'Den Teig in zwei Teile aufteilen und ausrollen',
+                    'Dünn mit der Tomatensauce bestreichen und mit Käse bestreuen',
+                    'Anschließend mit Paprikastreifen, Champignons und Salmi belegen',
+                    'Schnellstmöglich mit dem gemehlten Pizzaschaufel auf den Pizzastein legen und den Backofen auf 180 Grad herunterregeln.',
+                    'Die Pizza sollte ca. nach 8-10 Minute fertig sein'
+
                 ]
             }
         )
@@ -711,7 +844,19 @@ define('data-recipies', [], function () {
                     {name: 'Senf'}
                 ],
                 steps: [
-                    'Fleisch waschen und abtrocknen. Fett heiß werden lassen. Fleisch von beiden Seiten würzen, dann mit Senf einreiben. Fleisch scharf anbraten. Zwiebeln achteln und wenn Fleisch braun ist dazugeben. Herd runter schalten (sanft brutzeln). Getrocknete Pilze einweichen und ausdrücken (nur wenige). Knobi dazu. Etwas heißes Wasser dazu (ca. 1 Kaffeetasse). getrocknete Pilze dazu geben und Deckel drauf. Ca. 1-1 1/2 Stunden schmoren. Hin und wieder Wasser dazu. Fleisch rausnehmen und dann Soße abschmecken (Salz, Pfeffer, Parika und Honig).',
+                    'Fleisch waschen und abtrocknen.',
+                    'Fett heiß werden lassen.',
+                    'Fleisch von beiden Seiten würzen, dann mit Senf einreiben.',
+                    'Fleisch scharf anbraten.',
+                    'Zwiebeln achteln und wenn Fleisch braun ist dazugeben.',
+                    'Herd runter schalten und sanft brutzeln.',
+                    'Ein paar wenige getrocknete Pilze einweichen und ausdrücken',
+                    'Knoblauch dazu.',
+                    'Etwa eine Kaffetasse Wasser heißes Wasser hinzugeben.',
+                    'getrocknete Pilze dazu geben und Deckel drauf.',
+                    'Ca. 1-1 1/2 Stunden schmoren.',
+                    'Hin und wieder Wasser dazu.',
+                    'Fleisch rausnehmen und dann Soße mit Salz, Pfeffer, Parika und Honig abschmecken.'
                 ]
             }
         )
@@ -755,7 +900,13 @@ define('data-recipies', [], function () {
 
                 ],
                 steps: [
-                    'Tomaten waschen, halbieren und wie Zwiebel (nur größer) in Würfel schneiden. In einer Pfanne oder einem Topf das Olivenöl erhitzen, die Zwiebel darin glasig dünsten, die gewürfelten Tomaten dazu geben und etwas dünsten. Die gehackten Knoblauchzehen dazu geben und kurz mitdünsten. Mit Salz, Pfeffer und Brühe würzen. Die frischen, gehackten Kräuter (Basilikum, Thymian, Oregano) dazu geben, umrühren und ganz zum Schluss den klein gewürfelten Mozzarella hineingeben. Die Pfanne (Topf) sofort von der Kochstelle nehmen und umrühren. Der Käse soll nicht gleich sofort vollständig schmelzen.'
+                    'Tomaten waschen, halbieren und wie Zwiebel (nur größer) in Würfel schneiden.',
+                    'In einer Pfanne oder einem Topf das Olivenöl erhitzen, die Zwiebel darin glasig dünsten, die gewürfelten Tomaten dazu geben und etwas dünsten.',
+                    'Die gehackten Knoblauchzehen dazu geben und kurz mitdünsten.',
+                    'Mit Salz, Pfeffer und Brühe würzen.',
+                    'Die frischen, gehackten Kräuter (Basilikum, Thymian, Oregano) dazu geben, umrühren und ganz zum Schluss den klein gewürfelten Mozzarella hineingeben.',
+                    'Die Pfanne (Topf) sofort von der Kochstelle nehmen und umrühren.',
+                    'Der Käse soll nicht gleich sofort vollständig schmelzen.'
                 ]
             }
         )
@@ -782,7 +933,12 @@ define('data-recipies', [], function () {
                     {quantity: 1, unit: 'el', name: 'Butter'}
                 ],
                 steps: [
-                    'Die Tortellinis nach Packungsanweisung kochen. Den gewürfelten gekochten Schinken in einer tiefen Pfanne mit Butter kurz anbraten, dann 400ml von der Sahne hineingeben und auf kleiner Stufe köcheln lassen. Wenn die Tortellini gar sind, in die Pfanne zur Schinkensahne geben und weiter köcheln lassen. In der Zwischenzeit in einer kleinen Schüssel das Eigelb, den Parmesan, Muskatnuss, Salz und die restliche 200 ml Sahne verrühren, dann in die Pfanne zu den Tortellinis geben und so lange köcheln lassen, bis die Soße dickflüssig wird. Sofort servieren. Sehr gehaltvoll, aber der Geschmack ist fantastisch. Ab und zu kann man sich´s mal gönnen.'
+                    'Die Tortellinis nach Packungsanweisung kochen.',
+                    'Den gewürfelten gekochten Schinken in einer tiefen Pfanne mit Butter kurz anbraten, dann 400ml von der Sahne hineingeben und auf kleiner Stufe köcheln lassen.',
+                    'Wenn die Tortellini gar sind, in die Pfanne zur Schinkensahne geben und weiter köcheln lassen.',
+                    'In der Zwischenzeit in einer kleinen Schüssel das Eigelb, den Parmesan, Muskatnuss, Salz und die restliche 200 ml Sahne verrühren',
+                    'Dann in die Pfanne zu den Tortellinis geben und so lange köcheln lassen, bis die Soße dickflüssig wird.',
+                    'Sofort servieren.'
                 ]
             }
         )
@@ -845,7 +1001,7 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
-                name: 'Flammkuchen Elsässer Art',
+                name: 'Flammkuchen Elsässer Art (TM)',
                 tags: [
                 ],
                 ingredients: [
@@ -963,7 +1119,15 @@ define('data-recipies', [], function () {
 
                 ],
                 steps: [
-                    'Das Geschnetzelte mit Salz und Pfeffer aus der Mühle würzen und in zwei Teile teilen. Eine große Teflonpfanne mit der Hälfte des Erdnussöles sehr gut erhitzen, einen Teil des Fleisches beigeben und kurz (!) anbraten. (nicht zu lange, sonst wird das Fleisch zäh und trocken). Das Fleisch aus der Pfanne nehmen, warm stellen. Mit dem restlichen Fleisch ebenso verfahren. In derselben Pfanne die Butter erhitzen, die Zwiebeln beigeben und dünsten. Die in Scheiben geschnittenen Champignons dazugeben, mit dem Mehl stäuben und vermischen. Weißwein beigeben und zur Hälfte einreduzieren. Den Bratensaft vom Fleisch und den Rahm dazugeben und alles zur gewünschten Konsistenz einkochen. Mit Salz und Pfeffer abschmecken. '
+                    'Das Geschnetzelte mit Salz und Pfeffer aus der Mühle würzen und in zwei Teile teilen.',
+                    'Eine große Teflonpfanne mit der Hälfte des Erdnussöles sehr gut erhitzen, einen Teil des Fleisches beigeben und kurz (!) anbraten - nicht zu lange, sonst wird das Fleisch zäh und trocken.',
+                    'Das Fleisch aus der Pfanne nehmen, warm stellen.',
+                    'Mit dem restlichen Fleisch ebenso verfahren.',
+                    'In derselben Pfanne die Butter erhitzen, die Zwiebeln beigeben und dünsten.',
+                    'Die in Scheiben geschnittenen Champignons dazugeben, mit dem Mehl stäuben und vermischen.',
+                    'Traubensaft beigeben und zur Hälfte einreduzieren.',
+                    'Den Bratensaft vom Fleisch und den Rahm dazugeben und alles zur gewünschten Konsistenz einkochen.',
+                    'Mit Salz und Pfeffer abschmecken.'
                 ]
             }
         )
