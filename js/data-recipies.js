@@ -628,6 +628,52 @@ define('data-recipies', [], function () {
         $.extend({},
             templates.meal || {},
             {
+                name: 'Kotlett mit Kohlrabigemüse (TM)',
+                tags: [
+                    'schweinefleisch'
+                ],
+                ingredients: [
+                    {quantity: 3, unit: 'stk', name: 'Kohlrabi'},
+                    {quantity: 300, unit: 'gr', name: 'Kartoffeln'},
+                    {quantity: 500, unit: 'ml', name: 'Wasser'},
+                    {quantity: 2, unit: 'tl', name: 'gekörnte Brühe'},
+                    {quantity: 0.5, unit: 'tl', name: 'Salz'},
+
+                    {quantity: 2, unit: 'stk', name: 'Kotlett'},
+                    {quantity: 1, unit: 'stk', name: 'Ei'},
+                    {name: 'Paniermehl'},
+                    {name: 'Mehl'},
+
+                    {quantity: 20, unit: 'gr', name: 'Butter'},
+                    {quantity: 30, unit: 'gr', name: 'Mehl'},
+                    {quantity: 300, unit: 'ml', name: 'Brühflüssigkeit'},
+                    {quantity: 100, unit: 'ml', name: 'Sahne'},
+                    {quantity: 1, unit: 'el', name: 'Petersilie (TK)'},
+                    {name: 'Paprika'},
+                    {name: 'Curry'},
+                    {name: 'Pfeffer'}
+                ],
+                steps: [
+                    '500 g warmes Wasser, die gekrönte Brühe und das Salz in den Mixtopf geben',
+                    'Die geviertelten Kartofelln in das Garkörbchen geben und dieses in den Mixtopf hängen',
+                    'Die Kohlrabis in Stift schneiden und in dem Varoma Garaufsatz verteilen und garen ( 35 Min | Varoma | Stufe 1)',
+                    'In einer Pfanne ausreichend Öl erhitzen',
+                    'Nun die Kotletts unter fließendem Wasser abwaschen und danach trocken tupfen',
+                    'Die Fleischstücke erst von beiden seiten mehlen, danach im gut gequirletn Ei wenden und abschließend in den Semmelbröseln wenden',
+                    'Wenn das Fette der Pfanne heiß genug ist, die Kotletts jeweils von 3 Minuten braten',
+                    'Anschließend das Fleisch aus der Pfanne in eine feuerfeste Auflaufform geben und bei 120 Grad für 20 Minuten schmoren',
+                    'Nachdem Kartoffeln und Kohlrabi fertig sind, 300 ml der Garflüssigkeit auffangen',
+                    'Die Garflüssigkeit wieder in den Mixtopf geben und die restlichen Zutaten für die Soße hinzugeben',
+                    'Abschließend kurz auf Stufe 10 zerkleinern und dann (5 min. | 100 Grad | Stufe 3)'
+                ]
+            }
+        )
+    );
+
+    data.meals.push(
+        $.extend({},
+            templates.meal || {},
+            {
                 name: 'Paprika Gehacktes',
                 tags: [
                     'Dunkles Fleisch',
